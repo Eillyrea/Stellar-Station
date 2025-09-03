@@ -269,3 +269,10 @@
   id: 33
   time: '2025-08-29T02:06:39.0000000+00:00'
   url: https://github.com/Stellar-Station/Stellar-Station/pull/104
+- author: sowelipililimute
+  changes:
+  - message: Stellar airlocks now have prototypes
+    type: Add
+  id: 34
+  time: '2025-09-03T22:25:06.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/105
