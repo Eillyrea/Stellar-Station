@@ -398,7 +398,7 @@
   components:
     # - type: BibleUser # Stellar - Chaplains to Clerics
     - type: GhostRole
-      name: job-name-cleric # Stellar - Chaplains to Clerics
+      name: job-name-chaplain
     - type: Loadout
       prototypes: [ VisitorChaplain, VisitorChaplainAlt ]
       roleLoadout: [ RoleSurvivalStandard ]

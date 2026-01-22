@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: loadout
+  id: StellarMiscLoadoutHatSupply
+  equipment:
+    head: StellarClothingMiscHatSupplyCap
+
+- type: loadout
+  id: StellarMiscLoadoutHatSupplyBeret
+  equipment:
+    head: StellarClothingMiscHatSupplyBeret
+
+### HARD HATS
+- type: loadout
+  id: StellarMiscLoadoutHatHardHatOrange
+  equipment:
+    head: StellarClothingMiscHatHardHatOrange
+  groupBy: "hard-hat"
+
+- type: loadout
+  id: StellarMiscLoadoutHatHardHatYellow
+  equipment:
+    head: StellarClothingMiscHatHardHatYellow
+  groupBy: "hard-hat"

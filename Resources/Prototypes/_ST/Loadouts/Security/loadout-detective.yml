@@ -1,0 +1,108 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearSecurityDetective
+  equipment:
+    id: StellarPDASecurityDetective
+    ears: StellarClothingHeadsetSecurity
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobSecurityDetective
+  groups:
+  - StellarSecurityEyes
+  - StellarDetectiveHead
+  - StellarDetectiveCoat
+  - StellarDetectiveUniform
+  - StellarDetectiveGloves
+  - StellarDetectiveShoes
+  - StellarSecurityBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+
+- type: loadoutGroup
+  id: StellarDetectiveHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarDetectiveHatFedoraBrown
+  - StellarDetectiveHatFedoraCharcoal
+
+- type: loadoutGroup
+  id: StellarDetectiveCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarDetectiveCoatBrown
+  - StellarDetectiveCoatCharcoal
+
+- type: loadoutGroup
+  id: StellarDetectiveUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarDetectiveUniform
+  - StellarDetectiveUniformSkirt
+
+- type: loadoutGroup
+  id: StellarDetectiveGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesBlack
+  - StellarMiscLoadoutGlovesSterile
+
+- type: loadoutGroup
+  id: StellarDetectiveShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesCombatBoots
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+#### LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarDetectiveHatFedoraBrown
+  equipment:
+    head: StellarClothingHatSecurityDetectiveFedoraBrown
+
+- type: loadout
+  id: StellarDetectiveHatFedoraCharcoal
+  equipment:
+    head: StellarClothingHatSecurityDetectiveFedoraCharcoal
+
+### COATS
+- type: loadout
+  id: StellarDetectiveCoatBrown
+  equipment:
+    outerClothing: StellarClothingCoatSecurityDetectiveCoatBrown
+
+- type: loadout
+  id: StellarDetectiveCoatCharcoal
+  equipment:
+    outerClothing: StellarClothingCoatSecurityDetectiveCoatCharcoal
+
+### UNIFORM
+- type: loadout
+  id: StellarDetectiveUniform
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityDetective
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarDetectiveUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityDetectiveSkirt
+  groupBy: "uniform-skirt"

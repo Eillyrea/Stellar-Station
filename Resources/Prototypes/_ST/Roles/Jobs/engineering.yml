@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### ENGINEER
+- type: job
+  id: StellarJobEngineeringEngineer
+  name: stellar-job-name-engineer
+  description: stellar-job-description-engineer
+  playTimeTracker: StellarTimeTrackerEngineeringEngineer
+  # requirements:
+  #   - !type:DepartmentTimeRequirement
+  #     department: Civilian
+  #     time: 0.5h
+  startingGear: StellarGearEngineeringEngineer
+  icon: StellarJobIconEngineeringEngineer
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+
+- type: playTimeTracker
+  id: StellarTimeTrackerEngineeringEngineer
+

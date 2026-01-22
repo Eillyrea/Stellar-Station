@@ -25,3 +25,11 @@
   strategy: !type:ClampedHslColoration
     saturation: [0.0, 0.60]
     lightness: [0.2, 0.9]
+
+# BEGIN STELLAR
+- type: skinColoration
+  id: StellarHues
+  strategy: !type:ClampedHsvColoration
+    saturation: [0.0, 0.6]
+    value: [0.4, 1]
+# END STELLAR

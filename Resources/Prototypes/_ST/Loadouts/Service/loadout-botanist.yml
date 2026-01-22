@@ -1,0 +1,121 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearServiceBotanist
+  equipment:
+    id: StellarPDAServiceBotanist
+    ears: StellarClothingHeadsetService
+    gloves: StellarClothingMiscGlovesBrown
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobServiceBotanist
+  groups:
+  - StellarBotanistHead
+  - StellarBotanistEyes
+  - StellarBotanistCoat
+  - StellarBotanistUniform
+  - StellarBotanistShoes
+  - StellarServiceBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarBotanistHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarBotanistHatCapBlue
+  - StellarBotanistHatCapGreen
+  - StellarBotanistHatCapBrown
+
+- type: loadoutGroup
+  id: StellarBotanistEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarBotanistCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutOuterApronBotanyBlue
+  - StellarMiscLoadoutOuterApronBotanyGreen
+  - StellarMiscLoadoutOuterApronBrown
+
+- type: loadoutGroup
+  id: StellarBotanistUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarBotanistUniform
+  - StellarBotanistUniformSkirt
+  - StellarBotanistUniformOverallsGreen
+  - StellarBotanistUniformOverallsBlue
+  - StellarBotanistUniformOverallsBrown
+
+- type: loadoutGroup
+  id: StellarBotanistShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+#### LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarBotanistHatCapBlue
+  equipment:
+    head: StellarClothingHatServiceBotanistCapBlue
+
+- type: loadout
+  id: StellarBotanistHatCapGreen
+  equipment:
+    head: StellarClothingHatServiceBotanistCapGreen
+
+- type: loadout
+  id: StellarBotanistHatCapBrown
+  equipment:
+    head: StellarClothingHatServiceBotanistCapBrown
+
+### UNIFORM
+- type: loadout
+  id: StellarBotanistUniform
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBotanist
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarBotanistUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBotanistSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarBotanistUniformOverallsGreen
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBotanistOverallsGreen
+  groupBy: "overalls"
+
+- type: loadout
+  id: StellarBotanistUniformOverallsBlue
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBotanistOverallsBlue
+  groupBy: "overalls"
+
+- type: loadout
+  id: StellarBotanistUniformOverallsBrown
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBotanistOverallsBrown
+  groupBy: "overalls"

@@ -1,0 +1,156 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearCommandHeadOfMedicine
+  equipment:
+    id: StellarPDACommandHeadOfMedicine
+    ears: StellarClothingHeadsetHeadOfMedicine
+  storage:
+    back:
+    - Flash
+
+
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobCommandHeadOfMedicine # Stellar
+  groups:
+  - StellarHeadOfMedicineHead
+  - StellarMedicalEyes
+  - StellarHeadOfMedicineFace
+  - StellarHeadOfMedicineCoat
+  - StellarHeadOfMedicineUniform
+  - StellarHeadOfMedicineGloves
+  - StellarHeadOfMedicineShoes
+  - StellarHeadOfMedicineBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarHeadOfMedicineHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarHeadOfMedicineHatSurgicalCap
+  - StellarHeadOfMedicineHatBeret
+
+- type: loadoutGroup
+  id: StellarHeadOfMedicineFace
+  name: stellar-loadout-mask
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutMaskSterile
+
+- type: loadoutGroup
+  id: StellarHeadOfMedicineCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarHeadOfMedicineCoat
+  - StellarHeadOfMedicineCoatInsulated
+
+- type: loadoutGroup
+  id: StellarHeadOfMedicineUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarHeadOfMedicineUniform
+  - StellarHeadOfMedicineUniformSkirt
+  - StellarHeadOfMedicineUniformTurtleneck
+  - StellarHeadOfMedicineUniformTurtleneckSkirt
+  - StellarHeadOfMedicineUniformScrubs
+
+- type: loadoutGroup
+  id: StellarHeadOfMedicineGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarHeadOfMedicineGloves
+  - StellarMiscLoadoutGlovesSterile
+
+- type: loadoutGroup
+  id: StellarHeadOfMedicineBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarHeadOfMedicineBackpack
+
+- type: loadoutGroup
+  id: StellarHeadOfMedicineShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+  - StellarMiscLoadoutShoesMedical
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarHeadOfMedicineHatSurgicalCap
+  equipment:
+    head: StellarClothingHatCommandHeadOfMedicineSurgicalCap
+
+- type: loadout
+  id: StellarHeadOfMedicineHatBeret
+  equipment:
+    head: StellarClothingHatCommandHeadOfMedicineBeret
+
+### COATS
+- type: loadout
+  id: StellarHeadOfMedicineCoat
+  equipment:
+    outerClothing: StellarClothingCoatCommandHeadOfMedicine
+
+- type: loadout
+  id: StellarHeadOfMedicineCoatInsulated
+  equipment:
+    outerClothing: StellarClothingCoatCommandHeadOfMedicineInsulated
+
+### UNIFORM
+- type: loadout
+  id: StellarHeadOfMedicineUniform
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfMedicine
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarHeadOfMedicineUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfMedicineSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarHeadOfMedicineUniformTurtleneck
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfMedicineTurtleneck
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarHeadOfMedicineUniformTurtleneckSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfMedicineTurtleneckSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarHeadOfMedicineUniformScrubs
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfMedicineScrubs
+
+### GLOVES
+- type: loadout
+  id: StellarHeadOfMedicineGloves
+  equipment:
+    gloves: StellarClothingGlovesCommandHeadOfMedicine
+
+### BACKPACK
+- type: loadout
+  id: StellarHeadOfMedicineBackpack
+  equipment:
+    back: StellarClothingBackpackCommandHeadOfMedicine

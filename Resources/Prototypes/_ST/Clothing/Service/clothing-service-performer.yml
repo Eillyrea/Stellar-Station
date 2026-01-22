@@ -1,0 +1,171 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServicePerformerMimeBeretRed
+  name: red beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-red.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-red.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-red.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServicePerformerMimeBeretBlack
+  name: black beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-black.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-black.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-black.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServicePerformerMimeBeretWhite
+  name: white beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-white.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-white.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Performer/mime-hat-beret-white.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### MASKS
+- type: entity
+  parent: ClothingMaskBase
+  id: StellarClothingMaskServicePerformerMime
+  name: mime's mask
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/mime-mask.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/mime-mask.rsi
+  - type: IngestionBlocker
+  - type: Item
+    size: Tiny
+  - type: IdentityBlocker
+    coverage: MOUTH
+
+
+### MASKS
+- type: entity
+  parent: ClothingMaskBase
+  id: StellarClothingMaskServicePerformerClown
+  name: clown's mask
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/clown-mask.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/clown-mask.rsi
+  - type: IngestionBlocker
+  - type: Item
+    size: Tiny
+  - type: IdentityBlocker
+    coverage: MOUTH
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServicePerformerClown
+  name: clown's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/clown-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/clown-uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServicePerformerMimeClowny
+  name: mime's clowny uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/mime-uniform-clowny.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/mime-uniform-clowny.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServicePerformerMime
+  name: mime's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/mime-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/mime-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformServicePerformerMime
+  id: StellarClothingUniformServicePerformerMimeSkirt
+  name: mime's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServicePerformerMusician
+  name: musician's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/musician-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/musician-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformServicePerformerMusician
+  id: StellarClothingUniformServicePerformerMusicianSkirt
+  name: musician's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+### SHOES
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesServicePerformerClown
+  name: clown's shoes
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Performer/clown-shoes.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Performer/clown-shoes.rsi

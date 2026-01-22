@@ -1,0 +1,141 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandResearchDirectorBeret
+  name: research director's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatCommandResearchDirectorPaddedCoat
+  name: research director's padded coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-padded.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-padded.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-padded.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatCommandResearchDirectorSterileCoat
+  name: research director's sterile coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-sterile.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-sterile.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-sterile.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatCommandResearchDirectorLabCoat
+  name: research director's lab coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-lab.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-lab.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-lab.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandResearchDirector
+  name: research director's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandResearchDirector
+  id: StellarClothingUniformCommandResearchDirectorSkirt
+  name: research director's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandResearchDirectorTurtle
+  name: research director's turtleneck
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-uniform-turtleneck.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-uniform-turtleneck.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandResearchDirectorTurtle
+  id: StellarClothingUniformCommandResearchDirectorTurtleSkirt
+  name: research director's turtleneck & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandResearchDirectorTurtleDress
+  name: research director's white turtleneck & pencil skirt
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-uniform-dress.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-uniform-dress.rsi
+
+### GLOVES
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingGlovesCommandResearchDirector
+  name: research director's gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-gloves.rsi
+
+### BACKPACKS
+- type: entity
+  parent: [ClothingBackpack, BaseCommandContraband]
+  id: StellarClothingBackpackCommandResearchDirector
+  name: research director's backpack
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-backpack.rsi

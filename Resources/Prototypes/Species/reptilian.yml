@@ -7,7 +7,7 @@
   defaultSkinTone: "#34a223"
   markingLimits: MobReptilianMarkingLimits
   dollPrototype: MobReptilianDummy
-  skinColoration: VoxFeathers # Stellar
+  skinColoration: StellarHues # Stellar
   maleFirstNames: NamesReptilianMale
   femaleFirstNames: NamesReptilianFemale
   naming: FirstDashFirst

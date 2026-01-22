@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### MASKS
+- type: loadout
+  id: StellarMiscLoadoutMaskSterile
+  equipment:
+    mask: StellarClothingMiscMaskSterile

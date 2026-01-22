@@ -7,7 +7,7 @@
   defaultSkinTone: "#733ba0" # Stellar
   markingLimits: MobArachnidMarkingLimits
   dollPrototype: MobArachnidDummy
-  skinColoration: VoxFeathers # Stellar
+  skinColoration: StellarHues # Stellar
   maleFirstNames: NamesArachnidFirst
   femaleFirstNames: NamesArachnidFirst
   lastNames: NamesArachnidLast

@@ -1,0 +1,6 @@
+version = 1
+
+[[annotations]]
+path = ["*.png"]
+SPDX-FileCopyrightText = "AftrLite, Skilets"
+SPDX-License-Identifier = "LicenseRef-Wallening"

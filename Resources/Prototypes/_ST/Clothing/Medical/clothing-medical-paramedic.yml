@@ -1,0 +1,95 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformMedicalParamedic
+  name: paramedic's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformMedicalParamedic
+  id: StellarClothingUniformMedicalParamedicSkirt
+  name: paramedic's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformMedicalParamedicSimple
+  name: paramedic's simple uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-uniform-simple.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-uniform-simple.rsi
+
+- type: entity
+  parent: StellarClothingUniformMedicalParamedicSimple
+  id: StellarClothingUniformMedicalParamedicSimpleSkirt
+  name: paramedic's simple uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatMedicalParamedic
+  name: paramedic's jacket
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatMedicalParamedicHiVis
+  name: paramedic's hi-vis coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat-hivis.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat-hivis.rsi
+  - type: Item
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat-hivis.rsi
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatMedicalParamedicCap
+  name: paramedic's cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Medical/Paramedic/paramedic-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable

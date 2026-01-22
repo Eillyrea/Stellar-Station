@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarMedicalBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarMedicalBackpack
+
+- type: loadoutGroup
+  id: StellarMedicalEyes
+  name: stellar-loadout-eyes
+  loadouts:
+  - StellarMedicalHud
+  - StellarMedicalGlasses
+
+### BACKPACK
+- type: loadout
+  id: StellarMedicalBackpack
+  equipment:
+    back: StellarClothingBackpackMedical
+
+### EYES SLOT
+- type: loadout
+  id: StellarMedicalHud
+  equipment:
+    eyes: StellarClothingEyesMiscMedicalHud
+
+- type: loadout
+  id: StellarMedicalGlasses
+  equipment:
+    eyes: StellarClothingEyesMiscMedicalGlasses

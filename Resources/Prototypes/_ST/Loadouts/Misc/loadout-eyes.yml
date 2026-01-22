@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### GLASSES
+- type: loadout
+  id: StellarMiscLoadoutEyesGlasses
+  equipment:
+    eyes: StellarClothingEyesMiscGlasses
+
+### SUNGLASSES
+- type: loadout
+  id: StellarMiscLoadoutEyesSunglasses
+  equipment:
+    eyes: StellarClothingEyesMiscSunglasses
+
+### CHEMISTRY GOGGLES
+- type: loadout
+  id: StellarMiscLoadoutEyesMiscChemistryGoggles
+  equipment:
+    eyes: StellarClothingEyesMiscChemistryGoggles

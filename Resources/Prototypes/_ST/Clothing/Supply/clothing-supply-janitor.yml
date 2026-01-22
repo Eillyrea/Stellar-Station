@@ -1,0 +1,70 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HAT
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatSupplyJanitorCap
+  name: janitor's cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Janitor/janitor-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Janitor/janitor-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Supply/Janitor/janitor-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatSupplyJanitor
+  name: janitor's windbreaker
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Janitor/janitor-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Janitor/janitor-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Supply/Janitor/janitor-coat.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyJanitor
+  name: janitor's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Janitor/janitor-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Janitor/janitor-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformSupplyJanitor
+  id: StellarClothingUniformSupplyJanitorSkirt
+  name: janitor's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyJanitorCoveralls
+  name: janitor's coveralls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Janitor/janitor-uniform-coveralls.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Janitor/janitor-uniform-coveralls.rsi

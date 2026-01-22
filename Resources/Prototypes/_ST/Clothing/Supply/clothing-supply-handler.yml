@@ -1,0 +1,98 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatSupplyHandler
+  name: handler's windbreaker
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Handler/handler-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Handler/handler-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Supply/Handler/handler-coat.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyHandler
+  name: handler's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformSupplyHandler
+  id: StellarClothingUniformSupplyHandlerSkirt
+  name: handler's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyHandlerAlt
+  name: handler's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformSupplyHandlerAlt
+  id: StellarClothingUniformSupplyHandlerAltSkirt
+  name: handler's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyHandlerCasual
+  name: handler's casual uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform-casual.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform-casual.rsi
+
+- type: entity
+  parent: StellarClothingUniformSupplyHandlerCasual
+  id: StellarClothingUniformSupplyHandlerCasualSkirt
+  name: handler's casual uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyHandlerAfterHours
+  name: handler's after-hours uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform-afterhours.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Handler/handler-uniform-afterhours.rsi

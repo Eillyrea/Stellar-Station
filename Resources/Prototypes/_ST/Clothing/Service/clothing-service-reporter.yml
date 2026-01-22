@@ -1,0 +1,119 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceReporter
+  name: reporter's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceReporter
+  id: StellarClothingUniformServiceReporterSkirt
+  name: reporter's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceReporterAlt
+  name: reporter's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceReporterAlt
+  id: StellarClothingUniformServiceReporterAltSkirt
+  name: reporter's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceReporterBlue
+  name: reporter's blue uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-blue.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-blue.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceReporterBlue
+  id: StellarClothingUniformServiceReporterBlueSkirt
+  name: reporter's blue uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceReporterBlueAlt
+  name: reporter's alternate blue uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-blue-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-blue-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceReporterBlueAlt
+  id: StellarClothingUniformServiceReporterBlueAltSkirt
+  name: reporter's alternate blue uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceReporterGrey
+  name: reporter's grey uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-grey.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Reporter/reporter-uniform-grey.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceReporterGrey
+  id: StellarClothingUniformServiceReporterGreySkirt
+  name: reporter's grey uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt

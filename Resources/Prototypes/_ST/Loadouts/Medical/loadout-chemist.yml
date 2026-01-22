@@ -1,0 +1,107 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearMedicalChemist
+  equipment:
+    id: StellarPDAMedicalChemist
+    ears: StellarClothingHeadsetMedical
+    eyes: StellarClothingEyesMiscChemistryGoggles
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobMedicalChemist
+  groups:
+  - StellarChemistHead
+  - StellarChemistFace
+  - StellarChemistCoat
+  - StellarChemistUniform
+  - StellarChemistGloves
+  - StellarChemistShoes
+  - StellarMedicalBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarChemistHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarChemistHatBeret
+  - StellarChemistHatHairCap
+
+- type: loadoutGroup
+  id: StellarChemistFace
+  name: stellar-loadout-mask
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutMaskSterile
+
+- type: loadoutGroup
+  id: StellarChemistCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarChemistCoat
+  - StellarMiscLoadoutOuterApronBlack
+  - StellarMiscLoadoutOuterApronWhite
+  - StellarMiscLoadoutOuterApronChemOrange
+
+- type: loadoutGroup
+  id: StellarChemistUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarChemistUniform
+  - StellarChemistUniformSimple
+
+- type: loadoutGroup
+  id: StellarChemistGloves
+  name: stellar-loadout-gloves
+  loadouts:
+  - StellarMiscLoadoutGlovesChemicalSafety
+  - StellarMiscLoadoutGlovesSterile
+
+- type: loadoutGroup
+  id: StellarChemistShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesChemicalSafety
+  - StellarMiscLoadoutShoesMedical
+  - StellarMiscLoadoutShoesBlack
+
+### HEAD
+- type: loadout
+  id: StellarChemistHatBeret
+  equipment:
+    head: StellarClothingHatMedicalChemistBeret
+
+- type: loadout
+  id: StellarChemistHatHairCap
+  equipment:
+    head: StellarClothingHatMedicalChemistHairCap
+
+### COAT
+- type: loadout
+  id: StellarChemistCoat
+  equipment:
+    outerClothing: StellarClothingCoatMedicalChemist
+
+### UNIFORM
+- type: loadout
+  id: StellarChemistUniform
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalChemist
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarChemistUniformSimple
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalChemistSimple
+  groupBy: "uniform"

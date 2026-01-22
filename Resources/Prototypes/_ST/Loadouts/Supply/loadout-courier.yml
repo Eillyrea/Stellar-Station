@@ -1,0 +1,125 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearSupplyCourier
+  equipment:
+    id: StellarPDASupplyCourier
+    ears: StellarClothingHeadsetSupply
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobSupplyCourier
+  groups:
+  - StellarCourierHead
+  - StellarCourierEyes
+  - StellarCourierCoat
+  - StellarCourierUniform
+  - StellarCourierShoes
+  - StellarSupplyBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+
+### HEAD
+- type: loadoutGroup
+  id: StellarCourierHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarCourierHeadCap
+  - StellarMiscLoadoutHatSupply
+  - StellarMiscLoadoutHatSupplyBeret
+
+### EYES
+- type: loadoutGroup
+  id: StellarCourierEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarCourierCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarCourierCoat
+
+- type: loadoutGroup
+  id: StellarCourierUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarCourierUniform
+  - StellarCourierUniformSkirt
+  - StellarCourierUniformAlt
+  - StellarCourierUniformAltSkirt
+  - StellarCourierUniformCoveralls
+
+### SHOES
+- type: loadoutGroup
+  id: StellarCourierShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarCourierShoes
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+
+###### LOADOUTS
+
+### HEAD
+- type: loadout
+  id: StellarCourierHeadCap
+  equipment:
+    head: StellarClothingHatSupplyCourierCap
+
+### COAT
+- type: loadout
+  id: StellarCourierCoat
+  equipment:
+    outerClothing: StellarClothingCoatSupplyCourier
+
+### UNIFORM
+- type: loadout
+  id: StellarCourierUniform
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyCourier
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarCourierUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyCourierSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarCourierUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyCourierAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarCourierUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyCourierAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarCourierUniformCoveralls
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyCourierCoveralls
+
+### SHOES
+- type: loadout
+  id: StellarCourierShoes
+  equipment:
+    shoes: StellarClothingShoesSupplyCourier

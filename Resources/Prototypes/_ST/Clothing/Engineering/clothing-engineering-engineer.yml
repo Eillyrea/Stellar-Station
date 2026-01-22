@@ -1,0 +1,158 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatEngineeringEngineerBeret
+  name: engineer's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatEngineeringEngineerCapEngineer
+  name: engineer's engineering cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-cap-engineer.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-cap-engineer.rsi
+  - type: Item
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-cap-engineer.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatEngineeringEngineerCapAtmospherics
+  name: engineer's atmospherics cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-cap-atmospherics.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-cap-atmospherics.rsi
+  - type: Item
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-hat-cap-atmospherics.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformEngineeringEngineer
+  name: engineer's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformEngineeringEngineer
+  id: StellarClothingUniformEngineeringEngineerSkirt
+  name: engineer's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformEngineeringEngineerHazard
+  name: engineer's hazard uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-hazard.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-hazard.rsi
+
+- type: entity
+  parent: StellarClothingUniformEngineeringEngineerHazard
+  id: StellarClothingUniformEngineeringEngineerHazardSkirt
+  name: engineer's hazard uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformEngineeringEngineerAtmospherics
+  name: engineer's atmospherics uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-atmospherics.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-atmospherics.rsi
+
+- type: entity
+  parent: StellarClothingUniformEngineeringEngineerAtmospherics
+  id: StellarClothingUniformEngineeringEngineerAtmosphericsSkirt
+  name: engineer's atmospherics uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformEngineeringEngineerAfterHours
+  name: engineer's after-hours uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-afterhours.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-afterhours.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformEngineeringEngineerOveralls
+  name: engineer's overalls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-overalls.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-overalls.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformEngineeringEngineerCoveralls
+  name: engineer's coveralls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-coveralls.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-coveralls.rsi

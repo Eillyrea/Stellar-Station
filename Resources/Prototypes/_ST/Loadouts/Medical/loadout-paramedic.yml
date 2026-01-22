@@ -1,0 +1,118 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearMedicalParamedic
+  equipment:
+    id: StellarPDAMedicalParamedic
+    ears: StellarClothingHeadsetMedical
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobMedicalParamedic
+  groups:
+  - StellarParamedicHead
+  - StellarMedicalEyes
+  - StellarParamedicFace
+  - StellarParamedicCoat
+  - StellarParamedicUniform
+  - StellarParamedicGloves
+  - StellarParamedicShoes
+  - StellarMedicalBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarParamedicHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarParamedicHead
+
+- type: loadoutGroup
+  id: StellarParamedicFace
+  name: stellar-loadout-mask
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutMaskSterile
+
+- type: loadoutGroup
+  id: StellarParamedicCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarParamedicCoat
+  - StellarParamedicCoatHiVis
+
+- type: loadoutGroup
+  id: StellarParamedicUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarParamedicUniform
+  - StellarParamedicUniformSkirt
+  - StellarParamedicUniformSimple
+  - StellarParamedicUniformSimpleSkirt
+
+- type: loadoutGroup
+  id: StellarParamedicGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesSterile
+
+- type: loadoutGroup
+  id: StellarParamedicShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesMedical
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+### HEAD
+- type: loadout
+  id: StellarParamedicHead
+  equipment:
+    head: StellarClothingHatMedicalParamedicCap
+
+### COAT
+- type: loadout
+  id: StellarParamedicCoat
+  equipment:
+    outerClothing: StellarClothingCoatMedicalParamedic
+
+- type: loadout
+  id: StellarParamedicCoatHiVis
+  equipment:
+    outerClothing: StellarClothingCoatMedicalParamedicHiVis
+
+### UNIFORM
+- type: loadout
+  id: StellarParamedicUniform
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalParamedic
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarParamedicUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalParamedicSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarParamedicUniformSimple
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalParamedicSimple
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarParamedicUniformSimpleSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalParamedicSimpleSkirt
+  groupBy: "uniform-skirt"

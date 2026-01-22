@@ -1,0 +1,107 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearMedicalPsychologist
+  equipment:
+    id: StellarPDAMedicalPsychologist
+    ears: StellarClothingHeadsetMedical
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobMedicalPsychologist
+  groups:
+  - StellarPsychologistEyes
+  - StellarPsychologistFace
+  - StellarPsychologistCoat
+  - StellarPsychologistUniform
+  - StellarPsychologistShoes
+  - StellarMedicalBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarPsychologistEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarPsychologistFace
+  name: stellar-loadout-mask
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutMaskSterile
+
+- type: loadoutGroup
+  id: StellarPsychologistCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutOuterLabCoat
+
+- type: loadoutGroup
+  id: StellarPsychologistUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarPsychologistUniform
+  - StellarPsychologistUniformSkirt
+  - StellarPsychologistUniformAlt
+  - StellarPsychologistUniformAltSkirt
+  - StellarPsychologistUniformTurtleneck
+  - StellarPsychologistUniformTurtleneckSkirt
+
+- type: loadoutGroup
+  id: StellarPsychologistShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+### UNIFORM
+- type: loadout
+  id: StellarPsychologistUniform
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalPsychologist
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarPsychologistUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalPsychologistSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarPsychologistUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalPsychologistAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarPsychologistUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalPsychologistAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarPsychologistUniformTurtleneck
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalPsychologistTurtleneck
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarPsychologistUniformTurtleneckSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalPsychologistTurtleneckSkirt
+  groupBy: "uniform-skirt"

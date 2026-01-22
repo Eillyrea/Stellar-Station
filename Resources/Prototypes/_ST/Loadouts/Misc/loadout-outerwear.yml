@@ -1,0 +1,45 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### APRONS
+- type: loadout
+  id: StellarMiscLoadoutOuterApronBlack
+  equipment:
+    outerClothing: StellarClothingOuterMiscApronBlack
+  groupBy: "apron"
+
+- type: loadout
+  id: StellarMiscLoadoutOuterApronWhite
+  equipment:
+    outerClothing: StellarClothingOuterMiscApronWhite
+  groupBy: "apron"
+
+- type: loadout
+  id: StellarMiscLoadoutOuterApronChemOrange
+  equipment:
+    outerClothing: StellarClothingOuterMiscApronChemOrange
+  groupBy: "apron"
+
+- type: loadout
+  id: StellarMiscLoadoutOuterApronBotanyBlue
+  equipment:
+    outerClothing: StellarClothingOuterMiscApronBotanyBlue
+  groupBy: "apron"
+
+- type: loadout
+  id: StellarMiscLoadoutOuterApronBotanyGreen
+  equipment:
+    outerClothing: StellarClothingOuterMiscApronBotanyGreen
+  groupBy: "apron"
+
+- type: loadout
+  id: StellarMiscLoadoutOuterApronBrown
+  equipment:
+    outerClothing: StellarClothingOuterMiscApronBrown
+  groupBy: "apron"
+
+- type: loadout
+  id: StellarMiscLoadoutOuterLabCoat
+  equipment:
+    outerClothing: StellarClothingOuterMiscLabCoat

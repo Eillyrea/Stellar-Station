@@ -7,7 +7,7 @@
   defaultSkinTone: "#2bbed8" # Stellar
   markingLimits: MobSlimeMarkingLimits
   dollPrototype: MobSlimePersonDummy
-  skinColoration: VoxFeathers # Stellar
+  skinColoration: StellarHues # Stellar
 
 - type: speciesBaseSprites
   id: MobSlimeSprites

@@ -1,0 +1,112 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServiceBotanistCapBlue
+  name: botanist's blue cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-blue.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-blue.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-blue.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServiceBotanistCapGreen
+  name: botanist's green cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-green.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-green.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-green.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServiceBotanistCapBrown
+  name: botanist's brown cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-brown.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-brown.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Botanist/botanist-hat-cap-brown.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBotanist
+  name: botanist's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceBotanist
+  id: StellarClothingUniformServiceBotanistSkirt
+  name: botanist's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBotanistOverallsGreen
+  name: botanist's green overalls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-green.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-green.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBotanistOverallsBlue
+  name: botanist's blue overalls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-blue.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBotanistOverallsBrown
+  name: botanist's brown overalls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-brown.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-brown.rsi

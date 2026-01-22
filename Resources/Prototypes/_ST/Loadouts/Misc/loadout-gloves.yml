@@ -1,0 +1,59 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### GLOVES
+- type: loadout
+  id: StellarMiscLoadoutGlovesBlack
+  equipment:
+    gloves: StellarClothingMiscGlovesBlack
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesWhite
+  equipment:
+    gloves: StellarClothingMiscGlovesWhite
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesBrown
+  equipment:
+    gloves: StellarClothingMiscGlovesBrown
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesSterile
+  equipment:
+    gloves: StellarClothingMiscGlovesSterile
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesChemicalSafety
+  equipment:
+    gloves: StellarClothingMiscGlovesChemicalSafety
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesSanitation
+  equipment:
+    gloves: StellarClothingMiscGlovesSanitation
+  groupBy: "gloves-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesSanitationOrange
+  equipment:
+    gloves: StellarClothingMiscGlovesSanitationOrange
+  groupBy: "gloves-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesSanitationTeal
+  equipment:
+    gloves: StellarClothingMiscGlovesSanitationTeal
+  groupBy: "gloves-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesSanitationPurple
+  equipment:
+    gloves: StellarClothingMiscGlovesSanitationPurple
+  groupBy: "gloves-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutGlovesInsulated
+  equipment:
+    gloves: StellarClothingMiscGlovesInsulated
+  groupBy: "gloves-insulated"

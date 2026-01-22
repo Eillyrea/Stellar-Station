@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "license": "LicenseRef-Wallening",
+  "copyright": "By AftrLite for Stellar Station",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "base-default"
+        },
+        {
+            "name": "base-silver"
+        },
+        {
+            "name": "base-gold"
+        },
+        {
+            "name": "base-nt"
+        },
+        {
+            "name": "base-prison"
+        },
+        {
+            "name": "decal-stripe-command"
+        },
+        {
+            "name": "decal-stripe-supply"
+        },
+        {
+            "name": "decal-stripe-engineering"
+        },
+        {
+            "name": "decal-stripe-medical"
+        },
+        {
+            "name": "decal-stripe-science"
+        },
+        {
+            "name": "decal-stripe-security"
+        },
+        {
+            "name": "decal-stripe-service"
+        },
+        {
+            "name": "decal-discriminator-command"
+        },
+        {
+            "name": "decal-discriminator-security"
+        }
+    ]
+}

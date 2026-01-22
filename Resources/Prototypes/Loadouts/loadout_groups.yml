@@ -393,7 +393,7 @@
 
 - type: loadoutGroup
   id: ChaplainHead
-  name: loadout-group-cleric-head # Stellar - Chaplains to Clerics
+  name: loadout-group-chaplain-head
   minLimit: 0
   loadouts:
   - ChaplainHead
@@ -404,14 +404,14 @@
 
 - type: loadoutGroup
   id: ChaplainMask
-  name: loadout-group-cleric-mask # Stellar - Chaplains to Clerics
+  name: loadout-group-chaplain-mask
   minLimit: 0
   loadouts:
   - ChaplainMask
 
 - type: loadoutGroup
   id: ChaplainJumpsuit
-  name: loadout-group-cleric-jumpsuit # Stellar - Chaplains to Clerics
+  name: loadout-group-chaplain-jumpsuit
   loadouts:
   - ChaplainJumpsuit
   - ChaplainJumpskirt
@@ -420,7 +420,7 @@
 
 - type: loadoutGroup
   id: ChaplainOuterClothing
-  name: loadout-group-cleric-outerclothing # Stellar - Chaplains to Clerics
+  name: loadout-group-chaplain-outerclothing
   minLimit: 0
   loadouts:
   - ChaplainPlagueSuit
@@ -430,7 +430,7 @@
 
 - type: loadoutGroup
   id: ChaplainNeck
-  name: loadout-group-cleric-neck # Stellar - Chaplains to Clerics
+  name: loadout-group-chaplain-neck
   minLimit: 0
   loadouts:
   - ChaplainNeck

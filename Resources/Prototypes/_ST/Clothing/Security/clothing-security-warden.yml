@@ -1,0 +1,123 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatSecurityWardenBeret
+  name: warden's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Warden/warden-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Warden/warden-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Warden/warden-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatSecurityWardenCap
+  name: warden's cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Warden/warden-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Warden/warden-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Warden/warden-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatSecurityWardenPaddedCoat
+  name: warden's padded coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Warden/warden-coat-padded.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Warden/warden-coat-padded.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Warden/warden-coat-padded.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSecurityWarden
+  name: warden's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Warden/warden-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Warden/warden-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformSecurityWarden
+  id: StellarClothingUniformSecurityWardenSkirt
+  name: warden's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSecurityWardenAlt
+  name: warden's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Warden/warden-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Warden/warden-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformSecurityWardenAlt
+  id: StellarClothingUniformSecurityWardenAltSkirt
+  name: warden's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSecurityWardenTurtle
+  name: warden's turtleneck
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Warden/warden-uniform-turtleneck.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Warden/warden-uniform-turtleneck.rsi
+
+- type: entity
+  parent: StellarClothingUniformSecurityWardenTurtle
+  id: StellarClothingUniformSecurityWardenTurtleSkirt
+  name: warden's turtleneck & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+

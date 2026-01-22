@@ -1,0 +1,152 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearCommandResearchDirector
+  equipment:
+    eyes: StellarClothingEyesMiscCommandGlasses
+    id: StellarPDACommandResearchDirector
+    ears: StellarClothingHeadsetResearchDirector
+  storage:
+    back:
+    - Flash
+
+
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobCommandResearchDirector
+  groups:
+  - StellarResearchDirectorHead
+  - StellarResearchDirectorCoat
+  - StellarResearchDirectorUniform
+  - StellarResearchDirectorGloves
+  - StellarResearchDirectorShoes
+  - StellarResearchDirectorBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarResearchDirectorHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarResearchDirectorHatBeret
+
+- type: loadoutGroup
+  id: StellarResearchDirectorCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarResearchDirectorCoatPadded
+  - StellarResearchDirectorCoatLab
+  - StellarResearchDirectorCoatSterile
+
+- type: loadoutGroup
+  id: StellarResearchDirectorUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarResearchDirectorUniform
+  - StellarResearchDirectorUniformSkirt
+  - StellarResearchDirectorUniformTurtle
+  - StellarResearchDirectorUniformTurtleSkirt
+  - StellarResearchDirectorUniformTurtleDress
+
+- type: loadoutGroup
+  id: StellarResearchDirectorGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarResearchDirectorGloves
+  - StellarMiscLoadoutGlovesWhite
+
+- type: loadoutGroup
+  id: StellarResearchDirectorShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+  - StellarMiscLoadoutShoesScience
+
+- type: loadoutGroup
+  id: StellarResearchDirectorBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarResearchDirectorBackpack
+
+
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarResearchDirectorHatBeret
+  equipment:
+    head: StellarClothingHatCommandResearchDirectorBeret
+
+### COATS
+- type: loadout
+  id: StellarResearchDirectorCoatPadded
+  equipment:
+    outerClothing: StellarClothingCoatCommandResearchDirectorPaddedCoat
+
+- type: loadout
+  id: StellarResearchDirectorCoatLab
+  equipment:
+    outerClothing: StellarClothingCoatCommandResearchDirectorLabCoat
+
+- type: loadout
+  id: StellarResearchDirectorCoatSterile
+  equipment:
+    outerClothing: StellarClothingCoatCommandResearchDirectorSterileCoat
+
+### UNIFORM
+- type: loadout
+  id: StellarResearchDirectorUniform
+  equipment:
+    jumpsuit: StellarClothingUniformCommandResearchDirector
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarResearchDirectorUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandResearchDirectorSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarResearchDirectorUniformTurtle
+  equipment:
+    jumpsuit: StellarClothingUniformCommandResearchDirectorTurtle
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarResearchDirectorUniformTurtleSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandResearchDirectorTurtleSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarResearchDirectorUniformTurtleDress
+  equipment:
+    jumpsuit: StellarClothingUniformCommandResearchDirectorTurtleDress
+  groupBy: "uniform-skirt"
+
+### GLOVES
+
+- type: loadout
+  id: StellarResearchDirectorGloves
+  equipment:
+    gloves: StellarClothingGlovesCommandResearchDirector
+
+### BACKPACK
+- type: loadout
+  id: StellarResearchDirectorBackpack
+  equipment:
+    back: StellarClothingBackpackCommandResearchDirector

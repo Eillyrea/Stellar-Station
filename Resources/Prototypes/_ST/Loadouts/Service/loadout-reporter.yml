@@ -1,0 +1,119 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearServiceReporter
+  equipment:
+    id: StellarPDAServiceReporter
+    ears: StellarClothingHeadsetService
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobServiceReporter
+  groups:
+  - StellarReporterEyes
+  - StellarReporterUniform
+  - StellarReporterShoes
+  - StellarServiceBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarReporterEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarReporterUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarReporterUniform
+  - StellarReporterUniformSkirt
+  - StellarReporterUniformAlt
+  - StellarReporterUniformAltSkirt
+  - StellarReporterUniformBlue
+  - StellarReporterUniformBlueSkirt
+  - StellarReporterUniformBlueAlt
+  - StellarReporterUniformBlueAltSkirt
+  - StellarReporterUniformGrey
+  - StellarReporterUniformGreySkirt
+
+- type: loadoutGroup
+  id: StellarReporterShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+### UNIFORM
+- type: loadout
+  id: StellarReporterUniform
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporter
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarReporterUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarReporterUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarReporterUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarReporterUniformBlue
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterBlue
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarReporterUniformBlueSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterBlueSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarReporterUniformBlueAlt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterBlueAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarReporterUniformBlueAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterBlueAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarReporterUniformGrey
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterGrey
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarReporterUniformGreySkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceReporterGreySkirt
+  groupBy: "uniform-skirt"

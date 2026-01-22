@@ -1,0 +1,129 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandServiceDirector
+  name: service director's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandServiceDirector
+  id: StellarClothingUniformCommandServiceDirectorSkirt
+  name: service director's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandServiceDirectorAlt
+  name: service director's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandServiceDirectorAlt
+  id: StellarClothingUniformCommandServiceDirectorAltSkirt
+  name: service director's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandServiceDirectorCasual
+  name: service director's casual uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform-casual.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform-casual.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandServiceDirectorCasual
+  id: StellarClothingUniformCommandServiceDirectorCasualSkirt
+  name: service director's casual uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandServiceDirectorFormal
+  name: service director's formals
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform-formal.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-uniform-formal.rsi
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandServiceDirector
+  name: service director's cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandServiceDirectorBeret
+  name: service director's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### BACKPACKS
+- type: entity
+  parent: [ClothingBackpack, BaseCommandContraband]
+  id: StellarClothingBackpackCommandServiceDirector
+  name: service director's backpack
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ServiceDirector/servicedirector-backpack.rsi

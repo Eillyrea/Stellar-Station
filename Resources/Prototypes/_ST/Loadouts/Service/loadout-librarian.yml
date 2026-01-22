@@ -1,0 +1,77 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearServiceLibrarian
+  equipment:
+    id: StellarPDAServiceLibrarian
+    ears: StellarClothingHeadsetService
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobServiceLibrarian
+  groups:
+  - StellarLibrarianEyes
+  - StellarLibrarianUniform
+  - StellarLibrarianShoes
+  - StellarServiceBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarLibrarianEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarLibrarianUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarLibrarianUniform
+  - StellarLibrarianUniformSkirt
+  - StellarLibrarianUniformAlt
+  - StellarLibrarianUniformAltSkirt
+
+- type: loadoutGroup
+  id: StellarLibrarianShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+### UNIFORM
+- type: loadout
+  id: StellarLibrarianUniform
+  equipment:
+    jumpsuit: StellarClothingUniformServiceLibrarian
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarLibrarianUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceLibrarianSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarLibrarianUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceLibrarianAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarLibrarianUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceLibrarianAltSkirt
+  groupBy: "uniform-skirt"

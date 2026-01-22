@@ -1,0 +1,143 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatCommandOperationsManagerWindbreaker
+  name: operations manager's windbreaker
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-coat.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandOperationsManager
+  name: operations manager's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandOperationsManager
+  id: StellarClothingUniformCommandOperationsManagerSkirt
+  name: operations manager's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandOperationsManagerTurtleneck
+  name: operations manager's turtleneck uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform-turtleneck.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform-turtleneck.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandOperationsManagerTurtleneck
+  id: StellarClothingUniformCommandOperationsManagerTurtleneckSkirt
+  name: operations manager's turtleneck & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandOperationsManagerFormalSuit
+  name: operations manager's formal suit
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform-formal-suit.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform-formal-suit.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandOperationsManagerFormalSuit
+  id: StellarClothingUniformCommandOperationsManagerFormalSuitSkirt
+  name: operations manager's formal suit & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandOperationsManagerOveralls
+  name: operations manager's overalls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform-overalls.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-uniform-overalls.rsi
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandOperationsManagerBeret
+  name: operations manager's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandOperationsManagerCap
+  name: operations manager's cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### BACKPACKS
+- type: entity
+  parent: [ClothingBackpack, BaseCommandContraband]
+  id: StellarClothingBackpackCommandOperationsManager
+  name: operations manager's backpack
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/OperationsManager/operationsmanager-backpack.rsi

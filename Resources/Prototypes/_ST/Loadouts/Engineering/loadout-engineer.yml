@@ -1,0 +1,137 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearEngineeringEngineer
+  equipment:
+    id: StellarPDAEngineeringEngineer
+    ears: StellarClothingHeadsetEngineering
+    eyes: StellarClothingEyesMiscEngineeringGoggles
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobEngineeringEngineer
+  groups:
+  - StellarEngineerHead
+  - StellarEngineerUniform
+  - StellarEngineerGloves
+  - StellarEngineerShoes
+  - StellarEngineeringBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarEngineerHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarEngineerHatBeret
+  - StellarEngineerHatCapEngineer
+  - StellarEngineerHatCapAtmospherics
+  - StellarMiscLoadoutHatHardHatOrange
+  - StellarMiscLoadoutHatHardHatYellow
+
+- type: loadoutGroup
+  id: StellarEngineerUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarEngineerUniform
+  - StellarEngineerUniformSkirt
+  - StellarEngineerUniformHazard
+  - StellarEngineerUniformSkirtHazard
+  - StellarEngineerUniformAtmospherics
+  - StellarEngineerUniformAtmosphericsSkirt
+  - StellarEngineerUniformAfterHours
+  - StellarEngineerUniformCoveralls
+  - StellarEngineerUniformOveralls
+
+- type: loadoutGroup
+  id: StellarEngineerGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesInsulated
+
+- type: loadoutGroup
+  id: StellarEngineerShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesWorkBoots
+  - StellarMiscLoadoutShoesBrown
+
+#### LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarEngineerHatBeret
+  equipment:
+    head: StellarClothingHatEngineeringEngineerBeret
+
+- type: loadout
+  id: StellarEngineerHatCapEngineer
+  equipment:
+    head: StellarClothingHatEngineeringEngineerCapEngineer
+
+- type: loadout
+  id: StellarEngineerHatCapAtmospherics
+  equipment:
+    head: StellarClothingHatEngineeringEngineerCapAtmospherics
+
+### UNIFORM
+- type: loadout
+  id: StellarEngineerUniform
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineer
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarEngineerUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarEngineerUniformHazard
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerHazard
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarEngineerUniformSkirtHazard
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerHazardSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarEngineerUniformAtmospherics
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerAtmospherics
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarEngineerUniformAtmosphericsSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerAtmosphericsSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarEngineerUniformAfterHours
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerAfterHours
+
+- type: loadout
+  id: StellarEngineerUniformCoveralls
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerCoveralls
+
+- type: loadout
+  id: StellarEngineerUniformOveralls
+  equipment:
+    jumpsuit: StellarClothingUniformEngineeringEngineerOveralls

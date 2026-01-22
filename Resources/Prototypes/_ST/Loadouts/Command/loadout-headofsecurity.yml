@@ -1,0 +1,121 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearCommandHeadOfSecurity
+  equipment:
+    id: StellarPDACommandHeadOfSecurity
+    ears: StellarClothingHeadsetHeadOfSecurity
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobCommandHeadOfSecurity
+  groups:
+  - StellarHeadOfSecurityHead
+  - StellarSecurityEyes
+  - StellarHeadOfSecurityUniform
+  - StellarHeadOfSecurityGloves
+  - StellarHeadOfSecurityShoes
+  - StellarHeadOfSecurityBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarHeadOfSecurityHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarHeadOfSecurityHatBeret
+
+- type: loadoutGroup
+  id: StellarHeadOfSecurityUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarHeadOfSecurityUniform
+  - StellarHeadOfSecurityUniformSkirt
+  - StellarHeadOfSecurityUniformCasual
+  - StellarHeadOfSecurityUniformCasualSkirt
+  - StellarHeadOfSecurityUniformFormal
+  - StellarHeadOfSecurityUniformParade
+
+- type: loadoutGroup
+  id: StellarHeadOfSecurityShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesCombatBoots
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+- type: loadoutGroup
+  id: StellarHeadOfSecurityGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesBlack
+
+- type: loadoutGroup
+  id: StellarHeadOfSecurityBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarHeadOfSecurityBackpack
+
+
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarHeadOfSecurityHatBeret
+  equipment:
+    head: StellarClothingHatCommandHeadOfSecurityBeret
+
+### UNIFORM
+- type: loadout
+  id: StellarHeadOfSecurityUniform
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfSecurity
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarHeadOfSecurityUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfSecuritySkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarHeadOfSecurityUniformCasual
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfSecurityAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarHeadOfSecurityUniformCasualSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfSecurityAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarHeadOfSecurityUniformFormal
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfSecurityFormal
+
+- type: loadout
+  id: StellarHeadOfSecurityUniformParade
+  equipment:
+    jumpsuit: StellarClothingUniformCommandHeadOfSecurityParade
+
+### BACKPACK
+- type: loadout
+  id: StellarHeadOfSecurityBackpack
+  equipment:
+    back: StellarClothingBackpackCommandHeadOfSecurity

@@ -1,0 +1,150 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandHeadOfMedicine
+  name: head of medicine's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandHeadOfMedicine
+  id: StellarClothingUniformCommandHeadOfMedicineSkirt
+  name: head of medicine's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandHeadOfMedicineTurtleneck
+  name: head of medicine's turtleneck
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-uniform-turtleneck.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-uniform-turtleneck.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandHeadOfMedicineTurtleneck
+  id: StellarClothingUniformCommandHeadOfMedicineTurtleneckSkirt
+  name: head of medicine's turtleneck & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandHeadOfMedicineScrubs
+  name: head of medicine's technical scrubs
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-uniform-scrubs.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-uniform-scrubs.rsi
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandHeadOfMedicineSurgicalCap
+  name: head of medicine's surgical cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-hat-surgcap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-hat-surgcap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-hat-surgcap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandHeadOfMedicineBeret
+  name: head of medicine's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### GLOVES
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingGlovesCommandHeadOfMedicine
+  name: head of medicine's gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-gloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-regal-blue
+  - type: FingerprintMask
+  # TODO: STELLAR
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatCommandHeadOfMedicine
+  name: head of medicine's coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatCommandHeadOfMedicineInsulated
+  name: head of medicine's insulated coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat-insulated.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat-insulated.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat-insulated.rsi
+
+### BACKPACKS
+- type: entity
+  parent: [ClothingBackpack, BaseCommandContraband]
+  id: StellarClothingBackpackCommandHeadOfMedicine
+  name: head of medicine's backpack
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-backpack.rsi

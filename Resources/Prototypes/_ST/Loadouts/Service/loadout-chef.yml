@@ -1,0 +1,125 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearServiceChef
+  equipment:
+    id: StellarPDAServiceChef
+    ears: StellarClothingHeadsetService
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobServiceChef
+  groups:
+  - StellarChefHat
+  - StellarChefEyes
+  - StellarChefCoat
+  - StellarChefUniform
+  - StellarChefShoes
+  - StellarServiceBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarChefHat
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarChefHat
+
+- type: loadoutGroup
+  id: StellarChefEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarChefCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarChefCoatApron
+  - StellarChefCoatFreezer
+  - StellarChefCoatTrimRed
+  - StellarChefCoatTrimGreen
+
+- type: loadoutGroup
+  id: StellarChefUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarChefUniform
+  - StellarChefUniformSkirt
+  - StellarChefUniformAlt
+  - StellarChefUniformAltSkirt
+
+### HEAD
+- type: loadout
+  id: StellarChefHat
+  equipment:
+    head: StellarClothingHatServiceChef
+
+- type: loadoutGroup
+  id: StellarChefShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+  - StellarMiscLoadoutShoesBlackDress
+
+
+### COAT
+- type: loadout
+  id: StellarChefCoatApron
+  equipment:
+    outerClothing: StellarClothingCoatServiceChefCoatApronWaist
+
+- type: loadout
+  id: StellarChefCoatFreezer
+  equipment:
+    outerClothing: StellarClothingCoatServiceChefCoatFreezer
+
+- type: loadout
+  id: StellarChefCoatTrimRed
+  equipment:
+    outerClothing: StellarClothingCoatServiceChefCoatTrimRed
+  groupBy: "trimmed-coat"
+
+- type: loadout
+  id: StellarChefCoatTrimGreen
+  equipment:
+    outerClothing: StellarClothingCoatServiceChefCoatTrimGreen
+  groupBy: "trimmed-coat"
+
+### UNIFORM
+- type: loadout
+  id: StellarChefUniform
+  equipment:
+    jumpsuit: StellarClothingUniformServiceChef
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarChefUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceChefSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarChefUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceChefAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarChefUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceChefAltSkirt
+  groupBy: "uniform-skirt"

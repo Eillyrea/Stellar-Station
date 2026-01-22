@@ -1,0 +1,127 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearSecurityWarden
+  equipment:
+    id: StellarPDASecurityWarden
+    ears: StellarClothingHeadsetSecurity
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobSecurityWarden
+  groups:
+  - StellarWardenHead
+  - StellarSecurityEyes
+  - StellarWardenCoat
+  - StellarWardenUniform
+  - StellarWardenGloves
+  - StellarWardenShoes
+  - StellarSecurityBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarWardenHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarWardenHatBeret
+  - StellarWardenHatCap
+
+- type: loadoutGroup
+  id: StellarWardenCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarWardenCoatPadded
+
+- type: loadoutGroup
+  id: StellarWardenUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarWardenUniform
+  - StellarWardenUniformSkirt
+  - StellarWardenUniformAlt
+  - StellarWardenUniformAltSkirt
+  - StellarWardenUniformTurtle
+  - StellarWardenUniformTurtleSkirt
+
+- type: loadoutGroup
+  id: StellarWardenGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesBlack
+
+- type: loadoutGroup
+  id: StellarWardenShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesCombatBoots
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarWardenHatBeret
+  equipment:
+    head: StellarClothingHatSecurityWardenBeret
+
+- type: loadout
+  id: StellarWardenHatCap
+  equipment:
+    head: StellarClothingHatSecurityWardenCap
+
+### COATS
+- type: loadout
+  id: StellarWardenCoatPadded
+  equipment:
+    outerClothing: StellarClothingCoatSecurityWardenPaddedCoat
+
+### UNIFORM
+- type: loadout
+  id: StellarWardenUniform
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityWarden
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarWardenUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityWardenSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarWardenUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityWardenAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarWardenUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityWardenAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarWardenUniformTurtle
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityWardenTurtle
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarWardenUniformTurtleSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityWardenTurtleSkirt
+  groupBy: "uniform-skirt"

@@ -1,0 +1,99 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearMedicalDoctor
+  equipment:
+    id: StellarPDAMedicalDoctor
+    ears: StellarClothingHeadsetMedical
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobMedicalDoctor
+  groups:
+  - StellarDoctorHead
+  - StellarMedicalEyes
+  - StellarDoctorFace
+  - StellarDoctorCoat
+  - StellarDoctorUniform
+  - StellarDoctorGloves
+  - StellarDoctorShoes
+  - StellarMedicalBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarDoctorHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarDoctorHatSurgicalCap
+
+- type: loadoutGroup
+  id: StellarDoctorFace
+  name: stellar-loadout-mask
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutMaskSterile
+
+- type: loadoutGroup
+  id: StellarDoctorCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarDoctorCoat
+  - StellarMiscLoadoutOuterLabCoat
+
+- type: loadoutGroup
+  id: StellarDoctorUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarDoctorUniform
+  - StellarDoctorUniformSkirt
+
+- type: loadoutGroup
+  id: StellarDoctorGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesSterile
+
+- type: loadoutGroup
+  id: StellarDoctorShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesMedical
+  - StellarMiscLoadoutShoesBlack
+
+### HEAD
+- type: loadout
+  id: StellarDoctorHatSurgicalCap
+  equipment:
+    head: StellarClothingHatMedicalDoctorSurgicalCap
+
+### COAT
+- type: loadout
+  id: StellarDoctorCoat
+  equipment:
+    outerClothing: StellarClothingCoatMedicalDoctor
+
+### UNIFORM
+- type: loadout
+  id: StellarDoctorUniform
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalDoctor
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarDoctorUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformMedicalDoctorSkirt
+  groupBy: "uniform-skirt"

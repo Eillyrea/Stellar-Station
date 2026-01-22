@@ -1,0 +1,101 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### LAB COAT
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscLabCoat
+  name: lab coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/lab-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/lab-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/lab-coat.rsi
+
+### APRON, BLACK
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscApronBlack
+  name: black apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-black.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-black.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-black.rsi
+
+### APRON, WHITE
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscApronWhite
+  name: white apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-white.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-white.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-white.rsi
+
+### APRON, CHEM-ORANGE
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscApronChemOrange
+  name: chem-orange apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-chem-orange.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-chem-orange.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-chem-orange.rsi
+
+### APRON, BROWN
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscApronBrown
+  name: brown apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-brown.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-brown.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-brown.rsi
+
+### APRON, BOTANICAL BLUE
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscApronBotanyBlue
+  name: blue botanical apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-botany-blue.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-botany-blue.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-botany-blue.rsi
+
+### APRON, BOTANICAL GREEN
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingOuterMiscApronBotanyGreen
+  name: green botanical apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-botany-green.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-botany-green.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Outerclothing/apron-botany-green.rsi

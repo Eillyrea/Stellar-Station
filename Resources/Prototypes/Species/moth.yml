@@ -7,7 +7,7 @@
   defaultSkinTone: "#ffda93"
   markingLimits: MobMothMarkingLimits
   dollPrototype: MobMothDummy
-  skinColoration: VoxFeathers # Stellar
+  skinColoration: StellarHues # Stellar
   maleFirstNames: NamesMothFirstMale
   femaleFirstNames: NamesMothFirstFemale
   lastNames: NamesMothLast

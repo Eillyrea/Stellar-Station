@@ -1,0 +1,99 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearScienceScientist
+  equipment:
+    id: StellarPDAScienceScientist
+    ears: StellarClothingHeadsetScience
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobScienceScientist
+  groups:
+  - StellarScientistEyes
+  - StellarScientistCoat
+  - StellarScientistUniform
+  - StellarScientistShoes
+  - StellarScienceBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarScientistEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarScientistCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutOuterLabCoat
+
+- type: loadoutGroup
+  id: StellarScientistUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarScientistUniform
+  - StellarScientistUniformSkirt
+  - StellarScientistUniformAlt
+  - StellarScientistUniformAltSkirt
+  - StellarScientistUniformCasual
+  - StellarScientistUniformCasualSkirt
+
+- type: loadoutGroup
+  id: StellarScientistShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesScience
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+### UNIFORM
+- type: loadout
+  id: StellarScientistUniform
+  equipment:
+    jumpsuit: StellarClothingUniformScienceScientist
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarScientistUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformScienceScientistSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarScientistUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformScienceScientistAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarScientistUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformScienceScientistAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarScientistUniformCasual
+  equipment:
+    jumpsuit: StellarClothingUniformScienceScientistCasual
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarScientistUniformCasualSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformScienceScientistCasualSkirt
+  groupBy: "uniform-skirt"

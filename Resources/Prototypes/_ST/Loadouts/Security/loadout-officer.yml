@@ -1,0 +1,106 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearSecurityOfficer
+  equipment:
+    id: StellarPDASecurityOfficer
+    ears: StellarClothingHeadsetSecurity
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobSecurityOfficer
+  groups:
+  - StellarOfficerHead
+  - StellarSecurityEyes
+  - StellarOfficerUniform
+  - StellarOfficerGloves
+  - StellarOfficerShoes
+  - StellarSecurityBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarOfficerHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarOfficerHatBeret
+
+- type: loadoutGroup
+  id: StellarOfficerUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarOfficerUniform
+  - StellarOfficerUniformSkirt
+  - StellarOfficerUniformAlt
+  - StellarOfficerUniformAltSkirt
+  - StellarOfficerUniformCasual
+  - StellarOfficerUniformCasualSkirt
+
+- type: loadoutGroup
+  id: StellarOfficerGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesBlack
+
+- type: loadoutGroup
+  id: StellarOfficerShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesCombatBoots
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarOfficerHatBeret
+  equipment:
+    head: StellarClothingHatSecurityOfficerBeret
+
+### UNIFORM
+- type: loadout
+  id: StellarOfficerUniform
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityOfficer
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarOfficerUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityOfficerSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarOfficerUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityOfficerAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarOfficerUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityOfficerAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarOfficerUniformCasual
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityOfficerCasual
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarOfficerUniformCasualSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSecurityOfficerCasualSkirt
+  groupBy: "uniform-skirt"

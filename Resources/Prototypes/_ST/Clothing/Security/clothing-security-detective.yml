@@ -1,0 +1,89 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatSecurityDetectiveFedoraBrown
+  name: detective's brown fedora
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Detective/detective-hat-fedora-brown.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Detective/detective-hat-fedora-brown.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Detective/detective-hat-fedora-brown.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatSecurityDetectiveFedoraCharcoal
+  name: detective's charcoal fedora
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Detective/detective-hat-fedora-charcoal.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Detective/detective-hat-fedora-charcoal.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Detective/detective-hat-fedora-charcoal.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatSecurityDetectiveCoatBrown
+  name: detective's brown coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Detective/detective-coat-brown.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Detective/detective-coat-brown.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Detective/detective-coat-brown.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatSecurityDetectiveCoatCharcoal
+  name: detective's charcoal coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Detective/detective-coat-charcoal.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Detective/detective-coat-charcoal.rsi
+  - type: Item
+    sprite: _ST/Clothing/Security/Detective/detective-coat-charcoal.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSecurityDetective
+  name: detective's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Security/Detective/detective-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Security/Detective/detective-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformSecurityDetective
+  id: StellarClothingUniformSecurityDetectiveSkirt
+  name: detective's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt

@@ -1,0 +1,160 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### DRESS SHOES
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscBlackDress
+  name: black dress shoes
+  description: Fashionable. Synth-leather. Pre-polished. Everything fancy shoes need!
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-black-dress.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-black-dress.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscBrownDress
+  name: brown dress shoes
+  description: Fashionable. Synth-leather. Pre-polished. Everything fancy shoes need!
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-brown-dress.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-brown-dress.rsi
+
+### CASUAL SHOES
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscBlack
+  name: black shoes
+  description: Casual. Comfortable. Work-appropriate. They're pretty decent shoes!
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-black.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-black.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscBrown
+  name: brown shoes
+  description: Casual. Comfortable. Work-appropriate. They're pretty decent shoes!
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-brown.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-brown.rsi
+
+### SCIENCE SHOES
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscScience
+  name: science shoes
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-science.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-science.rsi
+
+### MEDICAL SHOES
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscMedical
+  name: medical shoes
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-medical.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-medical.rsi
+
+### CHEMICAL SAFETY BOOTS
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscChemicalSafetyBoots
+  name: chemical safety boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-chemical-safety.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-chemical-safety.rsi
+
+### WORK BOOTS
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscWorkBoots
+  name: work boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-work.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-work.rsi
+
+### COMBAT BOOTS
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesMiscCombatBoots
+  name: combat boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-combat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-combat.rsi
+
+### SANITATION BOOTS
+- type: entity
+  parent: [ ClothingShoesBaseButcherable, BaseCargoContraband ]
+  id: StellarClothingShoesMiscSanitationBoots
+  name: yellow sanitation boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation.rsi
+  - type: NoSlip
+  - type: SlowedOverSlippery
+    slowdownModifier: 0.7
+  - type: SpeedModifierContactCapClothing
+    maxContactSprintSlowdown: 0.7
+    maxContactWalkSlowdown: 0.7
+
+- type: entity
+  parent: StellarClothingShoesMiscSanitationBoots
+  id: StellarClothingShoesMiscSanitationBootsOrange
+  name: orange sanitation boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation-orange.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation-orange.rsi
+
+- type: entity
+  parent: StellarClothingShoesMiscSanitationBoots
+  id: StellarClothingShoesMiscSanitationBootsTeal
+  name: teal sanitation boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation-teal.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation-teal.rsi
+
+- type: entity
+  parent: StellarClothingShoesMiscSanitationBoots
+  id: StellarClothingShoesMiscSanitationBootsPurple
+  name: purple sanitation boots
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation-purple.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Shoes/shoes-boots-sanitation-purple.rsi

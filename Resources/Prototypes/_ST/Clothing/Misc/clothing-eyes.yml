@@ -1,0 +1,128 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# GLASSES
+- type: entity
+  parent: ClothingEyesBase
+  id: StellarClothingEyesMiscGlasses
+  name: glasses
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses.rsi
+
+- type: entity
+  parent: ClothingEyesBase
+  id: StellarClothingEyesMiscSunglasses
+  name: sunglasses
+  description: A pair of black sunglasses. A delightfully stylish accessory.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-sunglasses.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-sunglasses.rsi
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: StellarClothingEyesMiscCommandGlasses
+  name: administration glasses
+  description: Augmented glasses that show the ID card status of nearby individuals.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses-command.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses-command.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowJobIcons
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  id: StellarClothingEyesMiscSecurityGlasses
+  name: security glasses
+  description: Upgraded sunglasses that provide flash immunity and a security HUD.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses-security.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses-security.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: GuideHelp
+    guides:
+    - Security
+    - Antagonists
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: [ClothingEyesBase, ShowMedicalIcons, BaseMedicalContraband]
+  id: StellarClothingEyesMiscMedicalGlasses
+  name: medical glasses
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses-medical.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-glasses-medical.rsi
+
+# HUDS
+- type: entity
+  parent: [ClothingEyesBase, ShowMedicalIcons, BaseMedicalContraband]
+  id: StellarClothingEyesMiscMedicalHud
+  name: medical hud
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-hud-medical.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-hud-medical.rsi
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  id: StellarClothingEyesMiscSecurityHud
+  name: security hud
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-hud-security.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-hud-security.rsi
+
+# GOGGLES
+- type: entity
+  parent: [ClothingEyesBase, BaseEngineeringContraband]
+  id: StellarClothingEyesMiscEngineeringGoggles
+  name: tinted engineering goggles
+  description: Green-tinted goggles using a proprietary polymer that provides protection from eye damage of all types.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-goggles-engineering.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-goggles-engineering.rsi
+  - type: EyeProtection
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: ClothingEyesBase
+  id: StellarClothingEyesMiscChemistryGoggles
+  name: chemical analysis goggles
+  description: Goggles that can scan the chemical composition of solutions.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Eyes/eyes-goggles-chemistry.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Eyes/eyes-goggles-chemistry.rsi
+  - type: SolutionScanner
+  - type: IdentityBlocker
+    coverage: EYES

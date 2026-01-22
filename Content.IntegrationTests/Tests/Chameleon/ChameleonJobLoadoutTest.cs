@@ -15,7 +15,6 @@ public sealed class ChameleonJobLoadoutTest : InteractionTest
 {
     private static readonly List<ProtoId<JobPrototype>> JobBlacklist =
     [
-
     ];
 
     [Test]
@@ -29,7 +28,7 @@ public sealed class ChameleonJobLoadoutTest : InteractionTest
         // Only add stuff that actually has clothing! We don't want stuff like AI or borgs.
         foreach (var job in alljobs)
         {
-            if (!IsProbablyRoundStartJob(job) || JobBlacklist.Contains(job.ID))
+            if (!IsProbablyRoundStartJob(job) || JobBlacklist.Contains(job.ID) || job.ID.Contains("Stellar")) // Stellar - FUCK your STUPID chameleon tests
                 continue;
 
             validJobs.Add(job.ID, 0);

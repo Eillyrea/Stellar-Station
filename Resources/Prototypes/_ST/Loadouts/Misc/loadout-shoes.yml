@@ -1,0 +1,77 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### SHOES
+- type: loadout
+  id: StellarMiscLoadoutShoesMedical
+  equipment:
+    shoes: StellarClothingShoesMiscMedical
+
+- type: loadout
+  id: StellarMiscLoadoutShoesScience
+  equipment:
+    shoes: StellarClothingShoesMiscScience
+
+- type: loadout
+  id: StellarMiscLoadoutShoesChemicalSafety
+  equipment:
+    shoes: StellarClothingShoesMiscChemicalSafetyBoots
+
+- type: loadout
+  id: StellarMiscLoadoutShoesWorkBoots
+  equipment:
+    shoes: StellarClothingShoesMiscWorkBoots
+
+- type: loadout
+  id: StellarMiscLoadoutShoesCombatBoots
+  equipment:
+    shoes: StellarClothingShoesMiscCombatBoots
+
+- type: loadout
+  id: StellarMiscLoadoutShoesSanitationBoots
+  equipment:
+    shoes: StellarClothingShoesMiscSanitationBoots
+  groupBy: "shoes-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesSanitationBootsOrange
+  equipment:
+    shoes: StellarClothingShoesMiscSanitationBootsOrange
+  groupBy: "shoes-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesSanitationBootsTeal
+  equipment:
+    shoes: StellarClothingShoesMiscSanitationBootsTeal
+  groupBy: "shoes-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesSanitationBootsPurple
+  equipment:
+    shoes: StellarClothingShoesMiscSanitationBootsPurple
+  groupBy: "shoes-sanitation"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesBlack
+  equipment:
+    shoes: StellarClothingShoesMiscBlack
+  groupBy: "shoes-casual"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesBrown
+  equipment:
+    shoes: StellarClothingShoesMiscBrown
+  groupBy: "shoes-casual"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesBlackDress
+  equipment:
+    shoes: StellarClothingShoesMiscBlackDress
+  groupBy: "shoes-dress"
+
+- type: loadout
+  id: StellarMiscLoadoutShoesBrownDress
+  equipment:
+    shoes: StellarClothingShoesMiscBrownDress
+  groupBy: "shoes-dress"

@@ -1,0 +1,76 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatMedicalChemistBeret
+  name: chemist's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Chemist/chemist-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Chemist/chemist-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Medical/Chemist/chemist-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatMedicalChemistHairCap
+  name: chemist's hair cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Chemist/chemist-hat-haircap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Chemist/chemist-hat-haircap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Medical/Chemist/chemist-hat-haircap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformMedicalChemist
+  name: chemist's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Chemist/chemist-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Chemist/chemist-uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformMedicalChemistSimple
+  name: chemist's simple uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Chemist/chemist-uniform-simple.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Chemist/chemist-uniform-simple.rsi
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatMedicalChemist
+  name: chemist's coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Medical/Chemist/chemist-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Medical/Chemist/chemist-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Medical/Chemist/chemist-coat.rsi
+

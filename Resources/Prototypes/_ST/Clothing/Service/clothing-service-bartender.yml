@@ -1,0 +1,98 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatServiceBartenderCoatApronWaist
+  name: bartender's waist apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Bartender/bartender-coat-waist-apron.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Bartender/bartender-coat-waist-apron.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Bartender/bartender-coat-waist-apron.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBartender
+  name: bartender's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceBartender
+  id: StellarClothingUniformServiceBartenderSkirt
+  name: bartender's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBartenderAlt
+  name: bartender's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceBartenderAlt
+  id: StellarClothingUniformServiceBartenderAltSkirt
+  name: bartender's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBartenderLavender
+  name: bartender's lavender uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform-lavender.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform-lavender.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceBartenderLavender
+  id: StellarClothingUniformServiceBartenderLavenderSkirt
+  name: bartender's lavender uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceBartenderAfterHours
+  name: bartender's after-hours uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform-afterhours.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Bartender/bartender-uniform-afterhours.rsi

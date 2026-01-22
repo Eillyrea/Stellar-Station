@@ -1,0 +1,118 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearSupplyJanitor
+  equipment:
+    id: StellarPDASupplyJanitor
+    ears: StellarClothingHeadsetSupply
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobSupplyJanitor
+  groups:
+  - StellarJanitorHead
+  - StellarJanitorEyes
+  - StellarJanitorFace
+  - StellarJanitorCoat
+  - StellarJanitorUniform
+  - StellarJanitorGloves
+  - StellarJanitorShoes
+  - StellarSupplyBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarJanitorHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarJanitorCap
+  - StellarMiscLoadoutHatSupply
+  - StellarMiscLoadoutHatSupplyBeret
+
+- type: loadoutGroup
+  id: StellarJanitorEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+  - StellarMiscLoadoutEyesMiscChemistryGoggles
+
+- type: loadoutGroup
+  id: StellarJanitorFace
+  name: stellar-loadout-mask
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutMaskSterile
+
+- type: loadoutGroup
+  id: StellarJanitorCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarJanitorCoat
+
+- type: loadoutGroup
+  id: StellarJanitorUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarJanitorUniform
+  - StellarJanitorUniformSkirt
+  - StellarJanitorUniformCoveralls
+
+- type: loadoutGroup
+  id: StellarJanitorGloves
+  name: stellar-loadout-gloves
+  loadouts:
+  - StellarMiscLoadoutGlovesSanitation
+  - StellarMiscLoadoutGlovesSanitationOrange
+  - StellarMiscLoadoutGlovesSanitationTeal
+  - StellarMiscLoadoutGlovesSanitationPurple
+
+- type: loadoutGroup
+  id: StellarJanitorShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesSanitationBoots
+  - StellarMiscLoadoutShoesSanitationBootsOrange
+  - StellarMiscLoadoutShoesSanitationBootsTeal
+  - StellarMiscLoadoutShoesSanitationBootsPurple
+
+### HEAD
+- type: loadout
+  id: StellarJanitorCap
+  equipment:
+    head: StellarClothingHatSupplyJanitorCap
+
+### COAT
+- type: loadout
+  id: StellarJanitorCoat
+  equipment:
+    outerClothing: StellarClothingCoatSupplyJanitor
+
+### UNIFORM
+- type: loadout
+  id: StellarJanitorUniform
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyJanitor
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarJanitorUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyJanitorSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarJanitorUniformCoveralls
+  equipment:
+    jumpsuit: StellarClothingUniformSupplyJanitorCoveralls

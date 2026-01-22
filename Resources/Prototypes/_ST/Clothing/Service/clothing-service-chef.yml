@@ -1,0 +1,121 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatServiceChefCoatApronWaist
+  name: chef's waist apron
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-coat-waist-apron.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-coat-waist-apron.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Chef/chef-coat-waist-apron.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatServiceChefCoatFreezer
+  name: chef's refridgeration coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-coat-freezer.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-coat-freezer.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Chef/chef-coat-freezer.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatServiceChefCoatTrimRed
+  name: chef's red-trimmed coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-coat-red.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-coat-red.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Chef/chef-coat-red.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatServiceChefCoatTrimGreen
+  name: chef's green-trimmed coat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-coat-green.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-coat-green.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Chef/chef-coat-green.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceChef
+  name: chef's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceChef
+  id: StellarClothingUniformServiceChefSkirt
+  name: chef's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformServiceChefAlt
+  name: chef's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformServiceChefAlt
+  id: StellarClothingUniformServiceChefAltSkirt
+  name: chef's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatServiceChef
+  name: chef's hat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Service/Chef/chef-hat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Service/Chef/chef-hat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Service/Chef/chef-hat.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable

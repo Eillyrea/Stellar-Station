@@ -1,0 +1,112 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearServiceBartender
+  equipment:
+    id: StellarPDAServiceBartender
+    ears: StellarClothingHeadsetService
+  storage:
+    back:
+    - Flash
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobServiceBartender
+  groups:
+  - StellarBartenderEyes
+  - StellarBartenderCoat
+  - StellarBartenderUniform
+  - StellarBartenderShoes
+  - StellarServiceBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarBartenderEyes
+  name: stellar-loadout-eyes
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutEyesGlasses
+  - StellarMiscLoadoutEyesSunglasses
+
+- type: loadoutGroup
+  id: StellarBartenderUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarBartenderUniform
+  - StellarBartenderUniformSkirt
+  - StellarBartenderUniformAlt
+  - StellarBartenderUniformAltSkirt
+  - StellarBartenderUniformLavender
+  - StellarBartenderUniformLavenderSkirt
+  - StellarBartenderUniformAfterHours
+
+- type: loadoutGroup
+  id: StellarBartenderCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarBartenderCoatApronWaist
+  - StellarMiscLoadoutOuterApronBlack
+
+- type: loadoutGroup
+  id: StellarBartenderShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+### COAT
+- type: loadout
+  id: StellarBartenderCoatApronWaist
+  equipment:
+    outerClothing: StellarClothingCoatServiceBartenderCoatApronWaist
+
+### UNIFORM
+- type: loadout
+  id: StellarBartenderUniform
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartender
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarBartenderUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartenderSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarBartenderUniformAlt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartenderAlt
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarBartenderUniformAltSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartenderAltSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarBartenderUniformLavender
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartenderLavender
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarBartenderUniformLavenderSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartenderLavenderSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarBartenderUniformAfterHours
+  equipment:
+    jumpsuit: StellarClothingUniformServiceBartenderAfterHours

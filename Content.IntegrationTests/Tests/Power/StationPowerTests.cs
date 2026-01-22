@@ -21,25 +21,25 @@ public sealed class StationPowerTests
 
     private static readonly string[] GameMaps =
     [
-        "Fland",
-        "Meta",
-        "Packed",
-        "Omega",
-        "Bagel",
-        "Box",
-        "Core",
-        "Marathon",
-        "Saltern",
-        "Reach",
-        "Train",
-        "Oasis",
-        "Gate",
-        "Amber",
-        "Loop",
-        "Plasma",
-        "Elkridge",
-        "Convex",
-        "Relic",
+        // "Fland", // Begin Stellar - Don't test maps we don't use
+        // "Meta",
+        // "Packed",
+        // "Omega",
+        // "Bagel",
+        // "Box",
+        // "Core",
+        // "Marathon",
+        // "Saltern",
+        // "Reach",
+        // "Train",
+        // "Oasis",
+        // "Gate",
+        // "Amber",
+        // "Loop",
+        // "Plasma",
+        // "Elkridge",
+        // "Convex",
+        // "Relic", // End Stellar - Don't test maps we don't use
     ];
 
     [Test, TestCaseSource(nameof(GameMaps))]

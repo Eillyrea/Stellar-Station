@@ -1,0 +1,122 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearCommandChiefEngineer
+  equipment:
+    eyes: StellarClothingEyesCommandChiefEngineerGoggles
+    id: StellarPDACommandChiefEngineer
+    ears: StellarClothingHeadsetChiefEngineer
+  storage:
+    back:
+    - Flash
+
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobCommandChiefEngineer
+  groups:
+  - StellarChiefEngineerHead
+  - StellarChiefEngineerUniform
+  - StellarChiefEngineerGloves
+  - StellarChiefEngineerShoes
+  - StellarChiefEngineerBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarChiefEngineerHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarChiefEngineerHatBeret
+  - StellarChiefEngineerHatHardHatWhite
+  - StellarMiscLoadoutHatHardHatYellow
+
+- type: loadoutGroup
+  id: StellarChiefEngineerUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarChiefEngineerUniformOveralls
+  - StellarChiefEngineerUniformOverallsSkirt
+  - StellarChiefEngineerUniformTurtleneck
+  - StellarChiefEngineerUniformTurtleneckSkirt
+  - StellarChiefEngineerUniformAfterHours
+
+- type: loadoutGroup
+  id: StellarChiefEngineerGloves
+  name: stellar-loadout-gloves
+  minLimit: 0
+  loadouts:
+  - StellarMiscLoadoutGlovesInsulated
+
+- type: loadoutGroup
+  id: StellarChiefEngineerShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+  - StellarMiscLoadoutShoesWorkBoots
+
+- type: loadoutGroup
+  id: StellarChiefEngineerBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarChiefEngineerBackpack
+
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarChiefEngineerHatBeret
+  equipment:
+    head: StellarClothingHatCommandChiefEngineerBeret
+
+- type: loadout
+  id: StellarChiefEngineerHatHardHatWhite
+  equipment:
+    head: StellarClothingHatCommandChiefEngineerHardHatWhite
+
+### UNIFORM
+- type: loadout
+  id: StellarChiefEngineerUniformOveralls
+  equipment:
+    jumpsuit: StellarClothingUniformCommandChiefEngineerOveralls
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarChiefEngineerUniformOverallsSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandChiefEngineerOverallsSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarChiefEngineerUniformTurtleneck
+  equipment:
+    jumpsuit: StellarClothingUniformCommandChiefEngineerTurtleneck
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarChiefEngineerUniformTurtleneckSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandChiefEngineerTurtleneckSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarChiefEngineerUniformAfterHours
+  equipment:
+    jumpsuit: StellarClothingUniformCommandChiefEngineerAfterHours
+
+### BACKPACK
+- type: loadout
+  id: StellarChiefEngineerBackpack
+  equipment:
+    back: StellarClothingBackpackCommandChiefEngineer

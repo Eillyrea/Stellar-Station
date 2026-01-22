@@ -1,0 +1,74 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### SUPPLY HAT
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingMiscHatSupplyCap
+  name: supply cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Head/head-supply-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Head/head-supply-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Head/head-supply-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### SUPPLY BERET
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingMiscHatSupplyBeret
+  name: supply beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Head/head-supply-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Head/head-supply-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Head/head-supply-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### HARDHATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingMiscHatHardHatOrange
+  name: orange hard hat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Head/head-hardhat-orange.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Head/head-hardhat-orange.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Head/head-hardhat-orange.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingMiscHatHardHatYellow
+  name: yellow hard hat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Head/head-hardhat-yellow.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Head/head-hardhat-yellow.rsi
+  - type: Item
+    sprite: _ST/Clothing/Misc/Head/head-hardhat-yellow.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable

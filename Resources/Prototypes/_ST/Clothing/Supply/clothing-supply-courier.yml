@@ -1,0 +1,105 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatSupplyCourierCap
+  name: courier's cap
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Courier/courier-hat-cap.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Courier/courier-hat-cap.rsi
+  - type: Item
+    sprite: _ST/Clothing/Supply/Courier/courier-hat-cap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### COATS
+- type: entity
+  parent: ClothingOuterBase
+  id: StellarClothingCoatSupplyCourier
+  name: courier's short-sleeve windbreaker
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Courier/courier-coat.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Courier/courier-coat.rsi
+  - type: Item
+    sprite: _ST/Clothing/Supply/Courier/courier-coat.rsi
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyCourier
+  name: courier's uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Courier/courier-uniform.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Courier/courier-uniform.rsi
+
+- type: entity
+  parent: StellarClothingUniformSupplyCourier
+  id: StellarClothingUniformSupplyCourierSkirt
+  name: courier's uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyCourierAlt
+  name: courier's alternate uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Courier/courier-uniform-alt.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Courier/courier-uniform-alt.rsi
+
+- type: entity
+  parent: StellarClothingUniformSupplyCourierAlt
+  id: StellarClothingUniformSupplyCourierAltSkirt
+  name: courier's alternate uniform & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformSupplyCourierCoveralls
+  name: courier's coveralls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Courier/courier-uniform-coveralls.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Courier/courier-uniform-coveralls.rsi
+
+### SHOES
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: StellarClothingShoesSupplyCourier
+  name: courier's running shoes
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Supply/Courier/courier-shoes.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Supply/Courier/courier-shoes.rsi

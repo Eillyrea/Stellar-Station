@@ -1,0 +1,119 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### COLORED GLOVES
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesBlack
+  name: black gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/black-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/black-gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesWhite
+  name: white gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/white-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/white-gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesBrown
+  name: brown gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/brown-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/brown-gloves.rsi
+
+
+### MEDICAL GLOVES
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesSterile
+  name: sterile gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/medical-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/medical-gloves.rsi
+
+### CHEMICAL SAFETY GLOVES
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesChemicalSafety
+  name: chemical safety gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/chemical-safety-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/chemical-safety-gloves.rsi
+
+### SANITATION GLOVES
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesSanitation
+  name: yellow sanitation gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesSanitationOrange
+  name: orange sanitation gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-orange.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-orange.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesSanitationTeal
+  name: teal sanitation gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-teal.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-teal.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesSanitationPurple
+  name: purple sanitation gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-purple.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-purple.rsi
+
+### INSULATED GLOVES, VARIANTS
+- type: entity
+  parent: ClothingHandsBase
+  id: StellarClothingMiscGlovesInsulated
+  name: insulated gloves
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Gloves/insulated-gloves.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Misc/Gloves/insulated-gloves.rsi

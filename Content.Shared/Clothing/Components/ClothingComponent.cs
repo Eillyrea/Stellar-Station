@@ -25,6 +25,14 @@ public sealed partial class ClothingComponent : Component
     [DataField]
     public string? MappedLayer;
 
+    // BEGIN STELLAR CHANGES
+    /// <summary>
+    /// This is a hack to allow hijacking of the ears layer, even if clothing is equipped to a differnt slot. On stellar station, this is the only way the ears layer is used.
+    /// </summary>
+    [DataField]
+    public bool EarsVisualOverride = false;
+    // END STELLAR CHANGES
+
     [DataField]
     public bool QuickEquip = true;
 
@@ -97,7 +105,7 @@ public sealed partial class ClothingComponent : Component
     /// <summary>
     ///     A scale applied to all layers.
     /// </summary>
-    /// 
+    ///
     [DataField]
     public Vector2 Scale = Vector2.One;
 }

@@ -1,0 +1,176 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearCommandCaptain
+  equipment:
+    eyes: StellarClothingEyesMiscCommandGlasses
+    gloves: StellarClothingGlovesCommandCaptain
+    id: StellarPDACommandCaptain
+    ears: StellarClothingHeadsetCaptain
+  storage:
+    back:
+    - Flash
+
+
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobCommandCaptain
+  groups:
+  - StellarCaptainHead
+  # - StellarCaptainNeck
+  - StellarCaptainUniform
+  # - StellarCaptainOuterClothing
+  - StellarCaptainShoes
+  - StellarCaptainBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarCaptainHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarCaptainHat
+  - StellarCaptainHatBeret
+
+# - type: loadoutGroup
+#   id: StellarCaptainNeck
+#   name: loadout-group-captain-neck
+#   minLimit: 0
+#   loadouts:
+#   - CaptainCloak
+#   - CaptainCloakFormal
+#   - CaptainMantle
+
+- type: loadoutGroup
+  id: StellarCaptainUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarCaptainUniform
+  - StellarCaptainUniformSkirt
+  - StellarCaptainUniformCasual
+  - StellarCaptainUniformCasualSkirt
+  - StellarCaptainUniformFormal
+
+# - type: loadoutGroup
+#   id: StellarCaptainOuterClothing
+#   name: loadout-group-captain-outerclothing # TODO - Localization
+#   minLimit: 0
+#   loadouts:
+#   - CaptainOuterClothing
+#   - CaptainWintercoat
+
+- type: loadoutGroup
+  id: StellarCaptainShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+- type: loadoutGroup
+  id: StellarCaptainBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarCaptainBackpack
+  # - CaptainSatchel
+  # - CaptainDuffel
+
+
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarCaptainHat
+  equipment:
+    head: StellarClothingHatCommandCaptain
+
+- type: loadout
+  id: StellarCaptainHatBeret
+  equipment:
+    head: StellarClothingHatCommandCaptainBeret
+
+### UNIFORM
+- type: loadout
+  id: StellarCaptainUniform
+  equipment:
+    jumpsuit: StellarClothingUniformCommandCaptain
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarCaptainUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandCaptainSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarCaptainUniformCasual
+  equipment:
+    jumpsuit: StellarClothingUniformCommandCaptainCasual
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarCaptainUniformCasualSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandCaptainCasualSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarCaptainUniformFormal
+  equipment:
+    jumpsuit: StellarClothingUniformCommandCaptainFormal
+
+### NECK
+# - type: loadout
+#   id: CaptainCloak
+#   equipment:
+#     neck: ClothingNeckCloakCap
+
+# - type: loadout
+#   id: CaptainCloakFormal
+#   equipment:
+#     neck: ClothingNeckCloakCapFormal
+
+# - type: loadout
+#   id: CaptainMantle
+#   equipment:
+#     neck: ClothingNeckMantleCap
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: MasterCap
+
+# - type: startingGear
+#   id: CaptainMantle
+#   equipment:
+#     neck: ClothingNeckMantleCap
+
+### OUTER CLOTHING
+# - type: loadout
+#   id: CaptainOuterClothing
+#   equipment:
+#     outerClothing: ClothingOuterArmorCaptainCarapace
+
+# - type: loadout
+#   id: CaptainWintercoat
+#   equipment:
+#     outerClothing: ClothingOuterWinterCap
+
+### BACKPACK
+- type: loadout
+  id: StellarCaptainBackpack
+  equipment:
+    back: StellarClothingBackpackCommandCaptain
+
+# - type: loadout
+#   id: StellarCaptainSatchel
+#   equipment:
+#     back: ClothingBackpackSatchelCaptain

@@ -229,15 +229,15 @@
   name: chameleon controller implant
   description: This implant allows you to instantly change the appearance of all worn chameleon clothing.
   components:
-  - type: ChameleonControllerImplant
-  - type: SubdermalImplant
-    implantAction: ActionChameleonController
+  # - type: ChameleonControllerImplant # Stellar Begin
+  # - type: SubdermalImplant
+  #   implantAction: ActionChameleonController # Stellar End
   - type: UseDelay
     delay: 1
-  - type: UserInterface
-    interfaces:
-      enum.ChameleonControllerKey.Key:
-        type: ChameleonControllerBoundUserInterface
+  # - type: UserInterface # Stellar Begin
+  #   interfaces:
+  #     enum.ChameleonControllerKey.Key:
+  #       type: ChameleonControllerBoundUserInterface # Stellar End
 
 #Nuclear Operative/Special Exclusive implants
 

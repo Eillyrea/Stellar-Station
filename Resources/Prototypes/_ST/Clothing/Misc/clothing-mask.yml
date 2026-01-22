@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### MEDICAL MASK
+- type: entity
+  parent: ClothingMaskBase
+  id: StellarClothingMiscMaskSterile
+  name: sterile mask
+  description: A sterile mask designed to help prevent the spread of diseases.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Misc/Mask/medical-mask.rsi
+  - type: Clothing
+    equippedState: equipped-EARS
+    earsVisualOverride: true
+    sprite: _ST/Clothing/Misc/Mask/medical-mask.rsi
+  - type: IngestionBlocker
+  - type: Item
+    size: Tiny
+  - type: IdentityBlocker
+    coverage: MOUTH

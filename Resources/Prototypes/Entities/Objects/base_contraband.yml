@@ -161,7 +161,7 @@
   abstract: true
   components:
   - type: Contraband
-    allowedDepartments: [ Science, Silicon ]
+    allowedDepartments: [ Science ] # Stellar
 
 - type: entity
   id: BaseSecurityCargoContraband

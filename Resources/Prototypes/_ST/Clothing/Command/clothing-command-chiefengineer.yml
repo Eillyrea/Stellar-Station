@@ -1,0 +1,124 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+### HATS
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandChiefEngineerBeret
+  name: chief engineer's beret
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-hat-beret.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-hat-beret.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-hat-beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: StellarClothingHatCommandChiefEngineerHardHatWhite
+  name: chief engineer's white hard hat
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-hat-hardhat-white.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-hat-hardhat-white.rsi
+  - type: Item
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-hat-hardhat-white.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+
+### GLASSES
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: StellarClothingEyesCommandChiefEngineerGoggles
+  name: chief engineer's administrative goggles
+  description: Augmented goggles that provide protection from eye damage of all types and show nearby ID card statuses.
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-eyes-goggles.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-eyes-goggles.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowJobIcons
+
+### UNIFORMS
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandChiefEngineerOveralls
+  name: chief engineer's overalls
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-uniform-overalls.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-uniform-overalls.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandChiefEngineerOveralls
+  id: StellarClothingUniformCommandChiefEngineerOverallsSkirt
+  name: chief engineer's overalls & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandChiefEngineerTurtleneck
+  name: chief engineer's turtleneck
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-uniform-turtleneck.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-uniform-turtleneck.rsi
+
+- type: entity
+  parent: StellarClothingUniformCommandChiefEngineerTurtleneck
+  id: StellarClothingUniformCommandChiefEngineerTurtleneckSkirt
+  name: chief engineer's turtleneck & skirt
+  description: LOREM IPSUM
+  components:
+  - type: Clothing
+    slots: [innerclothing]
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-skirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: StellarClothingUniformCommandChiefEngineerAfterHours
+  name: chief engineer's after-hours uniform
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-uniform-afterhours.rsi
+  - type: Clothing
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-uniform-afterhours.rsi
+
+### BACKPACKS
+- type: entity
+  parent: [ClothingBackpack, BaseCommandContraband]
+  id: StellarClothingBackpackCommandChiefEngineer
+  name: chief engineer's backpack
+  description: LOREM IPSUM
+  components:
+  - type: Sprite
+    sprite: _ST/Clothing/Command/ChiefEngineer/chiefengineer-backpack.rsi

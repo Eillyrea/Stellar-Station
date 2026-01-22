@@ -1,0 +1,143 @@
+# SPDX-FileCopyrightText: 2025 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+# ROLE STARTING GEAR
+- type: startingGear
+  id: StellarGearCommandOperationsManager
+  equipment:
+    eyes: StellarClothingEyesMiscCommandGlasses
+    id: StellarPDACommandOperationsManager
+    ears: StellarClothingHeadsetOperationsManager
+  storage:
+    back:
+    - Flash
+
+
+
+# ROLE LOADOUT CONFIG
+- type: roleLoadout
+  id: StellarJobCommandOperationsManager
+  groups:
+  - StellarOperationsManagerHead
+  - StellarOperationsManagerCoat
+  - StellarOperationsManagerUniform
+  - StellarOperationsManagerShoes
+  - StellarOperationsManagerBackpack
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+
+# LOADOUT GROUPS
+- type: loadoutGroup
+  id: StellarOperationsManagerHead
+  name: stellar-loadout-head
+  minLimit: 0
+  loadouts:
+  - StellarOperationsManagerHatBeret
+  - StellarOperationsManagerHatCap
+  - StellarMiscLoadoutHatHardHatYellow
+
+- type: loadoutGroup
+  id: StellarOperationsManagerCoat
+  name: stellar-loadout-outerclothing
+  minLimit: 0
+  loadouts:
+  - StellarOperationsManagerCoatWindbreaker
+
+- type: loadoutGroup
+  id: StellarOperationsManagerUniform
+  name: stellar-loadout-uniform
+  loadouts:
+  - StellarOperationsManagerUniform
+  - StellarOperationsManagerUniformSkirt
+  - StellarOperationsManagerUniformTurtleneck
+  - StellarOperationsManagerUniformTurtleneckSkirt
+  - StellarOperationsManagerUniformFormalSuit
+  - StellarOperationsManagerUniformFormalSuitSkirt
+  - StellarOperationsManagerUniformOveralls
+
+- type: loadoutGroup
+  id: StellarOperationsManagerShoes
+  name: stellar-loadout-shoes
+  loadouts:
+  - StellarMiscLoadoutShoesBlackDress
+  - StellarMiscLoadoutShoesBrownDress
+  - StellarMiscLoadoutShoesBlack
+  - StellarMiscLoadoutShoesBrown
+
+- type: loadoutGroup
+  id: StellarOperationsManagerBackpack
+  name: stellar-loadout-backpack
+  loadouts:
+  - StellarOperationsManagerBackpack
+
+
+# LOADOUT GROUP CONTENTS
+
+### HEAD
+- type: loadout
+  id: StellarOperationsManagerHatBeret
+  equipment:
+    head: StellarClothingHatCommandOperationsManagerBeret
+
+- type: loadout
+  id: StellarOperationsManagerHatCap
+  equipment:
+    head: StellarClothingHatCommandOperationsManagerCap
+
+### COATS
+- type: loadout
+  id: StellarOperationsManagerCoatWindbreaker
+  equipment:
+    outerClothing: StellarClothingCoatCommandOperationsManagerWindbreaker
+
+### UNIFORM
+- type: loadout
+  id: StellarOperationsManagerUniform
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManager
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarOperationsManagerUniformSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManagerSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarOperationsManagerUniformTurtleneck
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManagerTurtleneck
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarOperationsManagerUniformTurtleneckSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManagerTurtleneckSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarOperationsManagerUniformFormalSuit
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManagerFormalSuit
+  groupBy: "uniform"
+
+- type: loadout
+  id: StellarOperationsManagerUniformFormalSuitSkirt
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManagerFormalSuitSkirt
+  groupBy: "uniform-skirt"
+
+- type: loadout
+  id: StellarOperationsManagerUniformOveralls
+  equipment:
+    jumpsuit: StellarClothingUniformCommandOperationsManagerOveralls
+
+
+### BACKPACK
+- type: loadout
+  id: StellarOperationsManagerBackpack
+  equipment:
+    back: StellarClothingBackpackCommandOperationsManager

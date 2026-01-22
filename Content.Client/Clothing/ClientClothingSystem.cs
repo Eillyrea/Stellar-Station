@@ -194,9 +194,19 @@ public sealed class ClientClothingSystem : ClothingSystem
     {
         if (!TryComp(entity, out InventorySlotsComponent? inventorySlots))
             return;
-
-        if (!inventorySlots.VisualLayerKeys.TryGetValue(args.Slot, out var revealedLayers))
+        // BEGIN STELLAR CHANGES
+        if (!TryComp(args.Equipment, out ClothingComponent? clothing))
             return;
+        if (args.Slot == "ears") // We don't render ears slot items, so if we're unequipping ears items, don't remove visual data writing to the ears layer
+            return;
+
+        var targetSlot = args.Slot;
+        if (clothing.EarsVisualOverride == true && args.Slot == "mask")
+            targetSlot = "ears"; // The mask is hijacking the ears layer, so queue it to be cleaned up
+
+        if (!inventorySlots.VisualLayerKeys.TryGetValue(targetSlot, out var revealedLayers))
+            return;
+        // END STELLAR CHANGES
 
         // Remove old layers. We could also just set them to invisible, but as items may add arbitrary layers, this
         // may eventually bloat the player with lots of invisible layers.
@@ -235,6 +245,13 @@ public sealed class ClientClothingSystem : ClothingSystem
         {
             return;
         }
+
+        // BEGIN STELLAR CHANGES - This is a REALLY shitty hack to allow some mask slot items to hijack the ears slot, which is visually unused on stellar station.
+        if (slot == "ears")
+            return; // don't render items actually equipped to the ears slot
+        if (clothingComponent.EarsVisualOverride == true && slot == "mask")
+            slot = "ears";
+        // END STELLAR CHANGES
 
         if (!_inventorySystem.TryGetSlot(equipee, slot, out var slotDef, inventory))
             return;
