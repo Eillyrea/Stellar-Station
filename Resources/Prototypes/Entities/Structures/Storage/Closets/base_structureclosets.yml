@@ -1,6 +1,6 @@
 - type: entity
   id: ClosetBase
-  parent: BaseStructureDynamic
+  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
   name: closet
   description: A standard-issue Nanotrasen storage unit.
   abstract: true
@@ -28,17 +28,6 @@
       visible: false
       map: ["enum.PaperLabelVisuals.Layer"]
   - type: MovedByPressure
-  - type: PaperLabel
-    labelSlot:
-      insertVerbText: comp-paper-label-insert
-      ejectVerbText: comp-paper-label-eject
-      whitelist:
-        components:
-        - Paper
-      blacklist:
-        tags:
-        - Book
-  - type: ItemSlots
   - type: DamageOnHighSpeedImpact
     damage:
       types:

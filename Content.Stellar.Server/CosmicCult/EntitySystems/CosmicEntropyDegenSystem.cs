@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: LicenseRef-CosmicCult
 
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Popups;
 using Content.Shared.StatusEffectNew.Components;
 using Content.Shared.StatusEffectNew;
