@@ -34,6 +34,7 @@
     sprite: _ST/Items/Chemistry/vial.rsi # Stellar
   - type: SolutionContainerVisuals
     maxFillLevels: 6
+    inHandsMaxFillLevels: 0
   - type: SolutionContainerManager
     solutions:
       drink:

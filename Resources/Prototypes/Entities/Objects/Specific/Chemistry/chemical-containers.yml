@@ -15,6 +15,7 @@
         maxVol: 200
   - type: SolutionContainerVisuals
     maxFillLevels: 8
+    inHandsMaxFillLevels: 0
   - type: ExaminableSolution
     exactVolume: true # Chemistry item
   - type: StaticPrice
