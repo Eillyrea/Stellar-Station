@@ -101,7 +101,7 @@ public sealed partial class AtmosphereSystem
         // Start applying fire effects and spreading to adjacent tiles.
         if (tile.Hotspot.Bypassing)
         {
-            tile.Hotspot.State = 3;
+            // tile.Hotspot.State = 3; // Stellar - improved fire
 
             var gridUid = ent.Owner;
             var tilePos = tile.GridIndices;
@@ -119,12 +119,12 @@ public sealed partial class AtmosphereSystem
 
                 tileBurntDecals++;
 
-                if (tileBurntDecals > 4)
+                if (tileBurntDecals > 1) // Stellar - improved fire
                     break;
             }
 
             // Add a random burned decal to the tile only if there are less than 4 of them
-            if (tileBurntDecals < 4)
+            if (tileBurntDecals < 1) // Stellar - improved fire
             {
                 _decalSystem.TryAddDecal(_burntDecals[_random.Next(_burntDecals.Length)],
                     new EntityCoordinates(gridUid, tilePos),
@@ -148,11 +148,13 @@ public sealed partial class AtmosphereSystem
                 }
             }
         }
-        else
-        {
-            // Little baby fire. Set the sprite state based on the current size of the fire.
-            tile.Hotspot.State = (byte)(tile.Hotspot.Volume > Atmospherics.CellVolume * 0.4f ? 2 : 1);
-        }
+        // Stellar - improved fire
+        // else
+        // {
+        //     // Little baby fire. Set the sprite state based on the current size of the fire.
+        //     tile.Hotspot.State = (byte)(tile.Hotspot.Volume > Atmospherics.CellVolume * 0.4f ? 2 : 1);
+        // }
+        // Stellar - improved fire
 
         if (tile.Hotspot.Temperature > tile.MaxFireTemperatureSustained)
             tile.MaxFireTemperatureSustained = tile.Hotspot.Temperature;
@@ -254,6 +256,33 @@ public sealed partial class AtmosphereSystem
     {
         if (tile.Air == null || !tile.Hotspot.Valid)
             return;
+
+        // Begin Stellar - Improved fire
+        switch (tile.Hotspot.Temperature)
+        {
+            case <= 390.15f:
+                tile.Hotspot.State = 1;
+                break;
+            case <= 475.15f:
+                tile.Hotspot.State = 2;
+                break;
+            case <= 570.15f:
+                tile.Hotspot.State = 3;
+                break;
+            case <= 1000.15f:
+                tile.Hotspot.State = 4;
+                break;
+            case <= 5000.15f:
+                tile.Hotspot.State = 5;
+                break;
+            case <= 10000.15f:
+                tile.Hotspot.State = 6;
+                break;
+            case > 10000.15f:
+                tile.Hotspot.State = 7;
+                break;
+        }
+        // End Stellar - Improved fire
 
         // Determine if the tile has become a full-blown fire if the volume of the fire has effectively reached
         // the volume of the tile's air.
