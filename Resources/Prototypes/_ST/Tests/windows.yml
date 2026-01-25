@@ -6,16 +6,16 @@
 - type: entity
   id: StellarWindowBase
   abstract: true
-  parent: Window
+  parent: BaseStructure
   components:
   - type: Sprite
     drawdepth: Walls
   - type: SpriteFade
   - type: Icon
     state: full
-  - type: IconSmooth
-    key: StellarWindow
-    base: window
+  - type: StellarWallSmooth
+    key: Window
+    fullState: window
   - type: PlacementReplacement
     key: walls
   - type: Fixtures
@@ -66,9 +66,9 @@
   - type: InteractionOutline
   - type: Icon
     state: full
-  - type: IconSmooth
-    key: StellarWindow
-    base: window
+  - type: StellarWallSmooth
+    key: Window
+    fullState: window
   - type: PlacementReplacement
     key: walls
   - type: Fixtures

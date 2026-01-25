@@ -1,0 +1,215 @@
+# SPDX-FileCopyrightText: 2026 Janet Blackquill
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: constructionGraph
+  id: StellarWalls
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: Girder
+      completed: &snap
+      - !type:SnapToGrid
+        southRotation: true
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+
+  - node: Girder
+    entity: StellarGirder
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity
+      conditions: &anchored_false
+      - !type:EntityAnchored
+        anchored: false
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+    - to: WallSteel
+      completed: *snap
+      conditions: &anchored_true
+      - !type:EntityAnchored
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+
+    - to: GirderReinforced
+      completed: *snap
+      conditions: *anchored_true
+      steps:
+      - material: Plasteel
+        amount: 2
+        doAfter: 1
+
+    - to: WallWood
+      completed: *snap
+      conditions: *anchored_true
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 1
+
+  - node: GirderReinforced
+    entity: StellarGirderReinforced
+    edges:
+    - to: WallPlasteel
+      completed: *snap
+      conditions: *anchored_true
+      steps:
+      - material: Plasteel
+        amount: 2
+        doAfter: 1
+    - to: WallShuttle
+      completed: *snap
+      conditions: *anchored_true
+      steps:
+      - material: MetalRod
+        amount: 4
+        doAfter: 1
+      - tool: Screwing
+        doAfter: 2
+      - material: Plasteel
+        amount: 2
+        doAfter: 1
+
+  - node: WallSteel
+    entity: StellarWallSteel
+    edges:
+    - to: Girder
+      completed:
+      - !type:GivePrototype
+        prototype: SheetSteel1
+        amount: 2
+      steps:
+      - tool: Welding
+        doAfter: 10
+
+  - node: WallPlasteel
+    entity: StellarWallPlasteel
+    edges:
+    - to: GirderReinforced
+      completed:
+        - !type:SpawnPrototype
+          prototype: SheetPlasteel1
+          amount: 2
+      steps:
+      - tool: Cutting
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+          data: 5
+      - tool: Screwing
+        doAfter: 1
+      - tool: Welding
+        doAfter: 5
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+          data: 4
+      - tool: Prying
+        doAfter: 1
+      - tool: Anchoring
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+          data: 3
+      - tool: Welding
+        doAfter: 10
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+          data: 2
+      - tool: Prying
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+          data: 1
+      - tool: Screwing
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ReinforcedWallVisuals.DeconstructionStage"
+          data: 0
+      - tool: Cutting
+        doAfter: 1
+
+  - node: WallShuttle
+    entity: StellarWallShuttle
+    edges:
+    - to: GirderReinforced
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetPlasteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: PartRodMetal1
+        amount: 4
+      steps:
+      - tool: Welding
+        doAfter: 10
+      - tool: Cutting
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ShuttleWallVisuals.DeconstructionStage"
+          data: 5
+      - tool: Screwing
+        doAfter: 2
+      - tool: Welding
+        doAfter: 5
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ShuttleWallVisuals.DeconstructionStage"
+          data: 4
+      - tool: Prying
+        doAfter: 2
+      - tool: Anchoring
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ShuttleWallVisuals.DeconstructionStage"
+          data: 3
+      - tool: Welding
+        doAfter: 10
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ShuttleWallVisuals.DeconstructionStage"
+          data: 2
+      - tool: Prying
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ShuttleWallVisuals.DeconstructionStage"
+          data: 1
+      - tool: Screwing
+        doAfter: 1
+        completed:
+        - !type:VisualizerDataInt
+          key: "enum.ShuttleWallVisuals.DeconstructionStage"
+          data: 0
+      - tool: Cutting
+        doAfter: 4
+    
+  - node: WallWood
+    entity: StellarWallWood
+    edges:
+    - to: Girder
+      completed:
+      - !type:GivePrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      steps:
+      - tool: Prying
+        doAfter: 10
