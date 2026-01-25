@@ -159,19 +159,14 @@ public sealed class StellarWallSmoothSystem : EntitySystem
         _sprite.LayerMapSet((ent, ent), CornerLayers.SWBase, _sprite.AddRsiLayer((ent, ent), state0));
         _sprite.LayerSetDirOffset((ent, ent), CornerLayers.SWBase, SpriteComponent.DirectionOffset.Clockwise);
 
-        if (ent.Comp1.FullOtherState is { } otherState)
-        {
-            state0 = $"{otherState}0";
-
-            _sprite.LayerMapSet((ent, ent), CornerLayers.SEOther, _sprite.AddRsiLayer((ent, ent), state0));
-            _sprite.LayerSetDirOffset((ent, ent), CornerLayers.SEOther, SpriteComponent.DirectionOffset.None);
-            _sprite.LayerMapSet((ent, ent), CornerLayers.NEOther, _sprite.AddRsiLayer((ent, ent), state0));
-            _sprite.LayerSetDirOffset((ent, ent), CornerLayers.NEOther, SpriteComponent.DirectionOffset.CounterClockwise);
-            _sprite.LayerMapSet((ent, ent), CornerLayers.NWOther, _sprite.AddRsiLayer((ent, ent), state0));
-            _sprite.LayerSetDirOffset((ent, ent), CornerLayers.NWOther, SpriteComponent.DirectionOffset.Flip);
-            _sprite.LayerMapSet((ent, ent), CornerLayers.SWOther, _sprite.AddRsiLayer((ent, ent), state0));
-            _sprite.LayerSetDirOffset((ent, ent), CornerLayers.SWOther, SpriteComponent.DirectionOffset.Clockwise);
-        }
+        _sprite.LayerMapSet((ent, ent), CornerLayers.SEOther, _sprite.AddLayer((ent, ent), new PrototypeLayerData(), null));
+        _sprite.LayerSetDirOffset((ent, ent), CornerLayers.SEOther, SpriteComponent.DirectionOffset.None);
+        _sprite.LayerMapSet((ent, ent), CornerLayers.NEOther, _sprite.AddLayer((ent, ent), new PrototypeLayerData(), null));
+        _sprite.LayerSetDirOffset((ent, ent), CornerLayers.NEOther, SpriteComponent.DirectionOffset.CounterClockwise);
+        _sprite.LayerMapSet((ent, ent), CornerLayers.NWOther, _sprite.AddLayer((ent, ent), new PrototypeLayerData(), null));
+        _sprite.LayerSetDirOffset((ent, ent), CornerLayers.NWOther, SpriteComponent.DirectionOffset.Flip);
+        _sprite.LayerMapSet((ent, ent), CornerLayers.SWOther, _sprite.AddLayer((ent, ent), new PrototypeLayerData(), null));
+        _sprite.LayerSetDirOffset((ent, ent), CornerLayers.SWOther, SpriteComponent.DirectionOffset.Clockwise);
     }
 
     private void Recompute(Entity<StellarWallSmoothComponent> ent)

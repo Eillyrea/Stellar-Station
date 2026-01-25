@@ -77,7 +77,7 @@
   - type: RadiationBlocker
     resistance: 2
   - type: CosmicCorruptible
-    convertTo: WallCosmicCult
+    convertTo: StellarWallMalign
   - type: Icon
     state: full
   - type: Anchorable

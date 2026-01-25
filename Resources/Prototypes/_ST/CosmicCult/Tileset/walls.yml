@@ -3,35 +3,6 @@
 # SPDX-License-Identifier: LicenseRef-CosmicCult
 
 - type: entity
-  parent: BaseWall
-  id: WallCosmicCult
-  name: malign wall
-  description: A strange-looking wall. Staring at it for too long instills a sense of discomfort.
-  components:
-  - type: CosmicCultExamine
-    cultistText: cosmic-examine-text-forthecult
-  - type: Tag
-    tags:
-      - Wall
-  - type: Sprite
-    sprite: _ST/Tileset/Walls/malign.rsi
-  - type: Icon
-    sprite: _ST/Tileset/Walls/malign.rsi
-  - type: SpriteFade
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 300
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: IconSmooth
-    # mode: CardinalFlags
-    key: cultwalls
-    base: wall
-
-- type: entity
   id: WindowCosmicCult
   name: malign pane
   description: An odd-looking window. Something about it unnerves you.

@@ -1764,7 +1764,7 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: WallCosmicCult
+- proto: StellarWallMalign
   entities:
   - uid: 10
     components:

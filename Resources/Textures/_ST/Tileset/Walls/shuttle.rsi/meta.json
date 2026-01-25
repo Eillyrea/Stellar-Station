@@ -11,35 +11,67 @@
             "name": "full"
         },
         {
-            "name": "shuttle0",
+            "name": "wall0",
             "directions": 4
         },
         {
-            "name": "shuttle1",
+            "name": "wall1",
             "directions": 4
         },
         {
-            "name": "shuttle2",
+            "name": "wall2",
             "directions": 4
         },
         {
-            "name": "shuttle3",
+            "name": "wall3",
             "directions": 4
         },
         {
-            "name": "shuttle4",
+            "name": "wall4",
             "directions": 4
         },
         {
-            "name": "shuttle5",
+            "name": "wall5",
             "directions": 4
         },
         {
-            "name": "shuttle6",
+            "name": "wall6",
             "directions": 4
         },
         {
-            "name": "shuttle7",
+            "name": "wall7",
+            "directions": 4
+        },
+        {
+            "name": "downwall0",
+            "directions": 4
+        },
+        {
+            "name": "downwall1",
+            "directions": 4
+        },
+        {
+            "name": "downwall2",
+            "directions": 4
+        },
+        {
+            "name": "downwall3",
+            "directions": 4
+        },
+        {
+            "name": "downwall4",
+            "directions": 4
+        },
+        {
+            "name": "downwall5",
+            "directions": 4
+        },
+        {
+            "name": "downwall6",
+            "directions": 4
+        },
+        {
+            "name": "downwall7",
             "directions": 4
         }
     ]

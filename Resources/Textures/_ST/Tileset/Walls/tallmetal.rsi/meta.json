@@ -11,140 +11,172 @@
             "name": "full"
         },
         {
-            "name": "tallmetal0",
+            "name": "wall0",
             "directions": 4
         },
         {
-            "name": "tallmetal1",
+            "name": "wall1",
             "directions": 4
         },
         {
-            "name": "tallmetal2",
+            "name": "wall2",
             "directions": 4
         },
         {
-            "name": "tallmetal3",
+            "name": "wall3",
             "directions": 4
         },
         {
-            "name": "tallmetal4",
+            "name": "wall4",
             "directions": 4
         },
         {
-            "name": "tallmetal5",
+            "name": "wall5",
             "directions": 4
         },
         {
-            "name": "tallmetal6",
+            "name": "wall6",
             "directions": 4
         },
         {
-            "name": "tallmetal7",
+            "name": "wall7",
             "directions": 4
         },
         {
             "name": "fullb"
         },
         {
-            "name": "tallmetalb0",
+            "name": "wallB0",
             "directions": 4
         },
         {
-            "name": "tallmetalb1",
+            "name": "wallB1",
             "directions": 4
         },
         {
-            "name": "tallmetalb2",
+            "name": "wallB2",
             "directions": 4
         },
         {
-            "name": "tallmetalb3",
+            "name": "wallB3",
             "directions": 4
         },
         {
-            "name": "tallmetalb4",
+            "name": "wallB4",
             "directions": 4
         },
         {
-            "name": "tallmetalb5",
+            "name": "wallB5",
             "directions": 4
         },
         {
-            "name": "tallmetalb6",
+            "name": "wallB6",
             "directions": 4
         },
         {
-            "name": "tallmetalb7",
+            "name": "wallB7",
             "directions": 4
         },
         {
             "name": "fullc"
         },
         {
-            "name": "tallmetalc0",
+            "name": "wallC0",
             "directions": 4
         },
         {
-            "name": "tallmetalc1",
+            "name": "wallC1",
             "directions": 4
         },
         {
-            "name": "tallmetalc2",
+            "name": "wallC2",
             "directions": 4
         },
         {
-            "name": "tallmetalc3",
+            "name": "wallC3",
             "directions": 4
         },
         {
-            "name": "tallmetalc4",
+            "name": "wallC4",
             "directions": 4
         },
         {
-            "name": "tallmetalc5",
+            "name": "wallC5",
             "directions": 4
         },
         {
-            "name": "tallmetalc6",
+            "name": "wallC6",
             "directions": 4
         },
         {
-            "name": "tallmetalc7",
+            "name": "wallC7",
             "directions": 4
         },
         {
             "name": "fulld"
         },
         {
-            "name": "tallmetald0",
+            "name": "wallD0",
             "directions": 4
         },
         {
-            "name": "tallmetald1",
+            "name": "wallD1",
             "directions": 4
         },
         {
-            "name": "tallmetald2",
+            "name": "wallD2",
             "directions": 4
         },
         {
-            "name": "tallmetald3",
+            "name": "wallD3",
             "directions": 4
         },
         {
-            "name": "tallmetald4",
+            "name": "wallD4",
             "directions": 4
         },
         {
-            "name": "tallmetald5",
+            "name": "wallD5",
             "directions": 4
         },
         {
-            "name": "tallmetald6",
+            "name": "wallD6",
             "directions": 4
         },
         {
-            "name": "tallmetald7",
+            "name": "wallD7",
+            "directions": 4
+        },
+        {
+            "name": "downwall0",
+            "directions": 4
+        },
+        {
+            "name": "downwall1",
+            "directions": 4
+        },
+        {
+            "name": "downwall2",
+            "directions": 4
+        },
+        {
+            "name": "downwall3",
+            "directions": 4
+        },
+        {
+            "name": "downwall4",
+            "directions": 4
+        },
+        {
+            "name": "downwall5",
+            "directions": 4
+        },
+        {
+            "name": "downwall6",
+            "directions": 4
+        },
+        {
+            "name": "downwall7",
             "directions": 4
         }
     ]

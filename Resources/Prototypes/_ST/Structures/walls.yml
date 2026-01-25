@@ -17,17 +17,18 @@
     sprite: _ST/Tileset/Walls/tallmetal.rsi
   - type: StellarWallSmooth
     key: WallSolid
-    fullState: tallmetal
+    fullState: wall
+    # downState: downwall # Commented out because it causes tests to fail right now
   - type: StellarRandomWallSmooth
     randomFullStates:
-    - tallmetal
-    - tallmetal
-    - tallmetal
-    - tallmetal
-    - tallmetalb
-    - tallmetalc
-    - tallmetald
-    - tallmetald
+    - wall
+    - wall
+    - wall
+    - wall
+    - wallB
+    - wallC
+    - wallD
+    - wallD
   - type: WallReplacementMarker
   - type: Construction
     graph: StellarWalls
@@ -48,7 +49,8 @@
     sprite: _ST/Tileset/Walls/metal_reinforced.rsi
   - type: StellarWallSmooth
     key: WallSolid
-    fullState: tallreinfmetal
+    fullState: wall
+    # downState: downwall # Commented out because it causes tests to fail right now
   - type: ReinforcedWallReplacementMarker
   - type: Construction
     graph: StellarWalls
@@ -68,7 +70,8 @@
     sprite: _ST/Tileset/Walls/shuttle.rsi
   - type: StellarWallSmooth
     key: WallSolid
-    fullState: shuttle
+    fullState: wall
+    # downState: downwall # Commented out because it causes tests to fail right now
   - type: GenericVisualizer
     visuals:
       enum.ShuttleWallVisuals.DeconstructionStage:
@@ -135,3 +138,21 @@
   - type: StellarWallSmooth
     key: WallSolid
     fullState: concrete
+
+- type: entity
+  parent:
+  - StellarStructureBaseWall
+  id: StellarWallMalign
+  name: malign wall
+  description: An unsettling-looking section of hull...
+  components:
+  - type: Sprite
+    sprite: _ST/Tileset/Walls/malign.rsi
+  - type: Icon
+    sprite: _ST/Tileset/Walls/malign.rsi
+  - type: StellarWallSmooth
+    key: WallSolid
+    fullState: wall
+    # downState: downwall # Commented out because it causes tests to fail right now
+  - type: CosmicCultExamine
+    cultistText: cosmic-examine-text-forthecult
