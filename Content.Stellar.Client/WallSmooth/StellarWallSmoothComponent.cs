@@ -39,4 +39,7 @@ public sealed partial class StellarWallSmoothComponent : Component
     /// </summary>
     [ViewVariables]
     internal int UpdateGeneration;
+
+    [ViewVariables]
+    public (EntityUid?, Vector2i)? LastPosition;
 }

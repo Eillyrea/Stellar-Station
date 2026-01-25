@@ -18,7 +18,8 @@
   - type: StellarWallSmooth
     key: WallSolid
     fullState: wall
-    # downState: downwall # Commented out because it causes tests to fail right now
+    downState: downwall
+  - type: StellarCutaway
   - type: StellarRandomWallSmooth
     randomFullStates:
     - wall
@@ -50,7 +51,8 @@
   - type: StellarWallSmooth
     key: WallSolid
     fullState: wall
-    # downState: downwall # Commented out because it causes tests to fail right now
+    downState: downwall
+  - type: StellarCutaway
   - type: ReinforcedWallReplacementMarker
   - type: Construction
     graph: StellarWalls
@@ -71,7 +73,8 @@
   - type: StellarWallSmooth
     key: WallSolid
     fullState: wall
-    # downState: downwall # Commented out because it causes tests to fail right now
+    downState: downwall
+  - type: StellarCutaway
   - type: GenericVisualizer
     visuals:
       enum.ShuttleWallVisuals.DeconstructionStage:
@@ -153,6 +156,7 @@
   - type: StellarWallSmooth
     key: WallSolid
     fullState: wall
-    # downState: downwall # Commented out because it causes tests to fail right now
+    downState: downwall
+  - type: StellarCutaway
   - type: CosmicCultExamine
     cultistText: cosmic-examine-text-forthecult

@@ -53,6 +53,7 @@ public sealed class StellarWallSmoothSystem : EntitySystem
             if (xform.MapID == MapId.Nullspace)
                 continue;
 
+            UpdateLastPosition((entity, wallSmooth));
             DirtyNeighbours((entity, wallSmooth, xform));
         }
 
@@ -84,7 +85,19 @@ public sealed class StellarWallSmoothSystem : EntitySystem
             DirtyNeighbours((ent, ent, xform));
         }
 
+        UpdateLastPosition(ent);
         InitializeLayers((ent, ent));
+    }
+
+    private void UpdateLastPosition(Entity<StellarWallSmoothComponent> ent)
+    {
+        var xform = Transform(ent);
+        if (!xform.Anchored)
+            return;
+
+        ent.Comp.LastPosition = TryComp<MapGridComponent>(xform.GridUid, out var grid)
+                    ? (xform.GridUid.Value, _map.TileIndicesFor(xform.GridUid.Value, grid, xform.Coordinates))
+                    : null;
     }
 
     private void OnShutdown(Entity<StellarWallSmoothComponent> ent, ref ComponentShutdown args)
@@ -107,10 +120,14 @@ public sealed class StellarWallSmoothSystem : EntitySystem
             gridEnt = (ent.Comp2.GridUid.Value, gridComp);
             pos = _map.CoordinatesToTile(gridEnt.Value, gridEnt.Value, ent.Comp2.Coordinates);
         }
+        else if (ent.Comp1.LastPosition is ({ } uid, var oldIndex) && _mapGridQuery.TryGetComponent(uid, out var uidComp))
+        {
+            gridEnt = (uid, uidComp);
+            pos = oldIndex;
+        }
         else
         {
             return;
-            // last known position
         }
 
         if (gridEnt is not { } grid)
@@ -222,7 +239,7 @@ public sealed class StellarWallSmoothSystem : EntitySystem
         ApplyCorners((ent, ent, spriteComp), false);
     }
 
-    private void ApplyCorners(Entity<StellarWallSmoothComponent, SpriteComponent> ent, bool down)
+    public void ApplyCorners(Entity<StellarWallSmoothComponent, SpriteComponent> ent, bool down)
     {
         var fullState = down && ent.Comp1.DownState is not null ? ent.Comp1.DownState : ent.Comp1.FullState;
         var otherState = down && ent.Comp1.DownOtherState is not null ? ent.Comp1.DownOtherState : ent.Comp1.DownState;
