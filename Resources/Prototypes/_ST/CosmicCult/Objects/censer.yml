@@ -51,7 +51,7 @@
           Quantity: 100
         maxVol: 100
   - type: ItemTogglePointLight
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: flame
     inhandVisuals:
       left:
