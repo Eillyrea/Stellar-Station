@@ -1,0 +1,22 @@
+# SPDX-FileCopyrightText: 2026 TheShuEd
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+#
+# This file is ALL RIGHTS RESERVED, Copyright (c) 2025 CrystallEdge, with usage rights granted to Stellar Station by the Copyright Holder.
+# https://github.com/crystallpunk-14/crystall-punk-14/blob/master/LICENSE_CE.TXT
+
+- type: shader
+  id: StellarPostProcess
+  kind: source
+  path: "/Textures/_ST/Shaders/post_process.swsl"
+  params:
+    CircleRadius: 420.0
+    CircleMinDist: 0.0
+    CirclePow: 1.0
+    CircleMax: 4.0
+    CircleMult: 0.25
+    FalloffClampMin: 0.075
+    FalloffClampMax: 1.0
+    FalloffStrength: 0.75
+    FalloffPow: 3.0
+    HDR: 1.5

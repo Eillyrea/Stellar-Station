@@ -1,0 +1,7 @@
+version = 1
+
+[[annotations]]
+path = ["post_process.swsl"]
+SPDX-FileCopyrightText = "2025 MetalSage, @ https://github.com/crystallpunk-14/crystall-punk-14/blob/master/LICENSE_CE.TXT"
+SPDX-License-Identifier = "LicenseRef-Wallening"
+SPDX-FileAttributionText = "This file is ALL RIGHTS RESERVED, Copyright (c) 2025 CrystallEdge, with usage rights granted to Stellar Station by the Copyright Holder."
