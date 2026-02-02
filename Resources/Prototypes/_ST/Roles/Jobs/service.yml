@@ -7,6 +7,7 @@
   id: StellarJobServiceBartender
   name: stellar-job-name-bartender
   description: stellar-job-description-bartender
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceBartender
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -23,6 +24,7 @@
   id: StellarJobServiceBotanist
   name: stellar-job-name-botanist
   description: stellar-job-description-botanist
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceBotanist
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -39,6 +41,7 @@
   id: StellarJobServiceCleric
   name: stellar-job-name-cleric
   description: stellar-job-description-cleric
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceCleric
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -55,6 +58,7 @@
   id: StellarJobServiceChef
   name: stellar-job-name-chef
   description: stellar-job-description-chef
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceChef
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -71,6 +75,7 @@
   id: StellarJobServicePerformer
   name: stellar-job-name-performer
   description: stellar-job-description-performer
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServicePerformer
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -87,6 +92,7 @@
   id: StellarJobServiceLibrarian
   name: stellar-job-name-librarian
   description: stellar-job-description-librarian
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceLibrarian
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -103,6 +109,7 @@
   id: StellarJobServiceReporter
   name: stellar-job-name-reporter
   description: stellar-job-description-reporter
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceReporter
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -119,6 +126,7 @@
   id: StellarJobServiceAssistant
   name: stellar-job-name-assistant
   description: stellar-job-description-assistant
+  setPreference: true
   playTimeTracker: StellarTimeTrackerServiceAssistant
   # requirements:
   #   - !type:DepartmentTimeRequirement

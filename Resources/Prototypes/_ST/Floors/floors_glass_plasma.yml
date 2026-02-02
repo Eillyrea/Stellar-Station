@@ -5,6 +5,7 @@
 ##################### REGULAR GLASS
 - type: tile
   id: StellarFloorGlassPlasmaBase
+  editorHidden: false
   name: st-floor-glass-plasma-base
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_base.png
   baseTurf: Plating
@@ -17,6 +18,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaDouble1
+  editorHidden: false
   name: st-floor-glass-plasma-double1
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_double_1.png
   baseTurf: Plating
@@ -29,6 +31,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaDouble2
+  editorHidden: false
   name: st-floor-glass-plasma-double2
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_double_2.png
   baseTurf: Plating
@@ -41,6 +44,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaMono
+  editorHidden: false
   name: st-floor-glass-plasma-mono
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_mono.png
   baseTurf: Plating
@@ -53,6 +57,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaMulti1
+  editorHidden: false
   name: st-floor-glass-plasma-multi1
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_multi_1.png
   baseTurf: Plating
@@ -65,6 +70,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaMulti2
+  editorHidden: false
   name: st-floor-glass-plasma-multi2
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_multi_2.png
   baseTurf: Plating
@@ -77,6 +83,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaFramedDouble1
+  editorHidden: false
   name: st-floor-glass-plasma-framed-double1
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_framed_double_1.png
   baseTurf: Plating
@@ -89,6 +96,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaFramedDouble2
+  editorHidden: false
   name: st-floor-glass-plasma-framed-double2
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_framed_double_2.png
   baseTurf: Plating
@@ -101,6 +109,7 @@
 
 - type: tile
   id: StellarFloorGlassPlasmaFramedMono
+  editorHidden: false
   name: st-floor-glass-plasma-framed-mono
   sprite: /Textures/_ST/Tileset/Floor/Glass_Plasma/plasmaglass_framed_mono.png
   baseTurf: Plating

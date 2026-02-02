@@ -7,6 +7,7 @@
   id: StellarJobScienceScientist
   name: stellar-job-name-scientist
   description: stellar-job-description-scientist
+  setPreference: true
   playTimeTracker: StellarTimeTrackerScienceScientist
   # requirements:
   #   - !type:DepartmentTimeRequirement

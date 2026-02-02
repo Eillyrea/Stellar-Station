@@ -10,7 +10,7 @@ namespace Content.Shared.Decals
         [IdDataField] public string ID { get; private set; } = null!;
         [DataField("sprite")] public SpriteSpecifier Sprite { get; private set; } = SpriteSpecifier.Invalid;
         [DataField("tags")] public List<string> Tags = new();
-        [DataField("showMenu")] public bool ShowMenu = true;
+        [DataField("showMenu")] public bool ShowMenu = false; //Stellar - all vanilla decales are hidden by default.
 
         /// <summary>
         /// If the decal is rotated compared to our eye should we snap it to south.

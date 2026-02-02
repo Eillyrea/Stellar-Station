@@ -7,6 +7,7 @@
   id: StellarJobSupplyHandler
   name: stellar-job-name-handler
   description: stellar-job-description-handler
+  setPreference: true
   playTimeTracker: StellarTimeTrackerSupplyHandler
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -23,6 +24,7 @@
   id: StellarJobSupplyCourier
   name: stellar-job-name-courier
   description: stellar-job-description-courier
+  setPreference: true
   playTimeTracker: StellarTimeTrackerSupplyCourier
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -39,6 +41,7 @@
   id: StellarJobSupplyJanitor
   name: stellar-job-name-janitor
   description: stellar-job-description-janitor
+  setPreference: true
   playTimeTracker: StellarTimeTrackerSupplyJanitor
   # requirements:
   #   - !type:DepartmentTimeRequirement

@@ -4,6 +4,7 @@
 
 - type: tile
   id: StellarFloorGreyBase
+  editorHidden: false
   name: st-floor-grey-base
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_base.png
   baseTurf: Plating
@@ -16,6 +17,7 @@
 
 - type: tile
   id: StellarFloorGreyCornerNw
+  editorHidden: false
   name: st-floor-grey-corner-nw
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_nw.png
   baseTurf: Plating
@@ -28,6 +30,7 @@
 
 - type: tile
   id: StellarFloorGreyCornerNe
+  editorHidden: false
   name: st-floor-grey-corner-ne
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_ne.png
   baseTurf: Plating
@@ -40,6 +43,7 @@
 
 - type: tile
   id: StellarFloorGreyCornerSe
+  editorHidden: false
   name: st-floor-grey-corner-se
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_se.png
   baseTurf: Plating
@@ -52,6 +56,7 @@
 
 - type: tile
   id: StellarFloorGreyCornerSw
+  editorHidden: false
   name: st-floor-grey-corner-sw
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_corner_sw.png
   baseTurf: Plating
@@ -64,6 +69,7 @@
 
 - type: tile
   id: StellarFloorGreyDouble1
+  editorHidden: false
   name: st-floor-grey-double1
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_doublewide_1.png
   baseTurf: Plating
@@ -76,6 +82,7 @@
 
 - type: tile
   id: StellarFloorGreyDouble2
+  editorHidden: false
   name: st-floor-grey-double2
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_doublewide_2.png
   baseTurf: Plating
@@ -88,6 +95,7 @@
 
 - type: tile
   id: StellarFloorGreyMini
+  editorHidden: false
   name: st-floor-grey-mini
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini.png
   baseTurf: Plating
@@ -100,6 +108,7 @@
 
 - type: tile
   id: StellarFloorGreyMiniBrick1
+  editorHidden: false
   name: st-floor-grey-mini-brick1
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini_brick_1.png
   baseTurf: Plating
@@ -112,6 +121,7 @@
 
 - type: tile
   id: StellarFloorGreyMiniBrick2
+  editorHidden: false
   name: st-floor-grey-mini-brick2
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini_brick_2.png
   baseTurf: Plating
@@ -124,6 +134,7 @@
 
 - type: tile
   id: StellarFloorGreyMiniBrickHerringbone
+  editorHidden: false
   name: st-floor-grey-herringbone
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mini_brick_herringbone.png
   baseTurf: Plating
@@ -136,6 +147,7 @@
 
 - type: tile
   id: StellarFloorGreyMono
+  editorHidden: false
   name: st-floor-grey-mono
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_mono.png
   baseTurf: Plating
@@ -148,6 +160,7 @@
 
 - type: tile
   id: StellarFloorGreyPlate
+  editorHidden: false
   name: st-floor-grey-plating
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_plate.png
   baseTurf: Plating
@@ -160,6 +173,7 @@
 
 - type: tile
   id: StellarFloorGreyProcessor
+  editorHidden: false
   name: st-floor-grey-processor
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_processor.png
   baseTurf: Plating
@@ -172,6 +186,7 @@
 
 - type: tile
   id: StellarFloorGreyTechy
+  editorHidden: false
   name: st-floor-grey-techy
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_techy.png
   baseTurf: Plating
@@ -184,6 +199,7 @@
 
 - type: tile
   id: StellarFloorGreyVented
+  editorHidden: false
   name: st-floor-grey-vented
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_vented.png
   baseTurf: Plating
@@ -196,6 +212,7 @@
 
 - type: tile
   id: StellarFloorGreyWideE
+  editorHidden: false
   name: st-floor-grey-wide-e
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_e.png
   baseTurf: Plating
@@ -208,6 +225,7 @@
 
 - type: tile
   id: StellarFloorGreyWideN
+  editorHidden: false
   name: st-floor-grey-wide-n
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_n.png
   baseTurf: Plating
@@ -220,6 +238,7 @@
 
 - type: tile
   id: StellarFloorGreyWideS
+  editorHidden: false
   name: st-floor-grey-wide-s
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_s.png
   baseTurf: Plating
@@ -232,6 +251,7 @@
 
 - type: tile
   id: StellarFloorGreyWideW
+  editorHidden: false
   name: st-floor-grey-wide-w
   sprite: /Textures/_ST/Tileset/Floor/Grey/grey_wide_w.png
   baseTurf: Plating

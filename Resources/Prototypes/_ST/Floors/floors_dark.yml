@@ -4,6 +4,7 @@
 
 - type: tile
   id: StellarFloorDarkBase
+  editorHidden: false
   name: st-floor-dark-base
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_base.png
   baseTurf: Plating
@@ -16,6 +17,7 @@
 
 - type: tile
   id: StellarFloorDarkCornerNw
+  editorHidden: false
   name: st-floor-dark-corner-nw
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_corner_nw.png
   baseTurf: Plating
@@ -28,6 +30,7 @@
 
 - type: tile
   id: StellarFloorDarkCornerNe
+  editorHidden: false
   name: st-floor-dark-corner-ne
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_corner_ne.png
   baseTurf: Plating
@@ -40,6 +43,7 @@
 
 - type: tile
   id: StellarFloorDarkCornerSe
+  editorHidden: false
   name: st-floor-dark-corner-se
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_corner_se.png
   baseTurf: Plating
@@ -52,6 +56,7 @@
 
 - type: tile
   id: StellarFloorDarkCornerSw
+  editorHidden: false
   name: st-floor-dark-corner-sw
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_corner_sw.png
   baseTurf: Plating
@@ -64,6 +69,7 @@
 
 - type: tile
   id: StellarFloorDarkDouble1
+  editorHidden: false
   name: st-floor-dark-double1
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_doublewide_1.png
   baseTurf: Plating
@@ -76,6 +82,7 @@
 
 - type: tile
   id: StellarFloorDarkDouble2
+  editorHidden: false
   name: st-floor-dark-double2
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_doublewide_2.png
   baseTurf: Plating
@@ -88,6 +95,7 @@
 
 - type: tile
   id: StellarFloorDarkMini
+  editorHidden: false
   name: st-floor-dark-mini
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_mini.png
   baseTurf: Plating
@@ -100,6 +108,7 @@
 
 - type: tile
   id: StellarFloorDarkMiniBrick1
+  editorHidden: false
   name: st-floor-dark-mini-brick1
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_mini_brick_1.png
   baseTurf: Plating
@@ -112,6 +121,7 @@
 
 - type: tile
   id: StellarFloorDarkMiniBrick2
+  editorHidden: false
   name: st-floor-dark-mini-brick2
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_mini_brick_2.png
   baseTurf: Plating
@@ -124,6 +134,7 @@
 
 - type: tile
   id: StellarFloorDarkMiniBrickHerringbone
+  editorHidden: false
   name: st-floor-dark-herringbone
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_mini_brick_herringbone.png
   baseTurf: Plating
@@ -136,6 +147,7 @@
 
 - type: tile
   id: StellarFloorDarkMono
+  editorHidden: false
   name: st-floor-dark-mono
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_mono.png
   baseTurf: Plating
@@ -148,6 +160,7 @@
 
 # - type: tile
 #   id: StellarFloorDarkPlate
+#  editorHidden: false
 #   name: st-floor-dark-plating
 #   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_plate.png
 #   baseTurf: Plating
@@ -160,6 +173,7 @@
 
 - type: tile
   id: StellarFloorDarkProcessor
+  editorHidden: false
   name: st-floor-dark-processor
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_processor.png
   baseTurf: Plating
@@ -172,6 +186,7 @@
 
 - type: tile
   id: StellarFloorDarkTechy
+  editorHidden: false
   name: st-floor-dark-techy
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_techy.png
   baseTurf: Plating
@@ -184,6 +199,7 @@
 
 - type: tile
   id: StellarFloorDarkVented
+  editorHidden: false
   name: st-floor-dark-vented
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_vented.png
   baseTurf: Plating
@@ -196,6 +212,7 @@
 
 - type: tile
   id: StellarFloorDarkWideE
+  editorHidden: false
   name: st-floor-dark-wide-e
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_wide_e.png
   baseTurf: Plating
@@ -208,6 +225,7 @@
 
 - type: tile
   id: StellarFloorDarkWideN
+  editorHidden: false
   name: st-floor-dark-wide-n
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_wide_n.png
   baseTurf: Plating
@@ -220,6 +238,7 @@
 
 - type: tile
   id: StellarFloorDarkWideS
+  editorHidden: false
   name: st-floor-dark-wide-s
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_wide_s.png
   baseTurf: Plating
@@ -232,6 +251,7 @@
 
 - type: tile
   id: StellarFloorDarkWideW
+  editorHidden: false
   name: st-floor-dark-wide-w
   sprite: /Textures/_ST/Tileset/Floor/Dark/dark_wide_w.png
   baseTurf: Plating

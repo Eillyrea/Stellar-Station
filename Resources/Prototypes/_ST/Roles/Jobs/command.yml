@@ -6,6 +6,7 @@
 - type: job
   id: StellarJobCommandCaptain
   name: stellar-job-name-captain
+  setPreference: true
   description: stellar-job-description-captain
   playTimeTracker: StellarTimeTrackerCommandCaptain
   # requirements:
@@ -35,6 +36,7 @@
   id: StellarJobCommandOperationsManager
   name: stellar-job-name-operationsmanager
   description: stellar-job-description-operationsmanager
+  setPreference: true
   playTimeTracker: StellarTimeTrackerCommandOperationsManager
   # requirements:
   #   - !type:RoleTimeRequirement
@@ -63,6 +65,7 @@
   id: StellarJobCommandChiefEngineer
   name: stellar-job-name-chiefengineer
   description: stellar-job-description-chiefengineer
+  setPreference: true
   playTimeTracker: StellarTimeTrackerCommandChiefEngineer
   # requirements:
   #   - !type:RoleTimeRequirement
@@ -90,6 +93,7 @@
   id: StellarJobCommandServiceDirector
   name: stellar-job-name-servicedirector
   description: stellar-job-description-servicedirector
+  setPreference: true
   playTimeTracker: StellarTimeTrackerCommandServiceDirector
   # requirements:
   #   - !type:RoleTimeRequirement
@@ -117,6 +121,7 @@
   id: StellarJobCommandResearchDirector
   name: stellar-job-name-researchdirector
   description: stellar-job-description-researchdirector
+  setPreference: true
   playTimeTracker: StellarTimeTrackerCommandResearchDirector
   # requirements:
   #   - !type:RoleTimeRequirement
@@ -144,6 +149,7 @@
   id: StellarJobCommandHeadOfMedicine
   name: stellar-job-name-headofmedicine
   description: stellar-job-description-headofmedicine
+  setPreference: true
   playTimeTracker: StellarTimeTrackerCommandHeadOfMedicine
   # requirements:
   #   - !type:RoleTimeRequirement
@@ -171,6 +177,7 @@
   id: StellarJobCommandHeadOfSecurity
   name: stellar-job-name-headofsecurity
   description: stellar-job-description-headofsecurity
+  setPreference: true
   playTimeTracker: StellarTimeTrackerCommandHeadOfSecurity
   # requirements:
   #   - !type:RoleTimeRequirement

@@ -4,6 +4,7 @@
 
 - type: tile
   id: StellarFloorWhiteBase
+  editorHidden: false
   name: st-floor-white-base
   sprite: /Textures/_ST/Tileset/Floor/White/white_base.png
   baseTurf: Plating
@@ -16,6 +17,7 @@
 
 - type: tile
   id: StellarFloorWhiteCornerNw
+  editorHidden: false
   name: st-floor-white-corner-nw
   sprite: /Textures/_ST/Tileset/Floor/White/white_corner_nw.png
   baseTurf: Plating
@@ -28,6 +30,7 @@
 
 - type: tile
   id: StellarFloorWhiteCornerNe
+  editorHidden: false
   name: st-floor-white-corner-ne
   sprite: /Textures/_ST/Tileset/Floor/White/white_corner_ne.png
   baseTurf: Plating
@@ -40,6 +43,7 @@
 
 - type: tile
   id: StellarFloorWhiteCornerSe
+  editorHidden: false
   name: st-floor-white-corner-se
   sprite: /Textures/_ST/Tileset/Floor/White/white_corner_se.png
   baseTurf: Plating
@@ -52,6 +56,7 @@
 
 - type: tile
   id: StellarFloorWhiteCornerSw
+  editorHidden: false
   name: st-floor-white-corner-sw
   sprite: /Textures/_ST/Tileset/Floor/White/white_corner_sw.png
   baseTurf: Plating
@@ -64,6 +69,7 @@
 
 - type: tile
   id: StellarFloorWhiteDouble1
+  editorHidden: false
   name: st-floor-white-double1
   sprite: /Textures/_ST/Tileset/Floor/White/white_doublewide_1.png
   baseTurf: Plating
@@ -76,6 +82,7 @@
 
 - type: tile
   id: StellarFloorWhiteDouble2
+  editorHidden: false
   name: st-floor-white-double2
   sprite: /Textures/_ST/Tileset/Floor/White/white_doublewide_2.png
   baseTurf: Plating
@@ -88,6 +95,7 @@
 
 - type: tile
   id: StellarFloorWhiteMini
+  editorHidden: false
   name: st-floor-white-mini
   sprite: /Textures/_ST/Tileset/Floor/White/white_mini.png
   baseTurf: Plating
@@ -100,6 +108,7 @@
 
 - type: tile
   id: StellarFloorWhiteMiniBrick1
+  editorHidden: false
   name: st-floor-white-mini-brick1
   sprite: /Textures/_ST/Tileset/Floor/White/white_mini_brick_1.png
   baseTurf: Plating
@@ -112,6 +121,7 @@
 
 - type: tile
   id: StellarFloorWhiteMiniBrick2
+  editorHidden: false
   name: st-floor-white-mini-brick2
   sprite: /Textures/_ST/Tileset/Floor/White/white_mini_brick_2.png
   baseTurf: Plating
@@ -124,6 +134,7 @@
 
 - type: tile
   id: StellarFloorWhiteMiniBrickHerringbone
+  editorHidden: false
   name: st-floor-white-herringbone
   sprite: /Textures/_ST/Tileset/Floor/White/white_mini_brick_herringbone.png
   baseTurf: Plating
@@ -136,6 +147,7 @@
 
 - type: tile
   id: StellarFloorWhiteMono
+  editorHidden: false
   name: st-floor-white-mono
   sprite: /Textures/_ST/Tileset/Floor/White/white_mono.png
   baseTurf: Plating
@@ -148,6 +160,7 @@
 
 - type: tile
   id: StellarFloorWhitePlate
+  editorHidden: false
   name: st-floor-white-plating
   sprite: /Textures/_ST/Tileset/Floor/White/white_plate.png
   baseTurf: Plating
@@ -160,6 +173,7 @@
 
 - type: tile
   id: StellarFloorWhiteProcessor
+  editorHidden: false
   name: st-floor-white-processor
   sprite: /Textures/_ST/Tileset/Floor/White/white_processor.png
   baseTurf: Plating
@@ -172,6 +186,7 @@
 
 - type: tile
   id: StellarFloorWhiteTechy
+  editorHidden: false
   name: st-floor-white-techy
   sprite: /Textures/_ST/Tileset/Floor/White/white_techy.png
   baseTurf: Plating
@@ -184,6 +199,7 @@
 
 - type: tile
   id: StellarFloorWhiteVented
+  editorHidden: false
   name: st-floor-white-vented
   sprite: /Textures/_ST/Tileset/Floor/White/white_vented.png
   baseTurf: Plating
@@ -196,6 +212,7 @@
 
 - type: tile
   id: StellarFloorWhiteWideE
+  editorHidden: false
   name: st-floor-white-wide-e
   sprite: /Textures/_ST/Tileset/Floor/White/white_wide_e.png
   baseTurf: Plating
@@ -208,6 +225,7 @@
 
 - type: tile
   id: StellarFloorWhiteWideN
+  editorHidden: false
   name: st-floor-white-wide-n
   sprite: /Textures/_ST/Tileset/Floor/White/white_wide_n.png
   baseTurf: Plating
@@ -220,6 +238,7 @@
 
 - type: tile
   id: StellarFloorWhiteWideS
+  editorHidden: false
   name: st-floor-white-wide-s
   sprite: /Textures/_ST/Tileset/Floor/White/white_wide_s.png
   baseTurf: Plating
@@ -232,6 +251,7 @@
 
 - type: tile
   id: StellarFloorWhiteWideW
+  editorHidden: false
   name: st-floor-white-wide-w
   sprite: /Textures/_ST/Tileset/Floor/White/white_wide_w.png
   baseTurf: Plating

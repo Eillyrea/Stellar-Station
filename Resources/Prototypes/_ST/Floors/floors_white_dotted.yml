@@ -4,6 +4,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedBase
+  editorHidden: false
   name: st-floor-white-dotted-base
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_base.png
   baseTurf: Plating
@@ -16,6 +17,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedCornerNw
+  editorHidden: false
   name: st-floor-white-dotted-corner-nw
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_corner_nw.png
   baseTurf: Plating
@@ -28,6 +30,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedCornerNe
+  editorHidden: false
   name: st-floor-white-dotted-corner-ne
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_corner_ne.png
   baseTurf: Plating
@@ -40,6 +43,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedCornerSe
+  editorHidden: false
   name: st-floor-white-dotted-corner-se
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_corner_se.png
   baseTurf: Plating
@@ -52,6 +56,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedCornerSw
+  editorHidden: false
   name: st-floor-white-dotted-corner-sw
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_corner_sw.png
   baseTurf: Plating
@@ -64,6 +69,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedDouble1
+  editorHidden: false
   name: st-floor-white-dotted-double1
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_doublewide_1.png
   baseTurf: Plating
@@ -76,6 +82,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedDouble2
+  editorHidden: false
   name: st-floor-white-dotted-double2
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_doublewide_2.png
   baseTurf: Plating
@@ -88,6 +95,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedMono
+  editorHidden: false
   name: st-floor-white-dotted-mono
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_mono.png
   baseTurf: Plating
@@ -100,6 +108,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedWideE
+  editorHidden: false
   name: st-floor-white-dotted-wide-e
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_wide_e.png
   baseTurf: Plating
@@ -112,6 +121,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedWideN
+  editorHidden: false
   name: st-floor-white-dotted-wide-n
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_wide_n.png
   baseTurf: Plating
@@ -124,6 +134,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedWideS
+  editorHidden: false
   name: st-floor-white-dotted-wide-s
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_wide_s.png
   baseTurf: Plating
@@ -136,6 +147,7 @@
 
 - type: tile
   id: StellarFloorWhiteDottedWideW
+  editorHidden: false
   name: st-floor-white-dotted-wide-w
   sprite: /Textures/_ST/Tileset/Floor/White_Dotted/white_dotted_wide_w.png
   baseTurf: Plating

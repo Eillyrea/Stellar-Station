@@ -128,5 +128,11 @@ namespace Content.Shared.Maps
         {
             TileId = id;
         }
+        
+        /// <summary>
+        /// Stellar - All vanilla tiles filtered by default
+        /// </summary>
+        [DataField]
+        public bool EditorHidden { get; private set; } = true;
     }
 }

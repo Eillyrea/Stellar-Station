@@ -5,6 +5,7 @@
 #### CHECKERBOARD
 - type: tile
   id: StellarFloorCheckerBase
+  editorHidden: false
   name: st-floor-checker-base
   sprite: /Textures/_ST/Tileset/Floor/Misc/checker_base.png
   baseTurf: Plating
@@ -17,6 +18,7 @@
 
 - type: tile
   id: StellarFloorCheckerBrick
+  editorHidden: false
   name: st-floor-checker-brick
   sprite: /Textures/_ST/Tileset/Floor/Misc/checker_brick.png
   baseTurf: Plating
@@ -29,6 +31,7 @@
 
 - type: tile
   id: StellarFloorCheckerHerringbone
+  editorHidden: false
   name: st-floor-checker-herringbone
   sprite: /Textures/_ST/Tileset/Floor/Misc/checker_herringbone.png
   baseTurf: Plating
@@ -42,6 +45,7 @@
 #### WOOD
 - type: tile
   id: StellarFloorWoodBase
+  editorHidden: false
   name: st-floor-wood-base
   sprite: /Textures/_ST/Tileset/Floor/Wood/wood_base.png
   baseTurf: Plating
@@ -56,6 +60,7 @@
 
 - type: tile
   id: StellarFloorWoodLong
+  editorHidden: false
   name: st-floor-wood-long
   sprite: /Textures/_ST/Tileset/Floor/Wood/wood_long.png
   baseTurf: Plating
@@ -70,6 +75,7 @@
 
 - type: tile
   id: StellarFloorWoodThinPatterned
+  editorHidden: false
   name: st-floor-wood-patterned
   sprite: /Textures/_ST/Tileset/Floor/Wood/wood_thin_patterned.png
   baseTurf: Plating
@@ -84,6 +90,7 @@
 
 - type: tile
   id: StellarFloorWoodThinHerringbone
+  editorHidden: false
   name: st-floor-wood-herringbone
   sprite: /Textures/_ST/Tileset/Floor/Wood/wood_thin_herringbone.png
   baseTurf: Plating
@@ -98,6 +105,7 @@
 
 - type: tile
   id: StellarFloorWoodThin1
+  editorHidden: false
   name: st-floor-wood-thin1
   sprite: /Textures/_ST/Tileset/Floor/Wood/wood_thin_1.png
   baseTurf: Plating
@@ -112,6 +120,7 @@
 
 - type: tile
   id: StellarFloorWoodThin2
+  editorHidden: false
   name: st-floor-wood-thin2
   sprite: /Textures/_ST/Tileset/Floor/Wood/wood_thin_2.png
   baseTurf: Plating
@@ -227,6 +236,7 @@
 
 - type: tile
   id: StellarFloorNothing
+  editorHidden: false
   sprite: /Textures/_ST/CosmicCult/Tileset/cosmicfloor/floor_void.png
   baseTurf: Space
   isSubfloor: true

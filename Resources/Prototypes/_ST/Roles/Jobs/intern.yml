@@ -7,6 +7,7 @@
   id: StellarJobInternMedical
   name: stellar-job-name-intern-medical
   description: stellar-job-description-intern-medical
+  setPreference: true
   playTimeTracker: StellarTimeTrackerInternMedical
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -23,6 +24,7 @@
   id: StellarJobInternSecurity
   name: stellar-job-name-intern-security
   description: stellar-job-description-intern-security
+  setPreference: true
   playTimeTracker: StellarTimeTrackerInternSecurity
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -39,6 +41,7 @@
   id: StellarJobInternScience
   name: stellar-job-name-intern-science
   description: stellar-job-description-intern-science
+  setPreference: true
   playTimeTracker: StellarTimeTrackerInternScience
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -55,6 +58,7 @@
   id: StellarJobInternSupply
   name: stellar-job-name-intern-supply
   description: stellar-job-description-intern-supply
+  setPreference: true
   playTimeTracker: StellarTimeTrackerInternSupply
   # requirements:
   #   - !type:DepartmentTimeRequirement
@@ -71,6 +75,7 @@
   id: StellarJobInternEngineering
   name: stellar-job-name-intern-engineering
   description: stellar-job-description-intern-engineering
+  setPreference: true
   playTimeTracker: StellarTimeTrackerInternEngineering
   # requirements:
   #   - !type:DepartmentTimeRequirement
