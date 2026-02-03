@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSecurityWardenBeret
   name: warden's beret
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSecurityWardenCap
   name: warden's cap
   description: LOREM IPSUM
@@ -39,7 +39,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatSecurityWardenPaddedCoat
   name: warden's padded coat
   description: LOREM IPSUM
@@ -53,7 +53,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityWarden
   name: warden's uniform
   description: LOREM IPSUM
@@ -76,7 +76,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityWardenAlt
   name: warden's alternate uniform
   description: LOREM IPSUM
@@ -99,7 +99,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityWardenTurtle
   name: warden's turtleneck
   description: LOREM IPSUM

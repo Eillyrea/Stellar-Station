@@ -4,7 +4,7 @@
 
 ### DRESS SHOES
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscBlackDress
   name: black dress shoes
   description: Fashionable. Synth-leather. Pre-polished. Everything fancy shoes need!
@@ -15,7 +15,7 @@
     sprite: _ST/Clothing/Misc/Shoes/shoes-black-dress.rsi
 
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscBrownDress
   name: brown dress shoes
   description: Fashionable. Synth-leather. Pre-polished. Everything fancy shoes need!
@@ -27,7 +27,7 @@
 
 ### CASUAL SHOES
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscBlack
   name: black shoes
   description: Casual. Comfortable. Work-appropriate. They're pretty decent shoes!
@@ -38,7 +38,7 @@
     sprite: _ST/Clothing/Misc/Shoes/shoes-black.rsi
 
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscBrown
   name: brown shoes
   description: Casual. Comfortable. Work-appropriate. They're pretty decent shoes!
@@ -50,7 +50,7 @@
 
 ### SCIENCE SHOES
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscScience
   name: science shoes
   description: LOREM IPSUM
@@ -62,7 +62,7 @@
 
 ### MEDICAL SHOES
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscMedical
   name: medical shoes
   description: LOREM IPSUM
@@ -74,7 +74,7 @@
 
 ### CHEMICAL SAFETY BOOTS
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscChemicalSafetyBoots
   name: chemical safety boots
   description: LOREM IPSUM
@@ -86,7 +86,7 @@
 
 ### WORK BOOTS
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscWorkBoots
   name: work boots
   description: LOREM IPSUM
@@ -98,7 +98,7 @@
 
 ### COMBAT BOOTS
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesMiscCombatBoots
   name: combat boots
   description: LOREM IPSUM
@@ -110,7 +110,7 @@
 
 ### SANITATION BOOTS
 - type: entity
-  parent: [ ClothingShoesBaseButcherable, BaseCargoContraband ]
+  parent: [ StellarClothingShoesBaseButcherable, BaseCargoContraband ]
   id: StellarClothingShoesMiscSanitationBoots
   name: yellow sanitation boots
   description: LOREM IPSUM

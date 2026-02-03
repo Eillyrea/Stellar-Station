@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformScienceScientist
   name: scientist's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformScienceScientistAlt
   name: scientist's alternate uniform
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformScienceScientistCasual
   name: scientist's casual uniform
   description: LOREM IPSUM

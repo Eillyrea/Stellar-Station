@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatEngineeringEngineerBeret
   name: engineer's beret
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatEngineeringEngineerCapEngineer
   name: engineer's engineering cap
   description: LOREM IPSUM
@@ -38,7 +38,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatEngineeringEngineerCapAtmospherics
   name: engineer's atmospherics cap
   description: LOREM IPSUM
@@ -56,7 +56,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformEngineeringEngineer
   name: engineer's uniform
   description: LOREM IPSUM
@@ -79,7 +79,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformEngineeringEngineerHazard
   name: engineer's hazard uniform
   description: LOREM IPSUM
@@ -102,7 +102,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformEngineeringEngineerAtmospherics
   name: engineer's atmospherics uniform
   description: LOREM IPSUM
@@ -125,7 +125,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformEngineeringEngineerAfterHours
   name: engineer's after-hours uniform
   description: LOREM IPSUM
@@ -136,7 +136,7 @@
     sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-afterhours.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformEngineeringEngineerOveralls
   name: engineer's overalls
   description: LOREM IPSUM
@@ -147,7 +147,7 @@
     sprite: _ST/Clothing/Engineering/Engineer/engineer-uniform-overalls.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformEngineeringEngineerCoveralls
   name: engineer's coveralls
   description: LOREM IPSUM

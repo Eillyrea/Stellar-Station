@@ -4,7 +4,7 @@
 
 ### SUPPLY HAT
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingMiscHatSupplyCap
   name: supply cap
   description: LOREM IPSUM
@@ -22,7 +22,7 @@
 
 ### SUPPLY BERET
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingMiscHatSupplyBeret
   name: supply beret
   description: LOREM IPSUM
@@ -40,7 +40,7 @@
 
 ### HARDHATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingMiscHatHardHatOrange
   name: orange hard hat
   description: LOREM IPSUM
@@ -57,7 +57,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingMiscHatHardHatYellow
   name: yellow hard hat
   description: LOREM IPSUM

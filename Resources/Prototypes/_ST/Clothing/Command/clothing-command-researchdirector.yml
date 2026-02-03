@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandResearchDirectorBeret
   name: research director's beret
   description: LOREM IPSUM
@@ -22,7 +22,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatCommandResearchDirectorPaddedCoat
   name: research director's padded coat
   description: LOREM IPSUM
@@ -35,7 +35,7 @@
     sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-padded.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatCommandResearchDirectorSterileCoat
   name: research director's sterile coat
   description: LOREM IPSUM
@@ -48,7 +48,7 @@
     sprite: _ST/Clothing/Command/ResearchDirector/researchdirector-coat-sterile.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatCommandResearchDirectorLabCoat
   name: research director's lab coat
   description: LOREM IPSUM
@@ -62,7 +62,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandResearchDirector
   name: research director's uniform
   description: LOREM IPSUM
@@ -85,7 +85,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandResearchDirectorTurtle
   name: research director's turtleneck
   description: LOREM IPSUM
@@ -108,7 +108,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandResearchDirectorTurtleDress
   name: research director's white turtleneck & pencil skirt
   description: LOREM IPSUM
@@ -120,7 +120,7 @@
 
 ### GLOVES
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingGlovesCommandResearchDirector
   name: research director's gloves
   description: LOREM IPSUM
@@ -132,7 +132,7 @@
 
 ### BACKPACKS
 - type: entity
-  parent: [ClothingBackpack, BaseCommandContraband]
+  parent: [StellarClothingBackpack, BaseCommandContraband]
   id: StellarClothingBackpackCommandResearchDirector
   name: research director's backpack
   description: LOREM IPSUM

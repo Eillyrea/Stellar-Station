@@ -6,6 +6,7 @@
   name: lobby spawn point
   id: StellarLobbyPlayerSpawnpoint
   parent: MarkerBase
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: Markers/cross.rsi

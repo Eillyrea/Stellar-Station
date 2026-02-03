@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandServiceDirector
   name: service director's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandServiceDirectorAlt
   name: service director's alternate uniform
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandServiceDirectorCasual
   name: service director's casual uniform
   description: LOREM IPSUM
@@ -73,7 +73,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandServiceDirectorFormal
   name: service director's formals
   description: LOREM IPSUM
@@ -85,7 +85,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandServiceDirector
   name: service director's cap
   description: LOREM IPSUM
@@ -102,7 +102,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandServiceDirectorBeret
   name: service director's beret
   description: LOREM IPSUM
@@ -120,7 +120,7 @@
 
 ### BACKPACKS
 - type: entity
-  parent: [ClothingBackpack, BaseCommandContraband]
+  parent: [StellarClothingBackpack, BaseCommandContraband]
   id: StellarClothingBackpackCommandServiceDirector
   name: service director's backpack
   description: LOREM IPSUM

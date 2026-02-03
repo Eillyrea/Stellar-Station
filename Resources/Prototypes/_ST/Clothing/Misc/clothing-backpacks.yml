@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: LicenseRef-Wallening
 
 - type: entity
-  parent: ClothingBackpack
+  parent: StellarClothingBackpack
   id: StellarClothingBackpackGrey
   name: basic backpack
   description: LOREM IPSUM
@@ -12,7 +12,7 @@
     sprite: _ST/Clothing/Misc/Back/Backpacks/backpack-base.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: StellarClothingBackpack
   id: StellarClothingBackpackService
   name: service backpack
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     sprite: _ST/Clothing/Misc/Back/Backpacks/backpack-base.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: StellarClothingBackpack
   id: StellarClothingBackpackSupply
   name: supply backpack
   description: LOREM IPSUM
@@ -30,7 +30,7 @@
     sprite: _ST/Clothing/Misc/Back/Backpacks/backpack-supply.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: StellarClothingBackpack
   id: StellarClothingBackpackEngineering
   name: engineering backpack
   description: LOREM IPSUM
@@ -39,7 +39,7 @@
     sprite: _ST/Clothing/Misc/Back/Backpacks/backpack-engineering.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: StellarClothingBackpack
   id: StellarClothingBackpackMedical
   name: medical backpack
   description: LOREM IPSUM
@@ -48,7 +48,7 @@
     sprite: _ST/Clothing/Misc/Back/Backpacks/backpack-medical.rsi
 
 - type: entity
-  parent: ClothingBackpack
+  parent: StellarClothingBackpack
   id: StellarClothingBackpackScience
   name: science backpack
   description: LOREM IPSUM
@@ -57,7 +57,7 @@
     sprite: _ST/Clothing/Misc/Back/Backpacks/backpack-science.rsi
 
 - type: entity
-  parent: [ClothingBackpack, BaseSecurityContraband]
+  parent: [StellarClothingBackpack, BaseSecurityContraband]
   id: StellarClothingBackpackSecurity
   name: security backpack
   description: LOREM IPSUM

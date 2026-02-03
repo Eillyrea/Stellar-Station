@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServicePerformerMimeBeretRed
   name: red beret
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServicePerformerMimeBeretBlack
   name: black beret
   description: LOREM IPSUM
@@ -38,7 +38,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServicePerformerMimeBeretWhite
   name: white beret
   description: LOREM IPSUM
@@ -56,7 +56,7 @@
 
 ### MASKS
 - type: entity
-  parent: ClothingMaskBase
+  parent: StellarClothingMaskBase
   id: StellarClothingMaskServicePerformerMime
   name: mime's mask
   description: LOREM IPSUM
@@ -74,7 +74,7 @@
 
 ### MASKS
 - type: entity
-  parent: ClothingMaskBase
+  parent: StellarClothingMaskBase
   id: StellarClothingMaskServicePerformerClown
   name: clown's mask
   description: LOREM IPSUM
@@ -91,7 +91,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServicePerformerClown
   name: clown's uniform
   description: LOREM IPSUM
@@ -102,7 +102,7 @@
     sprite: _ST/Clothing/Service/Performer/clown-uniform.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServicePerformerMimeClowny
   name: mime's clowny uniform
   description: LOREM IPSUM
@@ -113,7 +113,7 @@
     sprite: _ST/Clothing/Service/Performer/mime-uniform-clowny.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServicePerformerMime
   name: mime's uniform
   description: LOREM IPSUM
@@ -136,7 +136,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServicePerformerMusician
   name: musician's uniform
   description: LOREM IPSUM
@@ -160,7 +160,7 @@
 
 ### SHOES
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesServicePerformerClown
   name: clown's shoes
   description: LOREM IPSUM

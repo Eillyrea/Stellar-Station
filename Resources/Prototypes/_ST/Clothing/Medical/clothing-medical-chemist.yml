@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatMedicalChemistBeret
   name: chemist's beret
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatMedicalChemistHairCap
   name: chemist's hair cap
   description: LOREM IPSUM
@@ -39,7 +39,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformMedicalChemist
   name: chemist's uniform
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
     sprite: _ST/Clothing/Medical/Chemist/chemist-uniform.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformMedicalChemistSimple
   name: chemist's simple uniform
   description: LOREM IPSUM
@@ -62,7 +62,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatMedicalChemist
   name: chemist's coat
   description: LOREM IPSUM

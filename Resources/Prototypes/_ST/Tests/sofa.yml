@@ -9,6 +9,7 @@
   description: Looks comfy.
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Seating/comfy_sofa.rsi

@@ -7,6 +7,7 @@
   parent: LockerBase
   name: decorative cabinet
   description: Has a glossy lacquer finish.
+  categories: [ ForkFiltered ]
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -45,6 +46,7 @@
   name: decorative cabinet
   suffix: glass
   description: Has a glossy lacquer finish.
+  categories: [ ForkFiltered ]
   components:
   - type: Appearance
   - type: EntityStorageVisuals

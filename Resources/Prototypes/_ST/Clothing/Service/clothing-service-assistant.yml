@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceAssistant
   name: assistant's uniform
   description: LOREM IPSUM

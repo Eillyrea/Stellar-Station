@@ -6,6 +6,7 @@
   parent: BaseLatheLube
   id: StellarBaseTechFabDepartamental
   abstract: true
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi

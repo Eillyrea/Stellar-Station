@@ -6,6 +6,7 @@
   abstract: true
   parent: BaseMachineCircuitboard
   id: BaseTechFabCircuitboardStellar
+  categories: [ ForkFiltered ]
   components:
   - type: MachineBoard
     stackRequirements:

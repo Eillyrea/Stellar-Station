@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSupplyCourierCap
   name: courier's cap
   description: LOREM IPSUM
@@ -22,7 +22,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatSupplyCourier
   name: courier's short-sleeve windbreaker
   description: LOREM IPSUM
@@ -36,7 +36,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyCourier
   name: courier's uniform
   description: LOREM IPSUM
@@ -59,7 +59,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyCourierAlt
   name: courier's alternate uniform
   description: LOREM IPSUM
@@ -82,7 +82,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyCourierCoveralls
   name: courier's coveralls
   description: LOREM IPSUM
@@ -94,7 +94,7 @@
 
 ### SHOES
 - type: entity
-  parent: ClothingShoesBaseButcherable
+  parent: StellarClothingShoesBaseButcherable
   id: StellarClothingShoesSupplyCourier
   name: courier's running shoes
   description: LOREM IPSUM

@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceReporter
   name: reporter's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceReporterAlt
   name: reporter's alternate uniform
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceReporterBlue
   name: reporter's blue uniform
   description: LOREM IPSUM
@@ -73,7 +73,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceReporterBlueAlt
   name: reporter's alternate blue uniform
   description: LOREM IPSUM
@@ -96,7 +96,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceReporterGrey
   name: reporter's grey uniform
   description: LOREM IPSUM

@@ -8,6 +8,7 @@
   abstract: true
   name: directional glass windoor
   description: A glass service door for installation on tables or countertops.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Doors/Windoors/windoor_glass.rsi

@@ -7,6 +7,7 @@
   description: A tidily-bound book, full of prayers and scripture.
   parent: BaseStorageItem
   id: PrayerBook
+  categories: [ ForkFiltered ]
   components:
   - type: MeleeWeapon
     soundHit:

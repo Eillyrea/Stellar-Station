@@ -12,6 +12,7 @@
     mode: SnapgridCenter
     snap:
     - Window
+  categories: [ ForkFiltered ]
   components:
   - type: WallMount
     arc: 360

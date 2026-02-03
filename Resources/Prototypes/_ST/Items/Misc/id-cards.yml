@@ -8,6 +8,7 @@
   name: ID card
   description: A card necessary to access various areas aboard the station.
   abstract: true
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Items/Misc/id-cards.rsi

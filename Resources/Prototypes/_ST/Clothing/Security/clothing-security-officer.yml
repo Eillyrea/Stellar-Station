@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityOfficer
   name: officer's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityOfficerAlt
   name: officer's alternate uniform
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityOfficerCasual
   name: officer's casual uniform
   description: LOREM IPSUM
@@ -74,7 +74,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSecurityOfficerBeret
   name: officer's beret
   description: LOREM IPSUM

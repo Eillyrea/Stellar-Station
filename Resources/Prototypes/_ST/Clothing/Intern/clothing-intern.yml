@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformInternSupply
   name: supply intern's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformInternSecurity
   name: security intern's uniform
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformInternScience
   name: science intern's uniform
   description: LOREM IPSUM
@@ -73,7 +73,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformInternMedical
   name: medical intern's uniform
   description: LOREM IPSUM
@@ -95,7 +95,7 @@
       jumpsuit:
       - state: equipped-INNERCLOTHING-skirt
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformInternEngineering
   name: engineering intern's uniform
   description: LOREM IPSUM

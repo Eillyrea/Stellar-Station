@@ -4,7 +4,7 @@
 
 ### COLORED GLOVES
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesBlack
   name: black gloves
   description: LOREM IPSUM
@@ -15,7 +15,7 @@
     sprite: _ST/Clothing/Misc/Gloves/black-gloves.rsi
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesWhite
   name: white gloves
   description: LOREM IPSUM
@@ -26,7 +26,7 @@
     sprite: _ST/Clothing/Misc/Gloves/white-gloves.rsi
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesBrown
   name: brown gloves
   description: LOREM IPSUM
@@ -39,7 +39,7 @@
 
 ### MEDICAL GLOVES
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesSterile
   name: sterile gloves
   description: LOREM IPSUM
@@ -51,7 +51,7 @@
 
 ### CHEMICAL SAFETY GLOVES
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesChemicalSafety
   name: chemical safety gloves
   description: LOREM IPSUM
@@ -63,7 +63,7 @@
 
 ### SANITATION GLOVES
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesSanitation
   name: yellow sanitation gloves
   description: LOREM IPSUM
@@ -74,7 +74,7 @@
     sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves.rsi
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesSanitationOrange
   name: orange sanitation gloves
   description: LOREM IPSUM
@@ -85,7 +85,7 @@
     sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-orange.rsi
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesSanitationTeal
   name: teal sanitation gloves
   description: LOREM IPSUM
@@ -96,7 +96,7 @@
     sprite: _ST/Clothing/Misc/Gloves/sanitation-gloves-teal.rsi
 
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesSanitationPurple
   name: purple sanitation gloves
   description: LOREM IPSUM
@@ -108,7 +108,7 @@
 
 ### INSULATED GLOVES, VARIANTS
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingMiscGlovesInsulated
   name: insulated gloves
   description: LOREM IPSUM

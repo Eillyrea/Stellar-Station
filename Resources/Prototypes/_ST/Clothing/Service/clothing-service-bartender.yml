@@ -4,7 +4,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatServiceBartenderCoatApronWaist
   name: bartender's waist apron
   description: LOREM IPSUM
@@ -18,7 +18,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBartender
   name: bartender's uniform
   description: LOREM IPSUM
@@ -41,7 +41,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBartenderAlt
   name: bartender's alternate uniform
   description: LOREM IPSUM
@@ -64,7 +64,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBartenderLavender
   name: bartender's lavender uniform
   description: LOREM IPSUM
@@ -87,7 +87,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBartenderAfterHours
   name: bartender's after-hours uniform
   description: LOREM IPSUM

@@ -4,7 +4,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatSupplyHandler
   name: handler's windbreaker
   description: LOREM IPSUM
@@ -18,7 +18,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyHandler
   name: handler's uniform
   description: LOREM IPSUM
@@ -41,7 +41,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyHandlerAlt
   name: handler's alternate uniform
   description: LOREM IPSUM
@@ -64,7 +64,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyHandlerCasual
   name: handler's casual uniform
   description: LOREM IPSUM
@@ -87,7 +87,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyHandlerAfterHours
   name: handler's after-hours uniform
   description: LOREM IPSUM

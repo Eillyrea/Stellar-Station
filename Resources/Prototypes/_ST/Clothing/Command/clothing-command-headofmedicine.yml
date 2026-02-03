@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandHeadOfMedicine
   name: head of medicine's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandHeadOfMedicineTurtleneck
   name: head of medicine's turtleneck
   description: LOREM IPSUM
@@ -50,7 +50,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandHeadOfMedicineScrubs
   name: head of medicine's technical scrubs
   description: LOREM IPSUM
@@ -62,7 +62,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandHeadOfMedicineSurgicalCap
   name: head of medicine's surgical cap
   description: LOREM IPSUM
@@ -79,7 +79,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandHeadOfMedicineBeret
   name: head of medicine's beret
   description: LOREM IPSUM
@@ -97,7 +97,7 @@
 
 ### GLOVES
 - type: entity
-  parent: ClothingHandsBase
+  parent: StellarClothingHandsBase
   id: StellarClothingGlovesCommandHeadOfMedicine
   name: head of medicine's gloves
   description: LOREM IPSUM
@@ -114,7 +114,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatCommandHeadOfMedicine
   name: head of medicine's coat
   description: LOREM IPSUM
@@ -127,7 +127,7 @@
     sprite: _ST/Clothing/Command/HeadOfMedicine/headofmedicine-coat.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatCommandHeadOfMedicineInsulated
   name: head of medicine's insulated coat
   description: LOREM IPSUM
@@ -141,7 +141,7 @@
 
 ### BACKPACKS
 - type: entity
-  parent: [ClothingBackpack, BaseCommandContraband]
+  parent: [StellarClothingBackpack, BaseCommandContraband]
   id: StellarClothingBackpackCommandHeadOfMedicine
   name: head of medicine's backpack
   description: LOREM IPSUM

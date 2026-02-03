@@ -4,7 +4,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatServiceChefCoatApronWaist
   name: chef's waist apron
   description: LOREM IPSUM
@@ -17,7 +17,7 @@
     sprite: _ST/Clothing/Service/Chef/chef-coat-waist-apron.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatServiceChefCoatFreezer
   name: chef's refridgeration coat
   description: LOREM IPSUM
@@ -30,7 +30,7 @@
     sprite: _ST/Clothing/Service/Chef/chef-coat-freezer.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatServiceChefCoatTrimRed
   name: chef's red-trimmed coat
   description: LOREM IPSUM
@@ -43,7 +43,7 @@
     sprite: _ST/Clothing/Service/Chef/chef-coat-red.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatServiceChefCoatTrimGreen
   name: chef's green-trimmed coat
   description: LOREM IPSUM
@@ -57,7 +57,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceChef
   name: chef's uniform
   description: LOREM IPSUM
@@ -80,7 +80,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceChefAlt
   name: chef's alternate uniform
   description: LOREM IPSUM
@@ -104,7 +104,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServiceChef
   name: chef's hat
   description: LOREM IPSUM

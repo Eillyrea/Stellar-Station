@@ -4,7 +4,7 @@
 
 ### MEDICAL MASK
 - type: entity
-  parent: ClothingMaskBase
+  parent: StellarClothingMaskBase
   id: StellarClothingMiscMaskSterile
   name: sterile mask
   description: A sterile mask designed to help prevent the spread of diseases.

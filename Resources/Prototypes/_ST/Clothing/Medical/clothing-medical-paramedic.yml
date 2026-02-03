@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformMedicalParamedic
   name: paramedic's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformMedicalParamedicSimple
   name: paramedic's simple uniform
   description: LOREM IPSUM
@@ -51,7 +51,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatMedicalParamedic
   name: paramedic's jacket
   description: LOREM IPSUM
@@ -64,7 +64,7 @@
     sprite: _ST/Clothing/Medical/Paramedic/paramedic-coat.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatMedicalParamedicHiVis
   name: paramedic's hi-vis coat
   description: LOREM IPSUM
@@ -78,7 +78,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatMedicalParamedicCap
   name: paramedic's cap
   description: LOREM IPSUM

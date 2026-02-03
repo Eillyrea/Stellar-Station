@@ -4,7 +4,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatCommandOperationsManagerWindbreaker
   name: operations manager's windbreaker
   description: LOREM IPSUM
@@ -18,7 +18,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandOperationsManager
   name: operations manager's uniform
   description: LOREM IPSUM
@@ -41,7 +41,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandOperationsManagerTurtleneck
   name: operations manager's turtleneck uniform
   description: LOREM IPSUM
@@ -64,7 +64,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandOperationsManagerFormalSuit
   name: operations manager's formal suit
   description: LOREM IPSUM
@@ -87,7 +87,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandOperationsManagerOveralls
   name: operations manager's overalls
   description: LOREM IPSUM
@@ -99,7 +99,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandOperationsManagerBeret
   name: operations manager's beret
   description: LOREM IPSUM
@@ -116,7 +116,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandOperationsManagerCap
   name: operations manager's cap
   description: LOREM IPSUM
@@ -134,7 +134,7 @@
 
 ### BACKPACKS
 - type: entity
-  parent: [ClothingBackpack, BaseCommandContraband]
+  parent: [StellarClothingBackpack, BaseCommandContraband]
   id: StellarClothingBackpackCommandOperationsManager
   name: operations manager's backpack
   description: LOREM IPSUM

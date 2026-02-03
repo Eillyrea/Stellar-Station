@@ -9,6 +9,7 @@
   description: A sign for holding direction labels.
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -110,6 +111,7 @@
   description: A partially-built wayfinder sign.
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -151,6 +153,7 @@
   abstract: true
   id: WayfinderLabelBase
   description: A directional label with a rotatable arrow, meant for use on a wayfinder sign.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Items/Misc/wayfinderlabels.rsi

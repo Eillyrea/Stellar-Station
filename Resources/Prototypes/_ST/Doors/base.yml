@@ -6,6 +6,7 @@
   parent: BaseStructure
   abstract: true
   id: StellarTallDoorBase
+  categories: [ ForkFiltered ]
   name: door
   components:
   - type: InteractionOutline

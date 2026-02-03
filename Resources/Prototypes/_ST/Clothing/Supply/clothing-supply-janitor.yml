@@ -4,7 +4,7 @@
 
 ### HAT
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSupplyJanitorCap
   name: janitor's cap
   description: LOREM IPSUM
@@ -22,7 +22,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatSupplyJanitor
   name: janitor's windbreaker
   description: LOREM IPSUM
@@ -36,7 +36,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyJanitor
   name: janitor's uniform
   description: LOREM IPSUM
@@ -59,7 +59,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSupplyJanitorCoveralls
   name: janitor's coveralls
   description: LOREM IPSUM

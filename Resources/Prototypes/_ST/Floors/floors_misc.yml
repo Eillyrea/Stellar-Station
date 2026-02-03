@@ -142,6 +142,7 @@
     mode: SnapgridCenter
     snap:
     - Wall
+  categories: [ ForkFiltered ]
   components:
   - type: Clickable
   - type: Physics
@@ -195,6 +196,7 @@
   description: A catwalk for easier EVA maneuvering and cable placement. This one has hazard strips along the edges.
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Floor/catwalk-hazard.rsi
@@ -251,6 +253,7 @@
     mode: SnapgridCenter
     snap:
     - Wall
+  categories: [ ForkFiltered ]
   components:
   - type: FloorOccluder
   - type: Physics
@@ -310,6 +313,7 @@
   name: bluespace erosion
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
     - type: Sprite
       sprite: /Textures/_ST/Tileset/Floor/bluespace-erosion.rsi

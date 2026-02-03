@@ -9,6 +9,7 @@
   description: Lorem Ipsum
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
   - type: Clickable
   - type: Sprite

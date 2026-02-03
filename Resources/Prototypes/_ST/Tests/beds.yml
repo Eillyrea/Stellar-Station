@@ -7,6 +7,7 @@
   parent: BaseStructure
   abstract: true
   description: Good for a relaxing rest or slumbersome snooze.
+  categories: [ ForkFiltered ]
   components:
   - type: Physics
     bodyType: Static

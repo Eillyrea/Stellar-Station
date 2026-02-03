@@ -7,6 +7,7 @@
   parent: LockerBase
   name: cargo technician's locker
   description: I ship it.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Storage/Lockers/secure-cargo.rsi
@@ -18,6 +19,7 @@
   parent: LockerBase
   name: performer's locker
   description: It's all just a routine.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Storage/Lockers/secure-service-performer.rsi
@@ -29,6 +31,7 @@
   parent: LockerBase
   name: chef's locker
   description: For those who cook.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Storage/Lockers/secure-service-kitchen.rsi
@@ -40,6 +43,7 @@
   parent: LockerBase
   name: cleric's locker
   description: The locker seems holier than thou.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Storage/Lockers/secure-service-cleric.rsi
@@ -51,6 +55,7 @@
   parent: LockerBase
   name: janitor's locker
   description: One must imagine a janitor happy.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Storage/Lockers/secure-service-janitor.rsi
@@ -62,6 +67,7 @@
   parent: LockerBase
   name: armory locker
   description: A very sturdy-looking locker.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Storage/Lockers/secure-security-armory.rsi

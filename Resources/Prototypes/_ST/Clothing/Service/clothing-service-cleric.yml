@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceCleric
   name: cleric's uniform
   description: LOREM IPSUM
@@ -27,7 +27,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceClericRobeDark
   name: cleric's dark robe
   description: LOREM IPSUM
@@ -38,7 +38,7 @@
     sprite: _ST/Clothing/Service/Cleric/cleric-uniform-robe-dark.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceClericRobeLight
   name: cleric's light robe
   description: LOREM IPSUM

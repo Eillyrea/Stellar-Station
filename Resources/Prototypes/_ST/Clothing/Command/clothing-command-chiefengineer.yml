@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandChiefEngineerBeret
   name: chief engineer's beret
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatCommandChiefEngineerHardHatWhite
   name: chief engineer's white hard hat
   description: LOREM IPSUM
@@ -39,7 +39,7 @@
 
 ### GLASSES
 - type: entity
-  parent: [ClothingEyesBase, BaseCommandContraband]
+  parent: [StellarClothingEyesBase, BaseCommandContraband]
   id: StellarClothingEyesCommandChiefEngineerGoggles
   name: chief engineer's administrative goggles
   description: Augmented goggles that provide protection from eye damage of all types and show nearby ID card statuses.
@@ -57,7 +57,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandChiefEngineerOveralls
   name: chief engineer's overalls
   description: LOREM IPSUM
@@ -80,7 +80,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandChiefEngineerTurtleneck
   name: chief engineer's turtleneck
   description: LOREM IPSUM
@@ -103,7 +103,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformCommandChiefEngineerAfterHours
   name: chief engineer's after-hours uniform
   description: LOREM IPSUM
@@ -115,7 +115,7 @@
 
 ### BACKPACKS
 - type: entity
-  parent: [ClothingBackpack, BaseCommandContraband]
+  parent: [StellarClothingBackpack, BaseCommandContraband]
   id: StellarClothingBackpackCommandChiefEngineer
   name: chief engineer's backpack
   description: LOREM IPSUM

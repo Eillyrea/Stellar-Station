@@ -6,6 +6,7 @@
   parent: BasePDA
   id: StellarPDABase
   abstract: true
+  categories: [ ForkFiltered ]
   components:
   - type: Icon
     sprite: _ST/Clothing/Misc/PDA/pda-base.rsi

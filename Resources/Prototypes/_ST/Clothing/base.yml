@@ -1,0 +1,71 @@
+# SPDX-FileCopyrightText: 2026 Janet Blackquill <uhhadd@gmail.com>
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: entity
+  abstract: true
+  id: StellarClothingBase
+  categories: [ ForkFiltered ]
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingHeadBase
+  id: StellarClothingHeadBase
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingOuterBase
+  id: StellarClothingOuterBase
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingUniformBase
+  id: StellarClothingUniformBase
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingShoesBaseButcherable
+  id: StellarClothingShoesBaseButcherable
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingHandsBase
+  id: StellarClothingHandsBase
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingBackpack
+  id: StellarClothingBackpack
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingEyesBase
+  id: StellarClothingEyesBase
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingHeadset
+  id: StellarClothingHeadset
+
+- type: entity
+  abstract: true
+  parent:
+  - StellarClothingBase
+  - ClothingMaskBase
+  id: StellarClothingMaskBase

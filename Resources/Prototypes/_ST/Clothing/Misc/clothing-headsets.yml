@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: LicenseRef-Wallening
 
 - type: entity
-  parent: ClothingHeadset
+  parent: StellarClothingHeadset
   id: StellarClothingHeadsetGrey
   name: basic headset
   description: LOREM IPSUM
@@ -12,7 +12,7 @@
     sprite: _ST/Clothing/Misc/Ears/Headsets/headset-base.rsi
 
 - type: entity
-  parent: ClothingHeadset
+  parent: StellarClothingHeadset
   id: StellarClothingHeadsetService
   name: service headset
   description: LOREM IPSUM
@@ -26,7 +26,7 @@
     sprite: _ST/Clothing/Misc/Ears/Headsets/headset-service.rsi
 
 - type: entity
-  parent: ClothingHeadset
+  parent: StellarClothingHeadset
   id: StellarClothingHeadsetSupply
   name: supply headset
   description: LOREM IPSUM
@@ -40,7 +40,7 @@
     sprite: _ST/Clothing/Misc/Ears/Headsets/headset-supply.rsi
 
 - type: entity
-  parent: ClothingHeadset
+  parent: StellarClothingHeadset
   id: StellarClothingHeadsetEngineering
   name: engineering headset
   description: LOREM IPSUM
@@ -54,7 +54,7 @@
     sprite: _ST/Clothing/Misc/Ears/Headsets/headset-engineering.rsi
 
 - type: entity
-  parent: ClothingHeadset
+  parent: StellarClothingHeadset
   id: StellarClothingHeadsetMedical
   name: medical headset
   description: LOREM IPSUM
@@ -68,7 +68,7 @@
     sprite: _ST/Clothing/Misc/Ears/Headsets/headset-medical.rsi
 
 - type: entity
-  parent: ClothingHeadset
+  parent: StellarClothingHeadset
   id: StellarClothingHeadsetScience
   name: science headset
   description: LOREM IPSUM
@@ -82,7 +82,7 @@
     sprite: _ST/Clothing/Misc/Ears/Headsets/headset-science.rsi
 
 - type: entity
-  parent: [ClothingHeadset, BaseSecurityLawyerContraband]
+  parent: [StellarClothingHeadset, BaseSecurityLawyerContraband]
   id: StellarClothingHeadsetSecurity
   name: security headset
   description: LOREM IPSUM
@@ -99,7 +99,7 @@
 
 # COMMAND
 - type: entity
-  parent: [ClothingHeadset, BaseCommandContraband]
+  parent: [StellarClothingHeadset, BaseCommandContraband]
   id: StellarClothingHeadsetCaptain
   name: captain's headset
   description: LOREM IPSUM

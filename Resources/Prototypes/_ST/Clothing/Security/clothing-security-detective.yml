@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSecurityDetectiveFedoraBrown
   name: detective's brown fedora
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatSecurityDetectiveFedoraCharcoal
   name: detective's charcoal fedora
   description: LOREM IPSUM
@@ -39,7 +39,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatSecurityDetectiveCoatBrown
   name: detective's brown coat
   description: LOREM IPSUM
@@ -52,7 +52,7 @@
     sprite: _ST/Clothing/Security/Detective/detective-coat-brown.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatSecurityDetectiveCoatCharcoal
   name: detective's charcoal coat
   description: LOREM IPSUM
@@ -66,7 +66,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformSecurityDetective
   name: detective's uniform
   description: LOREM IPSUM

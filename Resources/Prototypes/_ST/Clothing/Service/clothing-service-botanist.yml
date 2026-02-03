@@ -4,7 +4,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServiceBotanistCapBlue
   name: botanist's blue cap
   description: LOREM IPSUM
@@ -21,7 +21,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServiceBotanistCapGreen
   name: botanist's green cap
   description: LOREM IPSUM
@@ -38,7 +38,7 @@
     - Recyclable
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatServiceBotanistCapBrown
   name: botanist's brown cap
   description: LOREM IPSUM
@@ -56,7 +56,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBotanist
   name: botanist's uniform
   description: LOREM IPSUM
@@ -79,7 +79,7 @@
       - state: equipped-INNERCLOTHING-skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBotanistOverallsGreen
   name: botanist's green overalls
   description: LOREM IPSUM
@@ -90,7 +90,7 @@
     sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-green.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBotanistOverallsBlue
   name: botanist's blue overalls
   description: LOREM IPSUM
@@ -101,7 +101,7 @@
     sprite: _ST/Clothing/Service/Botanist/botanist-uniform-overalls-blue.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformServiceBotanistOverallsBrown
   name: botanist's brown overalls
   description: LOREM IPSUM

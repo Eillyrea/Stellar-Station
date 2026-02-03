@@ -6,6 +6,7 @@
   parent: BaseRailing
   id: StellarHalfwallGrey
   name: grey halfwall
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     drawdepth: SmallObjects

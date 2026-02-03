@@ -4,7 +4,7 @@
 
 ### LAB COAT
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscLabCoat
   name: lab coat
   description: LOREM IPSUM
@@ -18,7 +18,7 @@
 
 ### APRON, BLACK
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscApronBlack
   name: black apron
   description: LOREM IPSUM
@@ -32,7 +32,7 @@
 
 ### APRON, WHITE
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscApronWhite
   name: white apron
   description: LOREM IPSUM
@@ -46,7 +46,7 @@
 
 ### APRON, CHEM-ORANGE
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscApronChemOrange
   name: chem-orange apron
   description: LOREM IPSUM
@@ -60,7 +60,7 @@
 
 ### APRON, BROWN
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscApronBrown
   name: brown apron
   description: LOREM IPSUM
@@ -74,7 +74,7 @@
 
 ### APRON, BOTANICAL BLUE
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscApronBotanyBlue
   name: blue botanical apron
   description: LOREM IPSUM
@@ -88,7 +88,7 @@
 
 ### APRON, BOTANICAL GREEN
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingOuterMiscApronBotanyGreen
   name: green botanical apron
   description: LOREM IPSUM

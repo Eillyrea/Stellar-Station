@@ -4,7 +4,7 @@
 
 ### UNIFORMS
 - type: entity
-  parent: ClothingUniformBase
+  parent: StellarClothingUniformBase
   id: StellarClothingUniformMedicalDoctor
   name: doctor's uniform
   description: LOREM IPSUM
@@ -28,7 +28,7 @@
 
 ### COATS
 - type: entity
-  parent: ClothingOuterBase
+  parent: StellarClothingOuterBase
   id: StellarClothingCoatMedicalDoctor
   name: doctor's coat
   description: LOREM IPSUM
@@ -42,7 +42,7 @@
 
 ### HATS
 - type: entity
-  parent: ClothingHeadBase
+  parent: StellarClothingHeadBase
   id: StellarClothingHatMedicalDoctorSurgicalCap
   name: doctor's surgical cap
   description: LOREM IPSUM

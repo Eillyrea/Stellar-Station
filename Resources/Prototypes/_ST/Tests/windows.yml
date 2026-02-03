@@ -7,6 +7,7 @@
   id: StellarWindowBase
   abstract: true
   parent: BaseStructure
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     drawdepth: Walls
@@ -60,6 +61,7 @@
     mode: SnapgridCenter
     snap:
     - Window
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     drawdepth: Walls
