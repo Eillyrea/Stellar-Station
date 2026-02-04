@@ -3,6 +3,7 @@
   id: AtmosFixBlockerMarker
   description: "Vacuum, T20C"
   parent: MarkerBase
+  categories: [ ForkFiltered ] # Stellar Station
   components:
     - type: Sprite
       layers:
@@ -20,6 +21,7 @@
   id: AtmosFixOxygenMarker
   description: "Oxygen @ gas miner pressure, T20C"
   parent: MarkerBase
+  categories: [ ForkFiltered ] # Stellar Station
   components:
     - type: Sprite
       layers:
@@ -37,6 +39,7 @@
   id: AtmosFixNitrogenMarker
   description: "Nitrogen @ gas miner pressure, T20C"
   parent: MarkerBase
+  categories: [ ForkFiltered ] # Stellar Station
   components:
     - type: Sprite
       layers:
@@ -54,6 +57,7 @@
   id: AtmosFixPlasmaMarker
   description: "Plasma @ gas miner pressure, T20C"
   parent: MarkerBase
+  categories: [ ForkFiltered ] # Stellar Station
   components:
     - type: Sprite
       layers:
@@ -71,6 +75,7 @@
   id: AtmosFixInstantPlasmaFireMarker
   description: "INSTANT PLASMAFIRE"
   parent: MarkerBase
+  categories: [ ForkFiltered ] # Stellar Station
   components:
     - type: Sprite
       layers:
@@ -88,6 +93,7 @@
   id: AtmosFixFreezerMarker
   description: "Change air temp to 235K, for freezer with a bit of wiggle room to get set up."
   parent: MarkerBase
+  categories: [ ForkFiltered ] # Stellar Station
   components:
     - type: Sprite
       layers:
@@ -105,6 +111,7 @@
   id: AtmosFixVoxMarker
   suffix: Vox Atmosphere
   description: "Nitrogen @ 101 kPa, 20C"
+  categories: [ ForkFiltered ] # Stellar Station
   components:
   - type: AtmosFixMarker
     mode: 7
@@ -114,6 +121,7 @@
   id: AtmosFixAirMarker
   name: Atmos Fix Air Marker
   description: "Oxygen (21%) and nitrogen (79%) @ gas miner pressure, T20C"
+  categories: [ ForkFiltered ] # Stellar Station
   components:
   - type: Sprite
     layers:

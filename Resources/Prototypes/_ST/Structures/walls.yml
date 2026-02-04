@@ -148,6 +148,7 @@
   id: StellarWallMalign
   name: malign wall
   description: An unsettling-looking section of hull...
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/Tileset/Walls/malign.rsi

@@ -217,6 +217,7 @@
   parent: BaseTree
   id: FloraTree
   name: tree
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     layers:
@@ -263,6 +264,7 @@
   parent: BaseTreeLarge
   id: FloraTreeLarge
   name: large tree
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     layers:

@@ -2,6 +2,7 @@
   id: FloorLavaEntity
   name: lava
   description: Don't jump in. It's not worth it, no matter how funny it is.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   placement:
     mode: SnapgridCenter
     snap:

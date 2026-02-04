@@ -105,6 +105,7 @@
   name: chair
   id: Chair
   parent: ChairBase
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Seating/steel_chair.rsi # Stellar - Wallening
@@ -160,6 +161,7 @@
   name: white office chair
   id: ChairOfficeLight
   parent: OfficeChairBase
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Seating/office_chair.rsi # Stellar - Wallening
@@ -172,6 +174,7 @@
   name: dark office chair
   id: ChairOfficeDark
   parent: ChairOfficeLight
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Seating/office_chair.rsi # Stellar - Wallening
@@ -185,6 +188,7 @@
   id: ComfyChair
   parent: ChairBase
   description: It looks comfy.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Seating/comfy_chair.rsi # Stellar - Wallening
@@ -209,6 +213,7 @@
   name: wooden chair
   id: ChairWood
   parent: UnanchoredChairBase
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Seating/wood_chair.rsi # Stellar - Wallening

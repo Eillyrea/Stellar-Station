@@ -4,6 +4,7 @@
   parent: BaseStructure
   name: table frame
   description: Pieces of metal that make the frame of a table.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_frame.rsi # Stellar - Wallening
@@ -115,6 +116,7 @@
   parent: CounterWoodFrame
   name: metal counter frame
   description: Pieces of metal that make the frame of a table.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_frame.rsi # Stellar - Wallening
@@ -160,6 +162,7 @@
   parent: TableBase
   name: table
   description: A square piece of metal standing on four metal legs.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_base.rsi # Stellar - Wallening
@@ -204,6 +207,7 @@
   parent: TableBase
   name: reinforced table
   description: A square piece of metal standing on four metal legs. Extra robust.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_reinf.rsi # Stellar - Wallening
@@ -252,6 +256,7 @@
   parent: TableBase
   name: glass table
   description: A square piece of glass, standing on four metal legs.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_glass.rsi # Stellar - Wallening
@@ -362,6 +367,7 @@
   parent: TableBase
   name: reinforced glass table
   description: A square piece of glass, standing on four metal legs. Extra robust.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_glass_reinf.rsi # Stellar - Wallening
@@ -420,6 +426,7 @@
   parent: TableBase
   name: plasma glass table
   description: A square piece of plasma glass, standing on four metal legs. Pretty!
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_plasma.rsi # Stellar - Wallening
@@ -521,6 +528,7 @@
   parent: TableBase
   name: wood table
   description: Do not apply fire to this. Rumour says it burns easily.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_wood.rsi # Stellar - Wallening
@@ -977,6 +985,7 @@
   parent: CounterBase
   name: metal counter
   description: Looks like a good place to put a drink down.
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Sprite
     sprite: _ST/Tileset/Decor/Tables/table_kitchen.rsi # Stellar - Wallening

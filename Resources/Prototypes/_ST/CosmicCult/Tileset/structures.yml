@@ -93,6 +93,7 @@
   id: CosmicObelisk
   name: malign obelisk
   description: A mysterious-yet-inert sturcture. Unsettling.
+  categories: [ ForkFiltered ]
   components:
   - type: Sprite
     sprite: _ST/CosmicCult/Tileset/cosmicpillar.rsi
@@ -197,6 +198,7 @@
   name: malign light
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ]
   components:
   - type: MeleeSound
     soundGroups:

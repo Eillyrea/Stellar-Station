@@ -93,6 +93,7 @@
     mode: SnapgridCenter
     snap:
     - Wall
+  categories: [ ForkFiltered ]
   components:
   - type: FloorOccluder
   - type: SpeedModifierContacts
@@ -146,6 +147,7 @@
   id: FloorCosmicDecayAlt
   suffix: DO NOT MAP
   name: "???"
+  categories: [ ForkFiltered ]
   placement:
     mode: SnapgridCenter
     snap:

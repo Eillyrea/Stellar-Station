@@ -5,6 +5,7 @@
   description: A catwalk for easier EVA maneuvering and cable placement.
   placement:
     mode: SnapgridCenter
+  categories: [ ForkFiltered ] # Stellar - Wallening
   components:
   - type: Anchorable
     flags:
