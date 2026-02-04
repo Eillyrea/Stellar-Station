@@ -16,25 +16,25 @@
       "directions": 4
     },
     {
-      "name": "vial"
+      "name": "icon_empty"
     },
     {
-      "name": "vial1"
+      "name": "fill-1"
     },
     {
-      "name": "vial2"
+      "name": "fill-2"
     },
     {
-      "name": "vial3"
+      "name": "fill-3"
     },
     {
-      "name": "vial4"
+      "name": "fill-4"
     },
     {
-      "name": "vial5"
+      "name": "fill-5"
     },
     {
-      "name": "vial6"
+      "name": "fill-6"
     }
   ]
 }

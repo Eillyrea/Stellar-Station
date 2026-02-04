@@ -8,7 +8,7 @@ using Content.Server.Bible.Components;
 using Content.Stellar.Shared.CosmicCult.Components.Examine;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.DoAfter;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
@@ -115,7 +115,7 @@ public sealed class DeconversionSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("cleanse-deconvert-attempt-notcorrupted", ("target", Identity.Entity(target.Value, EntityManager))), args.User, args.User);
             _popup.PopupCoordinates(Loc.GetString("cleanse-deconvert-attempt-rebound"), targetPosition, PopupType.MediumCaution);
             _damageable.TryChangeDamage(args.User, censer.FailedDeconversionDamage, true);
-            _damageable.TryChangeDamage(args.Target, censer.FailedDeconversionDamage, true);
+            _damageable.TryChangeDamage(target.Value, censer.FailedDeconversionDamage, true);
         }
         args.Handled = true;
     }

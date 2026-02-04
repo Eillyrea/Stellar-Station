@@ -7,7 +7,7 @@ using System.Numerics;
 using Content.Server.Bible.Components;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Effects;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Stunnable;

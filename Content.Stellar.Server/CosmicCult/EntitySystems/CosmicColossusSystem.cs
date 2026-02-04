@@ -10,6 +10,8 @@ using Content.Shared.Station.Components;
 using Content.Shared.Station;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Shared.Audio;
+using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;

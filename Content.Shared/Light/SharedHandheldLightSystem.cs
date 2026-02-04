@@ -2,7 +2,6 @@ using Content.Shared.Actions;
 using Content.Shared.Clothing.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Item;
-using Content.Shared.Light;
 using Content.Shared.Light.Components;
 using Content.Shared.Toggleable;
 using Content.Shared.Verbs;
@@ -25,7 +24,6 @@ public abstract class SharedHandheldLightSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<HandheldLightComponent, ComponentInit>(OnInit);
         SubscribeLocalEvent<HandheldLightComponent, ComponentHandleState>(OnHandleState);
-
         SubscribeLocalEvent<HandheldLightComponent, GetVerbsEvent<ActivationVerb>>(AddToggleLightVerb);
     }
 

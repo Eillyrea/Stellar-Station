@@ -22,9 +22,9 @@
   id: MedicalChemistryVials
   icon:
     sprite: _ST/Items/Chemistry/vial.rsi # Stellar
-    state: vial
+    state: icon_empty
   product: CrateChemistryVials
-  cost: 1000
+  cost: 1100
   category: cargoproduct-category-name-medical
   group: market
 

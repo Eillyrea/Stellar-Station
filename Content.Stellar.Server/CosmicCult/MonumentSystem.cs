@@ -17,7 +17,7 @@ using Content.Stellar.Shared.CosmicCult;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult.Prototypes;
 using Content.Shared.Audio;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Content.Shared.Stacks;

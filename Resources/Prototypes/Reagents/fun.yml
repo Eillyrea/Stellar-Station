@@ -183,7 +183,6 @@
       methods: [ Touch ]
       effects:
       - !type:HealthChange
-        scaling: true
         ignoreResistances: false
         damage:
           types:
@@ -233,7 +232,6 @@
       methods: [ Touch ]
       effects:
       - !type:HealthChange
-        scaling: true
         ignoreResistances: false
         damage:
           types:
@@ -395,34 +393,3 @@
         - !type:ReagentCondition
           reagent: JuiceThatMakesYouHew
           min: 50
-
-# - type: reagent # Begin Stellar - Corgium is truly reprehensibly insipid noncontent. Begone.
-#   id: CorgiJuice
-#   name: reagent-name-corgiessence
-#   group: Toxins
-#   desc: reagent-desc-corgiessence
-#   physicalDesc: reagent-physical-desc-fluffy
-#   flavor: dogfood
-#   color: "#ed9715"
-#   metabolisms:
-#     Poison:
-#       metabolismRate: 0.2
-#       effects:
-#       - !type:HealthChange
-#         conditions:
-#         - !type:ReagentThreshold
-#           min: 15
-#         damage:
-#           types:
-#             Cellular: 0.5
-#       - !type:Polymorph
-#         prototype: SmartCorgiMorph
-#         conditions:
-#         - !type:ReagentThreshold
-#           min: 50
-#       - !type:AdjustReagent
-#         reagent: CorgiJuice
-#         amount: -20
-#         conditions:
-#         - !type:ReagentThreshold
-#           min: 50 # End Stellar - Corgium is truly reprehensibly insipid noncontent. Begone.

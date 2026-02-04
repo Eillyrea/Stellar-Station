@@ -22,6 +22,7 @@
                         </BoxContainer>
                         <BoxContainer HorizontalAlignment="Center">
                             <RichTextLabel Name="LobbySong" Access="Public" HorizontalAlignment="Center" />
+                            <RichTextLabel Name="LobbyBackground" Access="Public" HorizontalAlignment="Left" />
                         </BoxContainer>
                     </BoxContainer>
                 </PanelContainer>

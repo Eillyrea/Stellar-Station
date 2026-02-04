@@ -7,7 +7,7 @@ using Content.Server.Popups;
 using Content.Stellar.Shared.CosmicCult.Components.Examine;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid;
 using Content.Shared.Interaction;
@@ -73,7 +73,7 @@ public sealed class CosmicGlyphSystem : EntitySystem
         var damage = uid.Comp.ActivationDamage / cultists.Count;
         foreach (var cultist in cultists)
         {
-            _damageable.TryChangeDamage(cultist, damage, true);
+            _damageable.TryChangeDamage(cultist.Owner, damage, true);
         }
 
         _audio.PlayPvs(uid.Comp.GylphSFX, tgtpos, AudioParams.Default.WithVolume(+1f));

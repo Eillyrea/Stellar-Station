@@ -43,6 +43,8 @@
 
 - type: reaction
   id: SpaceGlue
+  requiredMixerCategories:
+  - Stir # prevents turning slimes to glue, TODO: make it react only X units per second; make bloodstream an open thermal system
   minTemp: 370
   reactants:
     SpaceLube:
@@ -55,7 +57,7 @@
 - type: reaction
   id: Licoxide
   reactants:
-    Lead:
+    Lithium:
       amount: 1
     Zinc:
       amount: 1
@@ -208,22 +210,10 @@
     JuiceThatMakesYouHew:
       amount: 1
   effects:
-  - !type:ExplosionEffect
+  - !type:Explosion
     explosionType: Radioactive
     maxIntensity: 200
     intensityPerUnit: 2
     intensitySlope: 1
     maxTotalIntensity: 250
     tileBreakScale: 0.00001
-
-# - type: reaction # Begin Stellar - Corgium is truly reprehensibly insipid noncontent. Begone.
-#   id: CorgiJuice
-#   reactants:
-#     UncookedAnimalProteins:
-#       amount: 1
-#     JuiceThatMakesYouWeh:
-#       amount: 1
-#     Happiness:
-#       amount: 1
-#   products:
-#     CorgiJuice: 2 # End Stellar - Corgium is truly reprehensibly insipid noncontent. Begone.

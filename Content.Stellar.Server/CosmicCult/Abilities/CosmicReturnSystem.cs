@@ -7,7 +7,7 @@ using Content.Stellar.Server.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Content.Stellar.Shared.CosmicCult.Components.Examine;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Mind;
 using Content.Shared.Stunnable;
 

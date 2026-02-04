@@ -46,7 +46,7 @@ public sealed class CosmicCultObjectiveSystem : EntitySystem
         var query = EntityQueryEnumerator<WarpPointComponent>();
         while (query.MoveNext(out var warpUid, out var warp))
         {
-            if (!_entityWhitelist.IsBlacklistFail(comp.EffigyTargetBlacklist, warpUid))
+            if (!_entityWhitelist.IsWhitelistPass(comp.EffigyTargetBlacklist, warpUid))
                 continue;
 
             if (warp.Location != null)
