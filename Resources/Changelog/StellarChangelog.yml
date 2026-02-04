@@ -407,3 +407,23 @@
   id: 49
   time: '2025-12-27T02:14:05.0000000+00:00'
   url: https://github.com/Stellar-Station/Stellar-Station/pull/128
+- author: AftrLite
+  changes:
+  - message: All clothing has been resprited.
+    type: Add
+  - message: PDA's, IDs, and Job Icons have been resprited.
+    type: Add
+  - message: All jobs have been given a reorganization pass and reimplemented.
+    type: Add
+  - message: The Cargo department is now the Supply department.
+    type: Tweak
+  id: 50
+  time: '2026-01-23T00:05:11.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/132
+- author: sowelipililimute, AftrLite
+  changes:
+  - message: Walls cutaway to reveal their contents now.
+    type: Add
+  id: 51
+  time: '2026-01-25T17:56:29.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/137
