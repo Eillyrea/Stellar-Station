@@ -275,7 +275,7 @@
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.Eyes
     data:
-      sprite: Mobs/Customization/eyes.rsi
+      # sprite: Mobs/Customization/eyes.rsi - Stellar
       state: eyes
   - type: VisualOrganMarkings
     markingData:

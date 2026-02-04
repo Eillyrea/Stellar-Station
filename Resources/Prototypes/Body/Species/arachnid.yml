@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarArachnid
+  id: Arachnid
+
 - type: markingsGroup
   parent: Undergarments
-  id: Arachnid
+  id: StellarArachnid # Stellar
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
@@ -12,14 +16,14 @@
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
-      default: [ ArachnidAppendagesDefault ]
+      default: [ StellarSpiderArmsDefault ] # Stellar
     enum.HumanoidVisualLayers.Chest:
       limit: 2
       required: false
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
       required: true
-      default: [ ArachnidCheliceraeDownwards ]
+      default: [ StellarSpiderMouthDefault ] # Stellar
     enum.HumanoidVisualLayers.LArm:
       limit: 1
       required: false
@@ -122,10 +126,10 @@
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
-        sprite: Mobs/Effects/brute_damage.rsi
+        sprite: _ST/Effects/damage-overlay_brute.rsi # Stellar
         color: "#162581"
       Burn:
-        sprite: Mobs/Effects/burn_damage.rsi
+        sprite: _ST/Effects/damage-overlay_burn.rsi # Stellar
   - type: Speech
     speechVerb: Arachnid
     speechSounds: Arachnid
@@ -165,10 +169,10 @@
   components:
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Arachnid/parts.rsi
+      sprite: _ST/Mobs/Playable/arachnid.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Arachnid
+      group: StellarArachnid # Stellar
 
 - type: entity
   parent: [ OrganArachnid, OrganArachnidVisual ]
@@ -176,7 +180,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Arachnid/parts.rsi
+    sprite: _ST/Mobs/Playable/arachnid.rsi # Stellar
 
 - type: entity
   parent: [ OrganBaseTorso, OrganArachnidExternal ]

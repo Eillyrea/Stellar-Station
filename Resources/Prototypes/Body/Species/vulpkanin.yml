@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarVulpkanin
+  id: Vulpkanin
+
 - type: markingsGroup
   parent: Undergarments
-  id: Vulpkanin
+  id: StellarVulpkanin
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
@@ -15,18 +19,20 @@
     enum.HumanoidVisualLayers.HeadTop:
       limit: 1
       required: true
-      default: [ VulpEar ]
-    enum.HumanoidVisualLayers.Snout:
-      limit: 1
-      required: true
-      default: [ VulpSnout ]
+      default: [ StellarVulpEarsDefault ] # Stellar
+    # Begin Stellar
+    # enum.HumanoidVisualLayers.Snout:
+    #   limit: 1
+    #   required: true
+    #   default: [ VulpSnout ]
+    # End Stellar
     enum.HumanoidVisualLayers.SnoutCover:
       limit: 3
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
-      default: [ VulpTailVulp ]
+      default: [ StellarVulpTailDefault ] # Stellar
     enum.HumanoidVisualLayers.LArm:
       limit: 2
       required: false
@@ -91,52 +97,54 @@
     species: Vulpkanin
   - type: Inventory
     speciesId: vulpkanin
-    displacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: jumpsuit
-      back:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: back
-      outerClothing:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: outerwear
-      gloves:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: hand
-      shoes:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: shoes
-      head:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: head
-      neck:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: neck
-      eyes:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: eyes
-      belt:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: belt
+    # Begin Stellar
+    # displacements:
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: jumpsuit
+    #   back:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: back
+    #   outerClothing:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: outerwear
+    #   gloves:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: hand
+    #   shoes:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: shoes
+    #   head:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: head
+    #   neck:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: neck
+    #   eyes:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: eyes
+    #   belt:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Vulpkanin/displacement.rsi
+    #         state: belt
+    # End Stellar
 
 - type: entity
   parent:
@@ -182,16 +190,18 @@
   - type: TemperatureProtection
     heatingCoefficient: 1.2
     coolingCoefficient: 0.3
-  - type: JumpAbility
-    action: ActionVulpkaninGravityJump
-    canCollide: true
-    jumpDistance: 3
-    jumpSound:
-      path: /Audio/Weapons/punchmiss.ogg
-      params:
-        pitch: 1.33
-        volume: -5
-        variation: 0.05
+  # Begin Stellar
+  # - type: JumpAbility
+  #   action: ActionVulpkaninGravityJump
+  #   canCollide: true
+  #   jumpDistance: 3
+  #   jumpSound:
+  #     path: /Audio/Weapons/punchmiss.ogg
+  #     params:
+  #       pitch: 1.33
+  #       volume: -5
+  #       variation: 0.05
+  # End Stellar
 
 - type: entity
   parent: OrganBase
@@ -220,10 +230,10 @@
   components:
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Vulpkanin/parts.rsi
+      sprite: _ST/Mobs/Playable/vulpkanin.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Vulpkanin
+      group: StellarVulpkanin # Stellar
 
 - type: entity
   parent: [ OrganVulpkanin, OrganVulpkaninVisual ]
@@ -231,7 +241,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Vulpkanin/parts.rsi
+    sprite: _ST/Mobs/Playable/vulpkanin.rsi # Stellar
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganVulpkaninExternal ]

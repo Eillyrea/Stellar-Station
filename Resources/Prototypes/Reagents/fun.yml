@@ -397,6 +397,7 @@
           min: 50
 
 - type: reagent
+  abstract: true # Stellar
   id: CorgiJuice
   name: reagent-name-corgiessence
   group: Toxins

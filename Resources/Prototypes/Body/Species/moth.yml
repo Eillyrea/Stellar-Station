@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarMoth
+  id: Moth
+
 - type: markingsGroup
   parent: Undergarments
-  id: Moth
+  id: StellarMoth
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
@@ -12,14 +16,14 @@
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
-      default: [ MothWingsDefault ]
+      default: [ StellarMothWingsDefault ] # Stellar
     enum.HumanoidVisualLayers.Chest:
       limit: 2
       required: false
     enum.HumanoidVisualLayers.HeadTop:
       limit: 1
       required: true
-      default: [ MothAntennasDefault ]
+      default: [ StellarMothAntennaeDefault ] # Stellar
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
@@ -156,10 +160,10 @@
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
-        sprite: Mobs/Effects/brute_damage.rsi
+        sprite: _ST/Effects/damage-overlay_brute.rsi # Stellar
         color: "#808A51"
       Burn:
-        sprite: Mobs/Effects/burn_damage.rsi
+        sprite: _ST/Effects/damage-overlay_burn.rsi # Stellar
   - type: MothAccent
   - type: Vocal
     sounds:
@@ -219,10 +223,10 @@
   components:
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Moth/parts.rsi
+      sprite: _ST/Mobs/Playable/moth.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Moth
+      group: StellarMoth # Stellar
 
 - type: entity
   parent: [ OrganMoth, OrganMothVisual ]
@@ -230,7 +234,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _ST/Mobs/Playable/moth.rsi # Stellar
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganMothExternal ]

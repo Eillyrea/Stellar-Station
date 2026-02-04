@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarDiona
+  id: Diona
+
 - type: markingsGroup
   parent: Undergarments
-  id: Diona
+  id: StellarDiona # Stellar - don't use upstream markings
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Head:
@@ -30,7 +34,7 @@
     enum.HumanoidVisualLayers.Overlay:
       limit: 1
       required: true
-      default: [ DionaVineOverlay ]
+      default: [ StellarDionaVinesDefault ] # Stellar
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -87,10 +91,10 @@
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
-        sprite: Mobs/Effects/brute_damage.rsi
+        sprite: _ST/Effects/damage-overlay_brute.rsi # Stellar
         color: "#cd7314"
       Burn:
-        sprite: Mobs/Effects/burn_damage.rsi
+        sprite: _ST/Effects/damage-overlay_burn.rsi # Stellar
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -198,10 +202,10 @@
   components:
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Diona/parts.rsi
+      sprite: _ST/Mobs/Playable/diona.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Diona
+      group: StellarDiona # Stellar
 
 - type: entity
   parent: [ OrganDiona, OrganDionaVisual ]
@@ -209,7 +213,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Diona/parts.rsi
+    sprite: _ST/Mobs/Playable/diona.rsi # Stellar
 
 - type: entity
   parent: [ OrganBaseTorso, OrganDionaExternal ]
@@ -258,11 +262,13 @@
 - type: entity
   parent: [ OrganDionaVisual, OrganBaseEyes, OrganDionaInternal ]
   id: OrganDionaEyes
-  components:
-  - type: VisualOrgan
-    data:
-      sprite: Mobs/Customization/eyes.rsi
-      state: diona
+  # Begin Stellar
+  # components:
+  # - type: VisualOrgan
+  #   data:
+  #     sprite: Mobs/Customization/eyes.rsi
+  #     state: diona
+  # End Stellar
 
 - type: entity
   parent: [ OrganBaseLungs, OrganDionaInternal, OrganDionaMetabolizer ]

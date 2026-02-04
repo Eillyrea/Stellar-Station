@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarReptilian
+  id: Reptilian
+
 - type: markingsGroup
   parent: Undergarments
-  id: Reptilian
+  id: StellarReptilian # Stellar
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
@@ -12,14 +16,14 @@
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
-      default: [ LizardTailSmooth ]
+      default: [ StellarLizardTailDefault ] # Stellar
     enum.HumanoidVisualLayers.Chest:
       limit: 3
       required: false
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: true
-      default: [ LizardSnoutRound ]
+      default: [ StellarLizardSnoutDefault ] # Stellar
     enum.HumanoidVisualLayers.HeadTop:
       limit: 2
       required: false
@@ -194,13 +198,13 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Reptilian/parts.rsi
+    sprite: _ST/Mobs/Playable/lizard.rsi # Stellar
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Reptilian/parts.rsi
+      sprite: _ST/Mobs/Playable/lizard.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Reptilian
+      group: StellarReptilian
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganReptilianExternal ]

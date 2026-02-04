@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarHuman
+  id: Human
+
 - type: markingsGroup
   parent: Undergarments
-  id: Human
+  id: StellarHuman # Stellar
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
@@ -121,13 +125,13 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _ST/Mobs/Playable/human.rsi # Stellar
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Human/parts.rsi
+      sprite: _ST/Mobs/Playable/human.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Human
+      group: StellarHuman
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganHumanExternal ]
@@ -181,10 +185,12 @@
 - type: entity
   parent: [ OrganBaseEyes, OrganHumanInternal, OrganHumanExternal ]
   id: OrganHumanEyes
-  components:
-  - type: VisualOrgan
-    data:
-      sprite: Mobs/Customization/eyes.rsi
+  # Begin Stellar
+  # components:
+  # - type: VisualOrgan
+  #   data:
+  #     sprite: Mobs/Customization/eyes.rsi
+  # End Stellar
 
 - type: entity
   parent: [ OrganBaseTongue, OrganHumanInternal ]

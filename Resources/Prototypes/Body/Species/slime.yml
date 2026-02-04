@@ -1,6 +1,10 @@
+- type: markingsGroup # Stellar - don't use upstream markings
+  parent: StellarSlime
+  id: Slime
+
 - type: markingsGroup
   parent: Undergarments
-  id: Slime
+  id: StellarSlime # Stellar
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
@@ -125,10 +129,10 @@
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
-        sprite: Mobs/Effects/brute_damage.rsi
+        sprite: _ST/Effects/damage-overlay_brute.rsi # Stellar
         color: "#2cf274"
       Burn:
-        sprite: Mobs/Effects/burn_damage.rsi
+        sprite: _ST/Effects/damage-overlay_burn.rsi # Stellar
   - type: Bloodstream
     bloodReferenceSolution: # TODO Color slime blood based on their slime color or smth
       reagents:
@@ -201,13 +205,13 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Slime/parts.rsi
+    sprite: _ST/Mobs/Playable/slime.rsi # Stellar
   - type: VisualOrgan
     data:
-      sprite: Mobs/Species/Slime/parts.rsi
+      sprite: _ST/Mobs/Playable/slime.rsi # Stellar
   - type: VisualOrganMarkings
     markingData:
-      group: Slime
+      group: StellarSlime
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSlimePersonExternal ]
