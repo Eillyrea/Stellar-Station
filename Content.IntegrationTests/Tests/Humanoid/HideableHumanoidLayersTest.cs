@@ -9,7 +9,7 @@ using Robust.Client.GameObjects;
 namespace Content.IntegrationTests.Tests.Humanoid;
 
 [TestOf(typeof(SharedHideableHumanoidLayersSystem))]
-[Ignore] // Stellar - we don't have the load-bearing vulps
+[Ignore("Stellar - we don't have the load-bearing vulps")]
 public sealed class HideableHumanoidLayersTest : InteractionTest
 {
     protected override string PlayerPrototype => "MobVulpkanin";
