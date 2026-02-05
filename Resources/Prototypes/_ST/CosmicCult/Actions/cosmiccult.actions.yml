@@ -17,7 +17,7 @@
   - type: EntityTargetAction
     whitelist:
       components:
-      - HumanoidAppearance
+      - HumanoidProfile
     blacklist:
       components:
       - CosmicCult
@@ -39,7 +39,7 @@
     canTargetSelf: true
     whitelist:
       components:
-      - HumanoidAppearance
+      - HumanoidProfile
     blacklist:
       components:
       - CosmicCult
@@ -114,7 +114,7 @@
     canTargetSelf: true
     whitelist:
       components:
-      - HumanoidAppearance
+      - HumanoidProfile
     event: !type:EventCosmicLapse {}
 
 - type: entity

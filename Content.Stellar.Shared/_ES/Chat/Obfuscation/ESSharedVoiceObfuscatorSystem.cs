@@ -14,7 +14,7 @@ namespace Content.Stellar.Shared._ES.Chat.Obfuscation;
 /// </summary>
 public abstract class ESSharedVoiceObfuscatorSystem : EntitySystem
 {
-    [Dependency] private readonly SharedHumanoidAppearanceSystem _humanoidAppearance = default!;
+    [Dependency] private readonly HumanoidProfileSystem _humanoidProfile = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -27,7 +27,7 @@ public abstract class ESSharedVoiceObfuscatorSystem : EntitySystem
         args.PushMarkup(Loc.GetString("es-voice-obfuscator-examine"));
     }
 
-    public string GetObfuscatedVoice(Entity<HumanoidAppearanceComponent?> ent)
+    public string GetObfuscatedVoice(Entity<HumanoidProfileComponent?> ent)
     {
         // Non-humanoids have special logic since they don't have identity
         if (!Resolve(ent, ref ent.Comp, false))
@@ -43,7 +43,7 @@ public abstract class ESSharedVoiceObfuscatorSystem : EntitySystem
 
         var name = Name(ent);
         var gender = ent.Comp.Gender;
-        var ageRepresentation = _humanoidAppearance.GetAgeRepresentation(species, age);
+        var ageRepresentation = _humanoidProfile.GetAgeRepresentation(species, age);
         var identityRepresentation = new IdentityRepresentation(name, gender, ageRepresentation);
 
         return identityRepresentation.ToStringUnknown();

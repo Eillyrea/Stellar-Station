@@ -138,7 +138,6 @@
 
 - type: polymorph
   id: SmartCorgiMorph
-  abstract: true # Stellar - Corgium is truly reprehensibly insipid noncontent. Begone.
   configuration:
     entity: MobCorgiSmart
     forced: false

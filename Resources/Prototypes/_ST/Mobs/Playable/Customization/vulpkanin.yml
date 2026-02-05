@@ -6,18 +6,16 @@
 - type: marking
   id: StellarVulpTailDefault
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Vulpkanin ]
+  groupWhitelist: [ StellarVulpkanin ]
   sprites:
   - sprite: _ST/Mobs/Playable/vulpkanin.rsi
     state: tail
 
 # Ears
 - type: marking
-  id: StellaVulpEarsDefault
+  id: StellarVulpEarsDefault
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Vulpkanin ]
+  groupWhitelist: [ StellarVulpkanin ]
   sprites:
   - sprite: _ST/Mobs/Playable/vulpkanin.rsi
     state: ears

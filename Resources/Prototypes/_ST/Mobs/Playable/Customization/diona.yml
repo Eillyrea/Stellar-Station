@@ -5,9 +5,8 @@
 # Vines
 - type: marking
   id: StellarDionaVinesDefault
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [Diona]
+  bodyPart: Overlay
+  groupWhitelist: [StellarDiona]
   sprites:
   - sprite: _ST/Mobs/Playable/diona.rsi
     state: vines

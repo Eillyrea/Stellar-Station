@@ -59,7 +59,7 @@ public sealed partial class DropshadowSystem : SharedDropshadowSystem
 
         _sprite.LayerSetVisible((ent, args.Sprite), DropshadowLayers.Shadow, visible);
 
-        if (HasComp<HumanoidAppearanceComponent>(ent) && _appearance.TryGetData<bool>(ent, DropshadowVisuals.Prone, out var prone, args.Component))
+        if (HasComp<HumanoidProfileComponent>(ent) && _appearance.TryGetData<bool>(ent, DropshadowVisuals.Prone, out var prone, args.Component))
         {
             if (!prone)
             {

@@ -88,7 +88,6 @@
   - type: WarpPoint
     follow: true
   - type: Body
-    requiredLegs: 0
   - type: Emoting
   - type: Speech
     speechSounds: ColossusSpeech

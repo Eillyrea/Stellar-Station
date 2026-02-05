@@ -6,29 +6,26 @@
 - type: marking
   id: StellarLizardSnoutDefault
   bodyPart: Snout
-  markingCategory: Snout
   forcedColoring: true
-  speciesRestriction: [Reptilian]
+  groupWhitelist: [StellarReptilian]
   sprites:
-  - sprite: _ST/Mobs/Playable/lizard.rsi # Stellar
+  - sprite: _ST/Mobs/Playable/lizard.rsi
     state: snout
 
 # Tails
 - type: marking
   id: StellarLizardTailDefault
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  groupWhitelist: [StellarReptilian]
   sprites:
-  - sprite: _ST/Mobs/Playable/lizard.rsi # Stellar
+  - sprite: _ST/Mobs/Playable/lizard.rsi
     state: tail
 
 # Tails - Animated
 - type: marking
   id: StellarLizardTailDefaultAnimated
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: []
+  groupWhitelist: []
   sprites:
   - sprite: _ST/Mobs/Playable/lizard.rsi # Stellar
     state: tail

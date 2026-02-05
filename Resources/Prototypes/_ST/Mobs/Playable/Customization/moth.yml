@@ -6,8 +6,7 @@
 - type: marking
   id: StellarMothWingsDefault
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Moth]
+  groupWhitelist: [StellarMoth]
   sprites:
   - sprite: _ST/Mobs/Playable/moth.rsi # Stellar
     state: wings
@@ -16,8 +15,7 @@
 - type: marking
   id: StellarMothAntennaeDefault
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Moth]
+  groupWhitelist: [StellarMoth]
   sprites:
   - sprite: _ST/Mobs/Playable/moth.rsi # Stellar
     state: antennae
