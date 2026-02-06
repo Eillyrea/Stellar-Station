@@ -119,6 +119,7 @@ public abstract class SharedRoleSystem : EntitySystem
                 $"Job Role of {ToPrettyString(mind.OwnedEntity)} changed from '{jobRole.Value.Comp1.JobPrototype}' to '{jobPrototype}'");
 
             jobRole.Value.Comp1.JobPrototype = jobPrototype;
+            Dirty(jobRole.Value); // Stellar - we need job networked
         }
         else
             MindAddRoleDo(mindId, "MindRoleJob", mind, silent, jobPrototype);
@@ -161,6 +162,7 @@ public abstract class SharedRoleSystem : EntitySystem
         {
             mindRoleComp.JobPrototype = jobPrototype;
             EnsureComp<JobRoleComponent>(mindRoleId.Value);
+            Dirty(mindRoleId.Value, mindRoleComp); // Stellar - we need jobs networked
             DebugTools.AssertNull(mindRoleComp.AntagPrototype);
             DebugTools.Assert(!mindRoleComp.Antag);
             DebugTools.Assert(!mindRoleComp.ExclusiveAntag);

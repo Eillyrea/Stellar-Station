@@ -45,8 +45,6 @@ public sealed partial class CosmicColossusComponent : Component
 
     [DataField] public EntProtoId EffigyPrototype = "CosmicEffigy";
 
-    [DataField] public EntProtoId EffigyObjective = "ColossusEffigyObjective";
-
     [DataField] public EntProtoId EffigyPlaceAction = "ActionCosmicColossusEffigy";
 
     [DataField] public EntityUid? EffigyPlaceActionEntity;

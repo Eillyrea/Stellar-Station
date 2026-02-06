@@ -15,10 +15,11 @@
   - type: SpaceSpawnRule
   - type: AntagSpawner
     prototype: MobCosmicColossusLone
-  - type: AntagObjectives
-    objectives:
-    - ColossusSurviveObjective
-    - ColossusEffigyObjective
+  - type: StellarAntagGoals
+    goals: !type:AllSelector
+      children:
+      - id: ColossusSurviveGoal
+      - id: ColossusEffigyGoal
   - type: AntagSelection
     agentName: role-subtype-colossus
     definitions:

@@ -23,6 +23,7 @@ using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Content.Shared.Temperature.Components;
 using Content.Shared.UserInterface;
+using Content.Stellar.Shared.Goals;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
@@ -49,6 +50,7 @@ public sealed class MonumentSystem : SharedMonumentSystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
+    [Dependency] private readonly StellarNumericGoalSystem _numericGoal = default!;
 
     private static readonly EntProtoId CosmicGod = "MobCosmicGodSpawn";
     private static readonly EntProtoId MonumentCollider = "MonumentCollider";
@@ -96,10 +98,10 @@ public sealed class MonumentSystem : SharedMonumentSystem
 
             if (comp.CurrentState == FinaleState.ActiveFinale && _timing.CurTime >= comp.FinaleTimer) // trigger wincondition on time runout
             {
-                var victoryQuery = EntityQueryEnumerator<CosmicVictoryConditionComponent>();
-                while (victoryQuery.MoveNext(out _, out var victoryComp))
+                var victoryQuery = EntityQueryEnumerator<CosmicFinalityGoalComponent, StellarNumericGoalComponent>();
+                while (victoryQuery.MoveNext(out var goal, out _, out var numeric))
                 {
-                    victoryComp.Victory = true;
+                    _numericGoal.SetCurrent((goal, numeric), 1);
                 }
 
                 Spawn(CosmicGod, Transform(uid).Coordinates);
@@ -358,10 +360,10 @@ public sealed class MonumentSystem : SharedMonumentSystem
             Dirty(cultist, cultComp);
         }
 
-        var objectiveQuery = EntityQueryEnumerator<CosmicTierConditionComponent>();
-        while (objectiveQuery.MoveNext(out _, out var objectiveComp))
+        var objectiveQuery = EntityQueryEnumerator<CosmicMonumentGoalComponent, StellarNumericGoalComponent>();
+        while (objectiveQuery.MoveNext(out var goal, out _, out var numeric))
         {
-            objectiveComp.Tier = 1;
+            _numericGoal.SetCurrent((goal, numeric), 1);
         }
     }
 
@@ -377,10 +379,10 @@ public sealed class MonumentSystem : SharedMonumentSystem
             uid.Comp.UnlockedGlyphs.Add(glyphProto.ID);
         }
 
-        var objectiveQuery = EntityQueryEnumerator<CosmicTierConditionComponent>();
-        while (objectiveQuery.MoveNext(out _, out var objectiveComp))
+        var objectiveQuery = EntityQueryEnumerator<CosmicMonumentGoalComponent, StellarNumericGoalComponent>();
+        while (objectiveQuery.MoveNext(out var goal, out _, out var numeric))
         {
-            objectiveComp.Tier = 2;
+            _numericGoal.SetCurrent((goal, numeric), 2);
         }
 
         var query = EntityQueryEnumerator<CosmicCultComponent>();
@@ -418,10 +420,10 @@ public sealed class MonumentSystem : SharedMonumentSystem
 
         UpdateMonumentAppearance(uid, true);
 
-        var objectiveQuery = EntityQueryEnumerator<CosmicTierConditionComponent>();
-        while (objectiveQuery.MoveNext(out var _, out var objectiveComp))
+        var objectiveQuery = EntityQueryEnumerator<CosmicMonumentGoalComponent, StellarNumericGoalComponent>();
+        while (objectiveQuery.MoveNext(out var goal, out _, out var numeric))
         {
-            objectiveComp.Tier = 3;
+            _numericGoal.SetCurrent((goal, numeric), 3);
         }
 
         var query = EntityQueryEnumerator<CosmicCultComponent>();

@@ -41,7 +41,7 @@ public sealed class GameTopMenuBarUIController : UIController
         _escape.UnloadButton();
         _guidebook.UnloadButton();
         _admin.UnloadButton();
-        _character.UnloadButton();
+        // _character.UnloadButton(); - Stellar: begone
         _crafting.UnloadButton();
         _ahelp.UnloadButton();
         _action.UnloadButton();
@@ -54,7 +54,7 @@ public sealed class GameTopMenuBarUIController : UIController
         _escape.LoadButton();
         _guidebook.LoadButton();
         _admin.LoadButton();
-        _character.LoadButton();
+        // _character.LoadButton(); - Stellar: begone
         _crafting.LoadButton();
         _ahelp.LoadButton();
         _action.LoadButton();

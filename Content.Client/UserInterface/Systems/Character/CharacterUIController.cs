@@ -54,10 +54,12 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
         _window.OnClose += DeactivateButton;
         _window.OnOpen += ActivateButton;
 
-        CommandBinds.Builder
-            .Bind(ContentKeyFunctions.OpenCharacterMenu,
-                InputCmdHandler.FromDelegate(_ => ToggleWindow()))
-            .Register<CharacterUIController>();
+        // Begin Stellar - No
+        // CommandBinds.Builder
+        //     .Bind(ContentKeyFunctions.OpenCharacterMenu,
+        //         InputCmdHandler.FromDelegate(_ => ToggleWindow()))
+        //     .Register<CharacterUIController>();
+        // End Stellar - No
     }
 
     public void OnStateExited(GameplayState state)

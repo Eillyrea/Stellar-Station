@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: LicenseRef-CosmicCult
 
 using Content.Server.RoundEnd;
+using Content.Shared.EntityTable;
 using Content.Stellar.Shared.CosmicCult.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
@@ -138,6 +139,12 @@ public sealed partial class CosmicCultRuleComponent : Component
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan? ExtraRiftTimer;
+
+    [DataField]
+    public EntityUid? GoalsContainer;
+
+    [DataField]
+    public ProtoId<EntityTablePrototype> Goals = "CosmicCultGoals";
 
     [DataField] public SoundSpecifier WarpSFX = new SoundPathSpecifier("/Audio/_ST/CosmicCult/ability_blank.ogg");
 

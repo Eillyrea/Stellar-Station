@@ -163,9 +163,9 @@ objective-cosmiccult-charactermenu = You must usher in the end of all things. Co
 objective-cosmiccult-steward-charactermenu = You must direct the cult to usher in the end of all things. Oversee and ensure the cult's progress.
 
 objective-condition-conversion-title = CONVERT CREW
-objective-condition-conversion-desc = Collectively bring at least {$count} crew into the fold.
+objective-condition-conversion-desc = Collectively bring at least {$target} crew into the fold.
 objective-condition-entropy-title = SIPHON ENTROPY
-objective-condition-entropy-desc = Collectively siphon at least {$count} entropy from the crew.
+objective-condition-entropy-desc = Collectively siphon at least {$target} entropy from the crew.
 objective-condition-culttier-title = EMPOWER THE MONUMENT
 objective-condition-culttier-desc = Ensure that The Monument is brought to full power.
 objective-condition-victory-title = USHER IN THE END

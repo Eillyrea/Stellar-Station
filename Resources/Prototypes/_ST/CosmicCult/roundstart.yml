@@ -12,12 +12,12 @@
     delay:
       min: 60
       max: 120
-  - type: AntagObjectives
-    objectives:
-    - CosmicFinalityObjective
-    - CosmicMonumentObjective
-    - CosmicConversionObjective
-    - CosmicEntropyObjective
+  # - type: AntagObjectives
+  #   objectives:
+  #   - CosmicFinalityObjective
+  #   - CosmicMonumentObjective
+  #   - CosmicConversionObjective
+  #   - CosmicEntropyObjective
   - type: AntagSelection
     definitions:
     - prefRoles: [ CosmicAntagCultist ]

@@ -28,8 +28,7 @@ ghost-role-colossus-effigy-error-location = Invalid location! The Effigy must be
 ghost-role-colossus-effigy-error-intersection = Too crowded! An Effigy requires an empty 3x1 area to be beckoned.
 ghost-role-colossus-effigy-error-space = Too close to space! An Effigy must be be at least {$DISTANCE}m away.
 
-objective-condition-effigy-no-target = Beckon an Effigy wherever you desire.
-objective-condition-effigy = Beckon an Effigy near "{$location}".
+objective-condition-effigy = Call forth an Effigy of Entropy near "{$targetName}".
 
 # MINDSINK (Positronic Brain)
 

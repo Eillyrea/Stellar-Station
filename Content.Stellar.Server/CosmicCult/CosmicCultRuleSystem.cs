@@ -16,7 +16,6 @@ using Content.Server.GameTicking.Rules;
 using Content.Server.GameTicking;
 using Content.Server.Ghost;
 using Content.Shared.Light.Components;
-using Content.Server.Objectives.Components;
 using Content.Server.Popups;
 using Content.Shared.Roles.Components;
 using Content.Server.RoundEnd;
@@ -63,7 +62,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using System.Collections.Immutable;
+using System.Diagnostics;
 using System.Linq;
+using Content.Stellar.Shared.Goals;
 
 namespace Content.Stellar.Server.CosmicCult;
 
@@ -104,6 +105,8 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] private readonly VisibilitySystem _visibility = default!;
+    [Dependency] private readonly StellarGoalsSystem _goals = default!;
+    [Dependency] private readonly StellarNumericGoalSystem _numericGoal = default!;
 
     private ISawmill _sawmill = default!;
     private TimeSpan _t3RevealDelay = default!;
@@ -161,6 +164,13 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
     }
 
     #region Starting Events
+    protected override void Added(EntityUid uid, CosmicCultRuleComponent component, GameRuleComponent gameRule, GameRuleAddedEvent args)
+    {
+        component.GoalsContainer = _goals.SpawnContainer("Cosmic Cult");
+        var ok = _goals.TryAddGoals(component.GoalsContainer.Value, component.Goals);
+        Debug.Assert(ok);
+    }
+
     protected override void Started(EntityUid uid, CosmicCultRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
         component.StewardVoteTimer = _timing.CurTime + _voteDelay;
@@ -498,19 +508,20 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
             return;
 
         cult.Comp.EntropySiphoned += ent.Comp.CosmicSiphonQuantity;
-        var query = EntityQueryEnumerator<CosmicEntropyConditionComponent>();
-        while (query.MoveNext(out _, out var entropyComp))
+
+        var query = EntityQueryEnumerator<CosmicEntropyGoalComponent, StellarNumericGoalComponent>();
+        while (query.MoveNext(out var uid, out _, out var numeric))
         {
-            entropyComp.Siphoned = cult.Comp.EntropySiphoned;
+            _numericGoal.SetCurrent((uid, numeric), cult.Comp.EntropySiphoned);
         }
     }
 
     public void AdjustCultObjectiveConversion(int value)
     {
-        var query = EntityQueryEnumerator<CosmicConversionConditionComponent>();
-        while (query.MoveNext(out _, out var conversionComp))
+        var query = EntityQueryEnumerator<CosmicConversionGoalComponent, StellarNumericGoalComponent>();
+        while (query.MoveNext(out var uid, out _, out var numeric))
         {
-            conversionComp.Converted += value;
+            _numericGoal.ChangeCurrent((uid, numeric), value);
         }
     }
     #endregion
@@ -624,6 +635,7 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         associatedComp.CultGamerule = rule;
 
         _role.MindAddRole(mindId, MindRole, mind, true);
+        _goals.ObserveContainer(mindId, rule.Comp.GoalsContainer!.Value);
 
         _antag.SendBriefing(uid, Loc.GetString("cosmiccult-role-roundstart-fluff"), Color.FromHex("#4cabb3"), _briefingSound);
         _antag.SendBriefing(uid, Loc.GetString("cosmiccult-role-short-briefing"), Color.FromHex("#cae8e8"), null);
@@ -734,10 +746,7 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         radio.Channels = ["CosmicRadio"];
         transmitter.Channels = ["CosmicRadio"];
 
-        _mind.TryAddObjective(mindId, mind, "CosmicFinalityObjective");
-        _mind.TryAddObjective(mindId, mind, "CosmicMonumentObjective");
-        _mind.TryAddObjective(mindId, mind, "CosmicConversionObjective");
-        _mind.TryAddObjective(mindId, mind, "CosmicEntropyObjective");
+        _goals.ObserveContainer(mindId, cult.Comp.GoalsContainer!.Value);
 
         _euiMan.OpenEui(new CosmicConvertedEui(), session);
 
@@ -754,6 +763,9 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
     {
         if (AssociatedGamerule(uid) is not { } cult)
             return;
+        if (LifeStage(uid) >= EntityLifeStage.Terminating)
+            return;
+
         var cosmicGamerule = cult.Comp;
 
         _stun.TryKnockdown(uid.Owner, TimeSpan.FromSeconds(2), true);
@@ -776,7 +788,8 @@ public sealed class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRuleComponen
         if (!_mind.TryGetMind(uid, out var mindId, out var mind))
             return;
 
-        _mind.ClearObjectives((mindId, mind));
+        _goals.UnobserveContainer(mindId, cult.Comp.GoalsContainer!.Value);
+
         _role.MindRemoveRole<CosmicCultRoleComponent>(mindId);
         _role.MindRemoveRole<RoleBriefingComponent>(mindId);
         if (_playerMan.TryGetSessionById(mind.UserId, out var session))

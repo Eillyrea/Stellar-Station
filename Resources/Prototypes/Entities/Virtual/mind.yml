@@ -8,3 +8,6 @@
     containers:
       mind_roles: !type:Container
         ents: []
+  # Begin Stellar
+  - type: StellarGoalContainerObserver
+  # End Stellar

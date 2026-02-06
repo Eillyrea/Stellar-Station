@@ -33,9 +33,10 @@
         HorizontalExpand="True"
         AppendStyleClass="{x:Static style:StyleClass.ButtonSquare}"
         />
+    <!-- Stellar: we need to access the character button -->
     <ui:MenuButton
         Name="CharacterButton"
-        Access="Internal"
+        Access="Public"
         Icon="{xe:Tex '/Textures/Interface/character.svg.192dpi.png'}"
         ToolTip="{Loc 'game-hud-open-character-menu-button-tooltip'}"
         BoundKey = "{x:Static is:ContentKeyFunctions.OpenCharacterMenu}"
