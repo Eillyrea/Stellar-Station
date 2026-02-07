@@ -343,6 +343,29 @@ public abstract partial class GameTest
         return Client.EntMan.HasComponent<T>(ent);
     }
 
+    /// <summary>
+    ///     Rolls <see cref="IGameTiming.CurTime"/> forward on the server by the given amount, rounding up.
+    ///     Does not run any of the intermediate ticks, this teleports the server forward in time.
+    /// </summary>
+    /// <param name="amount">The amount of time to go forward.</param>
+    public void SRollForwardCurTime(TimeSpan amount)
+    {
+        var ticks = checked((uint)Math.Ceiling(amount / Server.Timing.TickPeriod));
+
+        Server.Timing.CurTick += ticks;
+    }
+
+
+    /// <summary>
+    ///     Performs <see cref="SRollForwardCurTime"/>, then synchronizes the client.
+    /// </summary>
+    /// <param name="amount">The amount of time to go forward.</param>
+    public async Task RollForwardCurTime(TimeSpan amount)
+    {
+        SRollForwardCurTime(amount);
+
+        await Pair.SyncTicks();
+    }
 
     /// <summary>
     ///     Assigns the player a body in the test map, ensuring they have a mind as well.

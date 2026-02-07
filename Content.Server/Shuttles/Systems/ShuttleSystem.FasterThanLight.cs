@@ -128,6 +128,10 @@ public sealed partial class ShuttleSystem
 
         var mapUid = _mapSystem.CreateMap(out var mapId);
         var ftlMap = AddComp<FTLMapComponent>(mapUid);
+        // BEGIN STELLAR CHANGES
+        var mapLight = EnsureComp<MapLightComponent>(mapUid);
+        mapLight.AmbientLightColor = Color.FromHex("#5292FFFF");
+        // END STELLAR CHANGES
 
         _metadata.SetEntityName(mapUid, "FTL");
         Log.Debug($"Setup hyperspace map at {mapUid}");
@@ -347,16 +351,16 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
-        _thruster.DisableLinearThrusters(shuttle);
-        _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.North);
-        _thruster.SetAngularThrust(shuttle, false);
+        // _thruster.DisableLinearThrusters(shuttle); // Begin Stellar
+        // _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.North);
+        // _thruster.SetAngularThrust(shuttle, false); // End Stellar
         _dockSystem.UndockDocks(uid);
 
         component = AddComp<FTLComponent>(uid);
         component.State = FTLState.Starting;
-        var audio = _audio.PlayPvs(_startupSound, uid);
-        _audio.SetGridAudio(audio);
-        component.StartupStream = audio?.Entity;
+        // var audio = _audio.PlayPvs(_startupSound, uid); // Begin Stellar
+        // _audio.SetGridAudio(audio);
+        // component.StartupStream = audio?.Entity; // End Stellar
 
         // Make sure the map is setup before we leave to avoid pop-in (e.g. parallax).
         EnsureFTLMap();
@@ -412,7 +416,7 @@ public sealed partial class ShuttleSystem
         comp.StateTime = StartEndTime.FromCurTime(_gameTiming, comp.TravelTime - DefaultArrivalTime);
 
         Enable(uid, component: body);
-        _physics.SetLinearVelocity(uid, new Vector2(0f, 20f), body: body);
+        // _physics.SetLinearVelocity(uid, new Vector2(0f, 20f), body: body); // Stellar
         _physics.SetAngularVelocity(uid, 0f, body: body);
 
         _dockSystem.SetDockBolts(uid, true);
@@ -422,9 +426,9 @@ public sealed partial class ShuttleSystem
         RaiseLocalEvent(uid, ref ev, true);
 
         // Audio
-        var wowdio = _audio.PlayPvs(comp.TravelSound, uid);
-        comp.TravelStream = wowdio?.Entity;
-        _audio.SetGridAudio(wowdio);
+        // var wowdio = _audio.PlayPvs(comp.TravelSound, uid); // Begin Stellar
+        // comp.TravelStream = wowdio?.Entity;
+        // _audio.SetGridAudio(wowdio); // End Stellar
     }
 
     /// <summary>
@@ -448,8 +452,8 @@ public sealed partial class ShuttleSystem
             _pvs.AddGlobalOverride(comp.VisualizerEntity.Value);
         }
 
-        _thruster.DisableLinearThrusters(shuttle);
-        _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.South);
+        // _thruster.DisableLinearThrusters(shuttle); // Stellar
+        // _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.South); // Stellar
 
         _console.RefreshShuttleConsoles(entity.Owner);
     }
@@ -532,9 +536,9 @@ public sealed partial class ShuttleSystem
 
         _thruster.DisableLinearThrusters(entity.Comp2);
 
-        comp.TravelStream = _audio.Stop(comp.TravelStream);
-        var audio = _audio.PlayPvs(_arrivalSound, uid);
-        _audio.SetGridAudio(audio);
+        // comp.TravelStream = _audio.Stop(comp.TravelStream); // Begin Stellar
+        // var audio = _audio.PlayPvs(_arrivalSound, uid);
+        // _audio.SetGridAudio(audio); // End Stellar
 
         if (TryComp<FTLDestinationComponent>(uid, out var dest))
         {

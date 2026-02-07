@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2026 TheShuEd
+// SPDX-FileCopyrightText: 2026 AftrLite
 //
 // SPDX-License-Identifier: LicenseRef-Wallening
 /*
@@ -6,9 +7,13 @@
  * https://github.com/crystallpunk-14/crystall-punk-14/blob/master/LICENSE_CE.TXT
  */
 
+using Content.Client.Resources;
 using Content.Stellar.Shared.CCVars;
+using Content.Stellar.Shared.PostProcess;
+using Content.Stellar.Shared.PostProcess.Components;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
+using Robust.Client.ResourceManagement;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
@@ -19,7 +24,8 @@ namespace Content.Stellar.Client.PostProcess;
 // Ideally, for performance reasons, post processing designed to be present at all times, such as additive light blending or tonemapping, should be done as part of a single shader pass.
 public sealed class PostProcessOverlay : Overlay
 {
-    [Dependency] private readonly IEntityManager _entMan = default!;
+    [Dependency] private readonly IResourceCache _cache = default!;
+    [Dependency] private readonly IEntityManager _entity = default!;
     [Dependency] private readonly ILightManager _lightManager = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
@@ -28,7 +34,8 @@ public sealed class PostProcessOverlay : Overlay
     public override OverlaySpace Space => OverlaySpace.WorldSpace;
     private readonly ShaderInstance _basePostProcessShader;
 
-    private ProtoId<ShaderPrototype> _shaderProto = "StellarPostProcess";
+    private readonly ProtoId<ShaderPrototype> _shaderProto = "StellarPostProcess";
+    private readonly string _lutBasePath = "/Textures/_ST/Shaders/lut-base.png";
 
     public PostProcessOverlay()
     {
@@ -40,7 +47,7 @@ public sealed class PostProcessOverlay : Overlay
     {
         var playerEntity = _player.LocalSession?.AttachedEntity;
 
-        if (!_entMan.TryGetComponent<EyeComponent>(playerEntity, out var eyeComp))
+        if (!_entity.TryGetComponent<EyeComponent>(playerEntity, out var eyeComp))
             return false;
 
         if (args.Viewport.Eye != eyeComp.Eye)
@@ -60,12 +67,19 @@ public sealed class PostProcessOverlay : Overlay
         if (args.Viewport.Eye == null)
             return;
 
+        var lutPath = _lutBasePath;
+        if (_entity.TryGetComponent<StellarPostProcessComponent>(args.MapUid, out var mapComp) && mapComp.UseLut != null)
+        {
+            lutPath = mapComp.UseLut;
+        }
+
+        var lutTexture = _cache.GetTexture(lutPath);
         var worldHandle = args.WorldHandle;
         var viewport = args.WorldBounds;
 
+        _basePostProcessShader.SetParameter("LUT_TEXTURE", lutTexture);
         _basePostProcessShader.SetParameter("SCREEN_TEXTURE", ScreenTexture);
         _basePostProcessShader.SetParameter("LIGHT_TEXTURE", args.Viewport.LightRenderTarget.Texture);
-
         _basePostProcessShader.SetParameter("Zoom", args.Viewport.Eye.Zoom.X);
 
         worldHandle.UseShader(_basePostProcessShader);
@@ -78,6 +92,7 @@ public sealed class PostProcessSystem : EntitySystem
 {
     [Dependency] private readonly IOverlayManager _overlay = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly IEntityManager _entity = default!;
 
     public override void Initialize()
     {
@@ -88,7 +103,17 @@ public sealed class PostProcessSystem : EntitySystem
             _overlay.AddOverlay(new PostProcessOverlay());
         }
 
+        SubscribeNetworkEvent<StellarPostProcessUpdateEvent>(OnPostProcessUpdate);
         Subs.CVar(_cfg, STCCVars.PostProcess, OnCVarUpdate, true);
+    }
+
+    private void OnPostProcessUpdate(StellarPostProcessUpdateEvent args)
+    {
+        var map = GetEntity(args.Target);
+        if (!_entity.TryGetComponent<StellarPostProcessComponent>(map, out var postProcessComp))
+            return;
+        postProcessComp.UseLut = args.Lut;
+        Dirty(map, postProcessComp);
     }
 
     private void OnCVarUpdate(bool enabled)

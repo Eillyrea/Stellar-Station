@@ -1,0 +1,327 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: gamePreset
+  id: StellarHazardSectorRandom
+  rules:
+  - StellarIntensityRule
+  - StellarRandomHazardSectorRule
+
+- type: entity
+  parent: BaseGameRule
+  id: StellarRandomHazardSectorRule
+  components:
+  - type: StellarRandomHazardSectorRule
+
+- type: entity
+  parent: BaseGameRule
+  id: StellarIntensityRule
+  components:
+  - type: StellarShiftIntensityRule
+
+- type: entity
+  abstract: true
+  parent: BaseGameRule
+  id: StellarBaseHazardSectorRule
+  components:
+  - type: StellarHazardSectorRule
+    travelTime: 30
+    ambiencePhases:
+    - timeAfterStart: 1s
+      travelSetup: true
+      minLightToggleTime: 15s
+      maxLightToggleTime: 30s
+  - type: StellarMajorThreatRule
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorApocryphalRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableApocryphal
+  - type: StellarMajorThreatRule
+    threatChance: .15
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxApocryphal
+    mapLight: "#2d614e"
+    ambiencePhases:
+    - timeBeforeEnd: 10m
+      applyLut: "/Textures/_ST/Shaders/lut-apoc.png"
+      stageMusic: /Audio/_ST/HazardSectors/apocryphal_stage3.ogg
+    - timeAfterStart: 45m
+      stageMusic: /Audio/_ST/HazardSectors/apocryphal_stage2.ogg
+    - timeAfterStart: 30s # synced with the Sector Arrival Stage.
+      stageMusic: /Audio/_ST/HazardSectors/apocryphal_stage1.ogg
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorAzureRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableAzure
+  - type: StellarMajorThreatRule
+    threatChance: .25
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxAzure
+    mapLight: "#54a5f7"
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorCorporateRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableCorporate
+  - type: StellarMajorThreatRule
+    threatChance: .25
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxCorporate
+    mapLight: "#95a0b4"
+    ambiencePhases:
+    - timeAfterStart: 45m
+      stageMusic: /Audio/_ST/HazardSectors/corporate_stage2.ogg
+    - timeBeforeEnd: 10m
+      stageMusic: /Audio/_ST/HazardSectors/corporate_stage3.ogg
+#    - timeAfterStart: 34s
+#      doAnnouncementNonsense: true
+#      announcementText: string stuff ????
+    - timeAfterStart: 30s # synced with the Sector Arrival Stage.
+      stageMusic: /Audio/_ST/HazardSectors/corporate_stage1.ogg
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorCrystallineRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableCrystalline
+  - type: StellarMajorThreatRule
+    threatChance: .5
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxCrystalline
+    mapLight: "#e9b85e"
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorMagnetarRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableMagnetar
+  - type: StellarMajorThreatRule
+    threatChance: .33
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxMagnetar
+    mapLight: "#bbecea"
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorMalignRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableMalign
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxMalign
+    mapLight: "#7f61a7"
+    ambiencePhases:
+    - timeBeforeEnd: 10m
+      stageMusic: /Audio/_ST/HazardSectors/malign_stage3.ogg
+    - timeAfterStart: 45m
+      stageMusic: /Audio/_ST/HazardSectors/malign_stage2.ogg
+    - timeAfterStart: 30s # synced with the Sector Arrival Stage.
+      stageMusic: /Audio/_ST/HazardSectors/malign_stage1.ogg
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorPelagicRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTablePelagic
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxPelagic
+    mapLight: "#404343"
+
+- type: entity
+  parent: StellarBaseHazardSectorRule
+  id: HazardSectorSupernovaRule
+  components:
+  - type: StellarHazardSectorEventScheduler
+    scheduledEvents: !type:NestedSelector
+      tableId: BasicGameRulesTable # Placeholder
+#      tableId: HazardSectorTableSupernova
+  - type: StellarMajorThreatRule
+    threatChance: .20
+  - type: StellarHazardSectorRule
+    parallax: StellarParallaxSupernova
+    mapLight: "#b33645"
+
+#- type: entity
+#  parent: BaseGameRule
+#  id: HazardSectorParanormalAntagsRule
+#  components:
+#  - type: SubGamemodes
+#    rules:
+#    - id: CosmicCult
+#      prob: 0.5
+#    - id: BloodCult
+#      prob: 0.5
+#    - id: Heretics
+#      prob: 0.5
+
+#- type: entity
+#  parent: BaseGameRule
+#  id: HazardSectorCorporateAntagsRule
+#  components:
+#  - type: SubGamemodes
+#    rules:
+#    - id: GorlexOps
+#      prob: 0.5
+#    - id: InterDyneOps
+#      prob: 0.5
+#    - id: CyberSunAssassin
+#      prob: 0.5
+
+#- type: entity
+#  parent: BaseGameRule
+#  id: HazardSectorMundaneAntagsRule
+#  components:
+#  - type: SubGamemodes
+#    rules:
+#    - id: DoubleAgents
+#      prob: 0.5
+#    - id: SpyVersusSpy
+#      prob: 0.5
+#    - id: Thief(?)
+#      prob: 0.5
+
+#  - type: entityTable
+#    id: HazardSectorTableApocryphal
+#    table: !type:AllSelector
+#      children:
+#        - !type:NestedSelector
+#          tableId: PlaceHolderTable # ANTAG RULES
+#        - !type:NestedSelector
+#          tableId: PlaceHolderTable # CREATURES, HOSTILE
+#        - !type:NestedSelector
+#          tableId: PlaceHolderTable # CREATURES, PASSIVE
+#        - !type:NestedSelector
+#          tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#        - !type:NestedSelector
+#          tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTableAzure
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTableCorporate
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTableCrystalline
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTableMagnetar
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTableMalign
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTablePelagic
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS
+#
+#  - type: entityTable
+#    id: HazardSectorTableSupernova
+#    table: !type:AllSelector
+#      children:
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ANTAG RULES
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, HOSTILE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # CREATURES, PASSIVE
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # ENVIRONMENTAL HAZARDS
+#      - !type:NestedSelector
+#        tableId: PlaceHolderTable # MISCELLANEOUS

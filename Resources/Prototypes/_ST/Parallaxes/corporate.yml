@@ -1,0 +1,55 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxCorporate
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/BG.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/BG_Stars.png"
+      slowness: 0.995
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/Gasgiant.png"
+      slowness: 0.99
+      worldAdjustPosition: 2, 2
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/Planet.png"
+      slowness: 0.98
+      worldAdjustPosition: -5, -5
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/Wisps.png"
+      slowness: 0.98
+      scrolling: -0.0125, 0.015
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/Fleet_Gorlex_1.png"
+      slowness: 0.97
+      scrolling: -0.025, 0
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Corporate/Asteroids_1.png"
+      slowness: 0.9
+      scrolling: -0.025, 0.03
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: stellarShiftIntensity
+  id: StellarIntensityGreen
+  intensity: 0.2
+
+- type: stellarShiftIntensity
+  id: StellarIntensityYellow
+  intensity: 0.5
+
+- type: stellarShiftIntensity
+  id: StellarIntensityOrange
+  intensity: 0.6
+
+- type: stellarShiftIntensity
+  id: StellarIntensityRed
+  intensity: 0.75
+
+- type: stellarShiftIntensity
+  id: StellarIntensityBlack
+  intensity: 0.9

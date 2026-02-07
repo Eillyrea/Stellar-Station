@@ -1,12 +1,19 @@
-//Boilerplate
+// SPDX-FileCopyrightText: 2026 TheShuEd
+// SPDX-FileCopyrightText: 2026 AftrLite
+// SPDX-License-Identifier: LicenseRef-Wallening
+//
+// This file is ALL RIGHTS RESERVED, Copyright (c) 2025 CrystallEdge & 2026 Stellar Station.
+// https://github.com/crystallpunk-14/crystall-punk-14/blob/master/LICENSE_CE.TXT
+// Usage rights of original/base code granted to Stellar Station by the Copyright Holder.
+
+uniform sampler2D LUT_TEXTURE;
 uniform sampler2D SCREEN_TEXTURE;
 uniform sampler2D LIGHT_TEXTURE;
 
 uniform highp float Zoom;
 
-//Variables for controlling the falloff of the additive lighting effect.
 uniform highp float CircleRadius; //= 420.0;
-uniform highp float CircleMinDist; //= 0.0;
+uniform highp float CircleMinDist; //= 1.0;
 uniform highp float CirclePow; //= 1.0;
 uniform highp float CircleMax; //= 4.0;
 uniform highp float CircleMult; //= 0.25;
@@ -16,19 +23,108 @@ uniform highp float FalloffStrength; //= 0.75;
 uniform highp float FalloffPow; //= 3.0;
 uniform highp float HDR; //= 1.5;
 
-void fragment() {
+uniform highp vec3 ColorTint;
+uniform highp float lut_size = 32.0;
+
+/////////////////////////////////////
+
+highp float interpchannel(highp float channel_value, highp float floor_value, highp float diff_value)
+{
+	highp float div_sign = abs(sign(diff_value));
+	return (channel_value-floor_value)*div_sign/(diff_value + (div_sign-1.0));
+}
+
+highp vec3 interppercent(highp vec3 color, highp vec3 floorc, highp vec3 diff)
+{
+	highp vec3 res = vec3(0.0);
+	res.r = interpchannel(color.r, floorc.r, diff.r);
+	res.g = interpchannel(color.g, floorc.g, diff.g);
+	res.b = interpchannel(color.b, floorc.b, diff.b);
+	return res;
+}
+
+highp vec3 interpcolor(highp vec3 floorc, highp vec3 diff, highp float perc){
+	return floorc.rgb + diff.rgb * perc;
+}
+
+highp vec3 tosrgb(highp vec3 linear_color){
+	highp float gamma = 2.2;
+	return pow(linear_color.rgb, vec3(1.0/gamma));
+}
+
+// Ew. Unfortunately, i don't quite grasp converting srgb to linear then back to srgb without obliterating gamma values, so it'll just have to be a big hellblock.
+// Despite how ugly this is, i've measured no notable performance impact.
+highp vec3 applylut(highp vec4 old_color)
+{
+	highp float lut_div = lut_size - 1.0;
+	// Get floor and ceil colors and diff from identity LUT_TEXTURE
+	highp vec3 old_color_lut_base = lut_div * old_color.rgb;
+	highp vec3 old_color_floor_vec = floor(old_color_lut_base);
+	highp vec3 old_color_ceil_vec = ceil(old_color_lut_base);
+	highp vec3 old_color_diff = (old_color_floor_vec - old_color_ceil_vec)/lut_div;
+	highp vec3 old_color_percentages = interppercent(old_color.rgb, old_color_floor_vec/lut_div, old_color_diff);
+
+	// Get the surrounding 8 samples positions
+	highp vec3 lut_color_fff_vec = vec3(old_color_floor_vec.r, old_color_floor_vec.g, old_color_floor_vec.b);
+	highp vec3 lut_color_ffc_vec = vec3(old_color_floor_vec.r, old_color_floor_vec.g, old_color_ceil_vec.b);
+	highp vec3 lut_color_fcf_vec = vec3(old_color_floor_vec.r, old_color_ceil_vec.g, old_color_floor_vec.b);
+	highp vec3 lut_color_fcc_vec = vec3(old_color_floor_vec.r, old_color_ceil_vec.g, old_color_ceil_vec.b);
+	highp vec3 lut_color_cff_vec = vec3(old_color_ceil_vec.r, old_color_floor_vec.g, old_color_floor_vec.b);
+	highp vec3 lut_color_cfc_vec = vec3(old_color_ceil_vec.r, old_color_floor_vec.g, old_color_ceil_vec.b);
+	highp vec3 lut_color_ccf_vec = vec3(old_color_ceil_vec.r, old_color_ceil_vec.g, old_color_floor_vec.b);
+	highp vec3 lut_color_ccc_vec = vec3(old_color_ceil_vec.r, old_color_ceil_vec.g, old_color_ceil_vec.b);
+	highp ivec2 lut_color_fff_pos = ivec2(int(lut_size*lut_color_fff_vec.b + lut_color_fff_vec.r), int(lut_color_fff_vec.g));
+	highp ivec2 lut_color_ffc_pos = ivec2(int(lut_size*lut_color_ffc_vec.b + lut_color_ffc_vec.r), int(lut_color_ffc_vec.g));
+	highp ivec2 lut_color_fcf_pos = ivec2(int(lut_size*lut_color_fcf_vec.b + lut_color_fcf_vec.r), int(lut_color_fcf_vec.g));
+	highp ivec2 lut_color_fcc_pos = ivec2(int(lut_size*lut_color_fcc_vec.b + lut_color_fcc_vec.r), int(lut_color_fcc_vec.g));
+	highp ivec2 lut_color_cff_pos = ivec2(int(lut_size*lut_color_cff_vec.b + lut_color_cff_vec.r), int(lut_color_cff_vec.g));
+	highp ivec2 lut_color_cfc_pos = ivec2(int(lut_size*lut_color_cfc_vec.b + lut_color_cfc_vec.r), int(lut_color_cfc_vec.g));
+	highp ivec2 lut_color_ccf_pos = ivec2(int(lut_size*lut_color_ccf_vec.b + lut_color_ccf_vec.r), int(lut_color_ccf_vec.g));
+	highp ivec2 lut_color_ccc_pos = ivec2(int(lut_size*lut_color_ccc_vec.b + lut_color_ccc_vec.r), int(lut_color_ccc_vec.g));
+
+	// Get gamma corrected color from LUT.
+	highp vec3 lut_color_fff = tosrgb(texelFetch(LUT_TEXTURE, lut_color_fff_pos, 0).rgb);
+	highp vec3 lut_color_ffc = tosrgb(texelFetch(LUT_TEXTURE, lut_color_ffc_pos, 0).rgb);
+	highp vec3 lut_color_fcf = tosrgb(texelFetch(LUT_TEXTURE, lut_color_fcf_pos, 0).rgb);
+	highp vec3 lut_color_fcc = tosrgb(texelFetch(LUT_TEXTURE, lut_color_fcc_pos, 0).rgb);
+	highp vec3 lut_color_cff = tosrgb(texelFetch(LUT_TEXTURE, lut_color_cff_pos, 0).rgb);
+	highp vec3 lut_color_cfc = tosrgb(texelFetch(LUT_TEXTURE, lut_color_cfc_pos, 0).rgb);
+	highp vec3 lut_color_ccf = tosrgb(texelFetch(LUT_TEXTURE, lut_color_ccf_pos, 0).rgb);
+	highp vec3 lut_color_ccc = tosrgb(texelFetch(LUT_TEXTURE, lut_color_ccc_pos, 0).rgb);
+
+	// Calculate first level interpolations.
+	highp vec3 lut_color_iff = interpcolor(lut_color_fff, lut_color_fff - lut_color_cff , old_color_percentages.r);
+	highp vec3 lut_color_ifc = interpcolor(lut_color_ffc, lut_color_ffc - lut_color_cfc, old_color_percentages.r);
+	highp vec3 lut_color_icf = interpcolor(lut_color_fcf, lut_color_fcf - lut_color_ccf, old_color_percentages.r);
+	highp vec3 lut_color_icc = interpcolor(lut_color_fcc, lut_color_fcc - lut_color_ccc, old_color_percentages.r);
+
+	// Calculate second level interpolations.
+	highp vec3 lut_color_iif = interpcolor(lut_color_iff, lut_color_iff - lut_color_icf, old_color_percentages.g);
+	highp vec3 lut_color_iic = interpcolor(lut_color_ifc, lut_color_ifc - lut_color_icc, old_color_percentages.g);
+
+	// Calculate third and final interpolation.
+	highp vec3 lut_color_iii = interpcolor(lut_color_iif, lut_color_iif - lut_color_iic, old_color_percentages.b);
+
+	// Get final color with original alpha.
+	// highp vec4 final_color = vec4(lut_color_iii, old_color.a);
+	return lut_color_iii;
+}
+
+void fragment()
+{
 	COLOR = zTextureSpec(SCREEN_TEXTURE, Pos);
 	highp vec2 aspect = vec2(1.0/SCREEN_PIXEL_SIZE.x, 1.0/SCREEN_PIXEL_SIZE.y);
 	highp float actualZoom = Zoom;
 
-	highp float circle = clamp(zCircleGradient(aspect, FRAGCOORD.xy, CircleMax, CircleRadius / actualZoom, CircleMinDist / actualZoom, CirclePow) * CircleMult, FalloffClampMin, FalloffClampMax);
+    highp float circle = clamp(zCircleGradient(aspect, FRAGCOORD.xy, CircleMax, CircleRadius / actualZoom, CircleMinDist / actualZoom, CirclePow * 1.8) * CircleMult /2, 0, 2);
 
-	highp vec3 lightsampleraw = texture2D(LIGHT_TEXTURE, Pos).rgb;
-	lightsampleraw = smoothstep(0.0, HDR, lightsampleraw);
-	highp float graylight = max(zGrayscale(lightsampleraw) - max((1.0 - circle) * FalloffStrength, 0.0), 0.0);
-	graylight = pow(graylight, FalloffPow);
+	highp vec3 lightsamplesat = texture2D(LIGHT_TEXTURE, Pos).rgb * 1;
+	lightsamplesat = smoothstep(0.0, HDR, lightsamplesat);
+	highp vec3 bloomlight = lightsamplesat * circle / 2;
 
-	highp vec3 lightsample = lightsampleraw * vec3(graylight);
+	highp vec3 lightsample = (vec3(bloomlight) / 1) * lightsamplesat * 2;
+    highp vec4 tempcolor = COLOR;
 
-	COLOR.rgb = COLOR.rgb + lightsample;
+    COLOR.rgb = applylut(COLOR);
+    COLOR.rgb = COLOR.rgb * ColorTint + lightsample; // just stack the light bloom on top because it'll clip otherwise
 }

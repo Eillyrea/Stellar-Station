@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxAzure
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Azure/BG_Darkblue.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Azure/BG_Stars.png"
+      slowness: 1
+      scrolling: -0.05, 0
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Azure/Azure_Nova.png"
+      slowness: 0.99
+      worldAdjustPosition: 0, -3.5
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Azure/Azure_Nova_Wisps.png"
+      slowness: 0.95
+      scrolling: -0.0125, 0.015
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Azure/Asteroids_1.png"
+      slowness: 0.9
+      scrolling: -0.025, 0.03
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Azure/Asteroids_2.png"
+      slowness: 0.8
+      scrolling: -0.05, 0.06
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

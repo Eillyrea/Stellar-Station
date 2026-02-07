@@ -1,0 +1,64 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxMagnetar
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/BG_Tealblue.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/BG_Stars.png"
+      slowness: 0.98
+      scrolling: -0.03, -0.02
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/Magnetar.png"
+      slowness: 0.95
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/WISPS_Magnetar.png"
+      slowness: 0.925
+      worldHomePosition: "90, -35"
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/WISPS-2_Magnetar.png"
+      slowness: 0.925
+      worldHomePosition: "-90, 95"
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/WISPS-3_Magnetar.png"
+      slowness: 0.9
+      worldHomePosition: "135, 115"
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/WISPS-4_Magnetar.png"
+      slowness: 0.9
+      worldHomePosition: "-135, -95"
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Magnetar/Magnetar_Outer.png"
+      slowness: 0.85
+      tiled: false
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

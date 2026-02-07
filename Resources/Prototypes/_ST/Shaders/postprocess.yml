@@ -1,4 +1,5 @@
 # SPDX-FileCopyrightText: 2026 TheShuEd
+# SPDX-FileCopyrightText: 2026 AftrLite
 #
 # SPDX-License-Identifier: LicenseRef-Wallening
 #
@@ -19,4 +20,5 @@
     FalloffClampMax: 1.0
     FalloffStrength: 0.75
     FalloffPow: 3.0
-    HDR: 1.5
+    HDR: 1.8
+    ColorTint: 1, 1, 1

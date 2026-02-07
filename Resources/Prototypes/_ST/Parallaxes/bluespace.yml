@@ -1,0 +1,85 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarBluespace
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/BG_Darkblue.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue_2.png"
+      slowness: 0.99
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue_3.png"
+      slowness: 0.8
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue_2.png"
+      slowness: 0.6
+      scrolling: "0, 0.04"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue.png"
+      slowness: 0.3
+      scrolling: "0, 0.1"
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false
+
+- type: parallax
+  id: StellarBluespaceFTL
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/BG_Darkblue.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/BGLayer_Darkblue.png"
+      slowness: 0.9
+      scrolling: "0, 1"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue_2.png"
+      slowness: 0.6
+      scrolling: "0, 3"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue_3.png"
+      slowness: 0.5
+      scrolling: "0, 4"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/WISPS_Darkblue_2.png"
+      slowness: 0.3
+      scrolling: "0, 6"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Bluespace/THIN_WISPS_Blue_1.png"
+      slowness: 0.15
+      scrolling: "0, 12"
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxSupernova
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Supernova/BG_Redpurple.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Supernova/BG_Stars.png"
+      slowness: 0.99
+      scrolling: 0.05, 0
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Supernova/Nova_Glare.png"
+      slowness: 0.98
+      tiled: false
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Supernova/Nova.png"
+      slowness: 0.97
+      tiled: false
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

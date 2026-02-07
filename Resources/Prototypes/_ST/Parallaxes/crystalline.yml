@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxCrystalline
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/BG_Dark.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/BG_Stars.png"
+      slowness: 0.99
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/Crystals_3.png"
+      slowness: 0.97
+      scrolling: 0, 0.025
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/Asteroids_1.png"
+      slowness: 0.95
+      scrolling: 0.015, 0.03
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/Crystals_1.png"
+      slowness: 0.93
+      scrolling: 0, 0.05
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/Asteroids_2.png"
+      slowness: 0.9
+      scrolling: 0.05, 0.06
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Crystalline/Crystals_2.png"
+      slowness: 0.8
+      scrolling: 0, 0.1
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

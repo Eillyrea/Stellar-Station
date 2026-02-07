@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxMalign
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Malign/BG_Dark.png"
+      slowness: 1
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Malign/Void.png"
+      slowness: 0.9995
+      worldAdjustPosition: 0.4, 0.8
+
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Malign/Asteroids_3.png"
+      slowness: 0.995
+      worldAdjustPosition: -0.2, -0.2
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Malign/Asteroids_2.png"
+      slowness: 0.99
+      worldAdjustPosition: -0.2, -0.2
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Malign/Malign_Wisps.png"
+      slowness: 0.9
+      scrolling: -0.01, 0.01
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Malign/Asteroids_1.png"
+      slowness: 0.8
+      scrolling: 0.05, 0.05
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

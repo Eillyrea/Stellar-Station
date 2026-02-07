@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: LicenseRef-Wallening
+
+- type: parallax
+  id: StellarParallaxApocryphal
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Apocryphal/BG_Apocryphal.png"
+      slowness: 0.95
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Apocryphal/Wisps_Apocryphal.png"
+      slowness: 0.925
+      scrolling: "0.02, 0.01"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Apocryphal/FOG_Apocryphal.png"
+      slowness: 0.9
+      scrolling: "-0.03, -0.02"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Apocryphal/FOG_Apocryphal.png"
+      slowness: 0.8
+      scrolling: "0.06, 0.04"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Apocryphal/FOG_Apocryphal.png"
+      slowness: 0.6
+      scrolling: "0.12, 0.08"
+
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_ST/Parallaxes/Apocryphal/Vignette.png"
+      scrolling: "-0.02, -0.01"
+
+  layersLQ:
+    - texture:
+        !type:GeneratedParallaxTextureSource
+        id: ""
+        configPath: "/Prototypes/Parallaxes/parallax_config.toml"
+  layersLQUseHQ: false

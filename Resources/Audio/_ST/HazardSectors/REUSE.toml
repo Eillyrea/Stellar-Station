@@ -1,0 +1,11 @@
+version = 1
+
+[[annotations]]
+path = ["apocryphal_stage1.ogg", "apocryphal_stage2.ogg", "apocryphal_stage3.ogg", "corporate_stage1.ogg", "corporate_stage2.ogg", "corporate_stage3.ogg"]
+SPDX-FileCopyrightText = "Custom songs composed for Stellar Station by Pigeonbeans."
+SPDX-License-Identifier = "LicenseRef-Wallening"
+
+[[annotations]]
+path = ["malign_stage1.ogg", "malign_stage2.ogg", "malign_stage3.ogg"]
+SPDX-FileCopyrightText = "Custom songs composed for Stellar Station by Nahu Pyrope."
+SPDX-License-Identifier = "LicenseRef-Wallening"
