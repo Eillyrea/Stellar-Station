@@ -427,3 +427,17 @@
   id: 51
   time: '2026-01-25T17:56:29.0000000+00:00'
   url: https://github.com/Stellar-Station/Stellar-Station/pull/137
+- author: AftrLite
+  changes:
+  - message: All forms of screenshake are Yummy now.
+    type: Add
+  id: 52
+  time: '2026-02-13T10:47:00.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/150
+- author: sowelipililimute
+  changes:
+  - message: The character objectives UI has been completely redone.
+    type: Add
+  id: 53
+  time: '2026-02-06T15:58:20.0000000+00:00'
+  url: https://github.com/Stellar-Station/Stellar-Station/pull/148
