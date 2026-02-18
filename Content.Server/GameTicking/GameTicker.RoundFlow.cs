@@ -659,7 +659,10 @@ namespace Content.Server.GameTicking
         {
             // If this game ticker is a dummy, do nothing!
             if (DummyTicker)
+            {
+                ResettingCleanup();
                 return;
+            }
 
             ReplayEndRound();
 
@@ -730,10 +733,13 @@ namespace Content.Server.GameTicking
         /// </summary>
         private void ResettingCleanup()
         {
-            // Move everybody currently in the server to lobby.
-            foreach (var player in _playerManager.Sessions)
+            if (!DummyTicker)
             {
-                PlayerJoinLobby(player);
+                // Move everybody currently in the server to lobby.
+                foreach (var player in _playerManager.Sessions)
+                {
+                    PlayerJoinLobby(player);
+                }
             }
 
             // Round restart cleanup event, so entity systems can reset.
@@ -741,7 +747,8 @@ namespace Content.Server.GameTicking
             RaiseLocalEvent(ev);
 
             // ES START
-            CleanupLobbyWorld();
+            if (!DummyTicker)
+                CleanupLobbyWorld();
             // ES END
 
             // So clients' entity systems can clean up too...
@@ -752,6 +759,12 @@ namespace Content.Server.GameTicking
             _mapManager.Restart();
 
             _banManager.Restart();
+
+            // ES START
+            if (DummyTicker)
+                return;
+            // ES END
+
 
             _gameMapManager.ClearSelectedMap();
 
