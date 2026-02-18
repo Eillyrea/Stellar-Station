@@ -4,13 +4,13 @@
 //
 // SPDX-License-Identifier: MIT
 
-using Content.Stellar.Shared._ES.Core.Timer.Components;
+using Content.Shared._ES.Core.Timer.Components;
 using JetBrains.Annotations;
 using Robust.Shared.Spawners;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
-namespace Content.Stellar.Shared._ES.Core.Timer;
+namespace Content.Shared._ES.Core.Timer;
 
 /// <summary>
 /// This handles <see cref="ESTimedDespawnComponent"/>

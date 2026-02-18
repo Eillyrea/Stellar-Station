@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2026 AftrLite
+#
+# SPDX-License-Identifier: MIT
+
+- type: entity
+  id: StellarSpaceWindEffect
+  name: space wind
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    drawdepth: Effects
+    sprite: _ST/Effects/space-wind.rsi
+    layers:
+    - state: wind-1
+      shader: unshaded
+      map: [ "appearance" ]
+  - type: RandomSprite
+    available:
+    - appearance:
+        wind-1: ""
+        wind-2: ""
+  - type: Appearance
+  - type: AnimationPlayer
+  - type: ESTimedDespawn
+    lifetime: 1.2
+  - type: ESTimedDespawnSpriteFade
+    fadeTime: 0.8
+  - type: Tag
+    tags:
+    - HideContextMenu

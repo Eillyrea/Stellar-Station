@@ -8,7 +8,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Spawners;
 
-namespace Content.Stellar.Shared._ES.Core.Timer.Components;
+namespace Content.Shared._ES.Core.Timer.Components;
 
 /// <summary>
 /// ES-specific version of <see cref="TimedDespawnComponent"/> with networking capabilities

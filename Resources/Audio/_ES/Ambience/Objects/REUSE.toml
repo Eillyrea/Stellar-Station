@@ -1,0 +1,6 @@
+version = 1
+
+[[annotations]]
+path = ["fire1.ogg", "fire2.ogg", "fire3.ogg", "fire4.ogg"]
+SPDX-FileCopyrightText = "Made by pigeonbeans, mixed to mono by mirrorcult"
+SPDX-License-Identifier = "CC-BY-NC-SA-3.0"

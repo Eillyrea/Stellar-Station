@@ -24,6 +24,9 @@ namespace Content.Server.Entry
             "MultipartMachineGhost",
            // ES START
             "ESInherentLight",
+            "ESTimedDespawnLightFade",
+            "ESTimedDespawnSpriteFade",
+            "ESGenericAmbienceVisualizer",
             // ES END
             // Stellar Start
             "StellarWallSmooth"
